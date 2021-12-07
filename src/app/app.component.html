@@ -1,0 +1,74 @@
+<budgetkey-container [showHeader]="true" [showSearchBar]="false" [showLanguages]="true">
+    <div class='ad' [class.active]='adVisible'>
+        <a href='https://act.obudget.org' target='_blank'>
+            <span>נפתח מחזור חדש לקורס </span>
+            <span class='budgetism'>תקציביזם</span>
+            <span>!</span>
+        </a>
+    </div>
+    <div class='header'>
+        <div class='bubbles'>
+            <speech-bubble [kind]='"question"'>
+                {{ __('- תתחילו לעבוד נתן וגבי?') }}
+            </speech-bubble>
+            <speech-bubble [kind]='"answer"'>
+                {{ __('במקום התיבת טקסט הזו - צריך לשים פסקה אשר מתארת את מטרת') }}
+                <strong>{{ __('״מקור הכסף״') }}</strong>
+                {{ __('בנתיים לא דרוש תיאור אמיתי אלא תעבוד רק על העיצוב של האתר') }} &ndash;<br/>
+                {{ __('כדי שנוכל לדעת מה עושים עם הכסף שלנו&hellip;') }}
+            </speech-bubble>
+          
+        </div>
+        <main-page-summary [amount]="totalAmount" [year]="year"></main-page-summary>
+        <div class="category-visualizations">
+            <category-visualization *ngFor="let category of funcCategories"
+                    [category]="category" data-kind="func">                      
+            </category-visualization>               
+        </div>
+    </div>
+    
+    <div class="footer">
+        <speech-bubble [kind]='"question"'>
+            {{ __('אם יש לי עדיין שאלות, למי לפנות?') }}
+        </speech-bubble>
+        <speech-bubble [kind]='"answer"'>
+            <a href="mailto:adam@obudget.org"
+            target="_blank">
+                {{ __('אם זו שאלה כללית שקשורה לתקציב נשמח לעזור') }}
+            </a>
+        </speech-bubble>
+        <speech-bubble [kind]='"answer"'>
+            <a href="http://www.hasadna.org.il/about-us/"
+            target="_blank">
+                {{ __('אם זו שאלה שקשורה לסדנא לידע ציבורי') }}
+            </a>
+        </speech-bubble>
+        <speech-bubble [kind]='"answer"'>
+            <a href="http://www.hasadna.org.il/%D7%A6%D7%95%D7%A8-%D7%A7%D7%A9%D7%A8/"
+            target="_blank">
+                {{ __('אם את/ה עיתונאי/ת') }}
+            </a>
+        </speech-bubble>
+        <speech-bubble [kind]='"question"'>
+            {{ __('איך אפשר לעזור לכם?') }}
+        </speech-bubble>
+        <speech-bubble [kind]='"answer"'>
+            <a href="http://www.hasadna.org.il/%D7%AA%D7%A8%D7%95%D7%9E%D7%94-2/"
+            target="_blank">
+            {{ __('אפשר לתרום לנו...') }}
+            </a>
+        </speech-bubble>
+        <speech-bubble [kind]='"answer"'>
+            <a href="http://www.hasadna.org.il/%D7%94%D7%AA%D7%A0%D7%93%D7%91%D7%95%D7%AA/"
+            target="_blank">
+            {{ __('או לבוא להתנדב') }}
+            </a>
+        </speech-bubble>
+        <speech-bubble [kind]='"answer"'>
+            <a href="https://github.com/OpenBudget/BudgetKey"
+            target="_blank">
+            {{ __('או לשחק עם הקוד של האתר') }}
+            </a>
+        </speech-bubble>
+    </div>
+</budgetkey-container>
