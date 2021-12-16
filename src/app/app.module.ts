@@ -10,25 +10,28 @@ import { CategoryVisualizationInfoPopupComponent } from './category-visualizatio
 import { HeroComponent } from './hero/hero.component';
 import { MushonkeyModule } from 'mushonkey';
 import { BUBBLES } from './constants';
+import { bubbles } from './bubbles'; //added import
 import { SpeechBubbleComponent } from './speech-bubble/speech-bubble.component';
 
 declare let BUDGETKEY_NG2_COMPONENTS_THEME: any;
 declare const BUDGETKEY_THEME_ID: any;
 declare const BUDGETKEY_LANG: any;
-declare const bubbles: any;
+//deleteted - declate const bubbles: any
 
-export const LANG = typeof(BUDGETKEY_LANG) === 'undefined' ? 'he' : BUDGETKEY_LANG;
+export const LANG = typeof (BUDGETKEY_LANG) === 'undefined' ? 'he' : BUDGETKEY_LANG;
 
 const providers: any[] = [
-  {provide: THEME_ID_TOKEN, useValue: typeof(BUDGETKEY_THEME_ID) === 'undefined' ? null : BUDGETKEY_THEME_ID},
-  {provide: LANG_TOKEN, useValue: LANG},
+  { provide: THEME_ID_TOKEN, useValue: typeof (BUDGETKEY_THEME_ID) === 'undefined' ? null : BUDGETKEY_THEME_ID },
+  { provide: LANG_TOKEN, useValue: LANG },
   getAuthServiceConfigProvider('https://next.obudget.org'),
-  {provide: BUBBLES, useValue: bubbles},
+  { provide: BUBBLES, useValue: bubbles },
 ];
-if (typeof(BUDGETKEY_NG2_COMPONENTS_THEME) !== 'undefined') {
+if (typeof (BUDGETKEY_NG2_COMPONENTS_THEME) !== 'undefined') {
   BUDGETKEY_NG2_COMPONENTS_THEME = Object.assign({}, BUDGETKEY_NG2_COMPONENTS_THEME);
-  providers.push({provide: THEME_TOKEN,
-                  useValue: BUDGETKEY_NG2_COMPONENTS_THEME});
+  providers.push({
+    provide: THEME_TOKEN,
+    useValue: BUDGETKEY_NG2_COMPONENTS_THEME
+  });
 }
 
 @NgModule({

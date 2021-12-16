@@ -1,15 +1,15 @@
 ::ng-deep .app {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    position: relative;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  position: relative;
 }
 
 .ad {
   position: fixed;
   left: 0;
   border-top-right-radius: 10px;
-  background-color: #009adf;  
+  background-color: #009adf;
   padding: 5px 10px;
   bottom: -40px;
   transition-property: bottom;
@@ -18,14 +18,13 @@
   z-index: 100;
   span {
     font-size: 16px;
-    color: white;  
+    color: white;
   }
 
   &.active {
     bottom: 0px;
     transition-delay: 3s;
   }
-
 }
 
 .budgetism {
@@ -36,56 +35,84 @@
   padding: 0 20px;
 }
 
-.header, .footer {
-    width: 100vw;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+.header,
+.footer {
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
 .header {
-    .bubbles {
-        margin-top: 60px;
-        margin-bottom: 20px;
-    }
+  .bubbles {
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
 
-    .category-visualizations {
-        display: flex;
-        flex-flow: row;
-        justify-content: center;
-        align-items: baseline;
-        flex-wrap: wrap;
-        max-width: 1250px;
-        width: 100%;
-    }
+  // .category-visualizations {
+  //   display: flex;
+  //   flex-flow: row;
+  //   justify-content: center;
+  //   align-items: baseline;
+  //   flex-wrap: wrap;
+  //   max-width: 1250px;
+  //   width: 100%;
+  // }
+
+  .category-visualizations{
+    display:grid;
+    align-items: center;
+    justify-items: center;
+    max-width: 1250px;
+    width: 50%;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .course {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    margin-top: 2em;
-    margin-bottom: 0.5em;
-    padding: 0.5em 1em;
-    border-radius: 2em 2em 0 2em;
-    background: #F2F2F2;
-    font-size: 3em;
-    color:  black;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  padding: 0.5em 1em;
+  border-radius: 2em 2em 0 2em;
+  background: #f2f2f2;
+  font-size: 3em;
+  color: black;
 
-    .scroll-down{
-      flex: 0 0 auto;
-      margin: 30px 0 0 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-end;
-  
-      svg {
-        display: block;
-  
-        path {
-          fill: #ff6666;
-        }
+  .scroll-down {
+    flex: 0 0 auto;
+    margin: 30px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    svg {
+      display: block;
+
+      path {
+        fill: #ff6666;
       }
     }
   }
+}
+
+.bottom-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.bottom-button {
+  width: 15rem;
+  height: 15rem;
+  margin: 1rem 3rem;
+  color: white;
+  background-color: #ff6666;
+  font-family: inherit;
+  border: 0;
+  border-radius: 0.8rem;
+  text-decoration: underline;
+}
