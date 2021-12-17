@@ -9,13 +9,10 @@ export const VALUE_SCALE = {
 export const DEFAULT_LOCALE = 'he-IL';
 
 export const CATEGORIES_THEMES = {
-  'בטחון וסדר ציבורי': 'blue',
-  'החזרי חוב': 'tan',
-  'שירותים חברתיים': 'violet',
-  'ענפי משק': 'olive',
-  'משרדי מטה': 'orange',
-  'הוצאות אחרות': 'yellow',
-  'תשתיות': 'mint',
+  'הכנסות ישירות': 'blue',
+  'הכנסות עקיפות': 'tan',
+  'ארות חוב': 'violet',
+  'הכנסות אחרות': 'olive',
 };
 
 export const BUBBLES = new InjectionToken('bubbles');
