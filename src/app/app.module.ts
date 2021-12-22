@@ -12,6 +12,7 @@ import { MushonkeyModule } from 'mushonkey';
 import { BUBBLES } from './constants';
 import { bubbles } from './bubbles'; //added import
 import { SpeechBubbleComponent } from './speech-bubble/speech-bubble.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 declare let BUDGETKEY_NG2_COMPONENTS_THEME: any;
 declare const BUDGETKEY_THEME_ID: any;
@@ -42,6 +43,7 @@ if (typeof (BUDGETKEY_NG2_COMPONENTS_THEME) !== 'undefined') {
     CategoryVisualizationInfoPopupComponent,
     HeroComponent,
     SpeechBubbleComponent,
+    NavBarComponent,
   ],
   imports: [
     BrowserModule,

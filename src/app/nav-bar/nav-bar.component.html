@@ -1,0 +1,15 @@
+<div class="nav-bar-container">
+  <div class="nav-bar">
+    <h1 class="nav-option" [ngClass]="{'selected-nav-option' : currentlySelected == 'left'}"
+      (click)="changeCurrentlySelected('left')">{{leftCaption}}</h1>
+    <h1 class="nav-option" [ngClass]="{'selected-nav-option' : currentlySelected == 'middle'}"
+      (click)="changeCurrentlySelected('middle')">{{middleCaption}}</h1>
+    <h1 class="nav-option" [ngClass]="{'selected-nav-option' : currentlySelected == 'right'}"
+      (click)="changeCurrentlySelected('right')">{{rightCaption}}</h1>
+
+  </div>
+
+  <div class="page" *ngIf="currentlySelected=='left'">LEFT</div>
+  <div class="page" *ngIf="currentlySelected=='middle'">MIDDLE</div>
+  <div class="page" *ngIf="currentlySelected=='right'">RIGHT</div>
+</div>

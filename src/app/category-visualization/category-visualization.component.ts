@@ -32,7 +32,7 @@ export class CategoryVisualizationComponent implements OnInit, AfterViewInit {
     return this.utils.formatNumber(value / 1000000000, 2) + __T('מיליארד') + ' ₪';
   }
 
-  constructor(private utils: UtilsService) {}
+  constructor(private utils: UtilsService) { }
 
   private createContainer(svg: any, diameter_w: number, diameter_h: number) {
     return svg.append('g')
@@ -78,7 +78,7 @@ export class CategoryVisualizationComponent implements OnInit, AfterViewInit {
   }
 
   private renderLegendLabels(container: any, root: any, category: any,
-                             nodes: any[], margin: number, padding: number) {
+    nodes: any[], margin: number, padding: number) {
     container
       .attr('class', 'legend-labels')
       .style('opacity', 0)
@@ -87,7 +87,7 @@ export class CategoryVisualizationComponent implements OnInit, AfterViewInit {
       .enter()
       .append('g')
       .call(createLegendLabels, margin / 2, (value: number) => this.formatPercents(value))
-      .attr('transform', function(d: any) {
+      .attr('transform', function (d: any) {
         const p: any = _.last((<any>d.data).legendPointer);
         const bounds = (<any>this).getBoundingClientRect();
 
@@ -102,7 +102,7 @@ export class CategoryVisualizationComponent implements OnInit, AfterViewInit {
       });
 
     function createLegendLabels(containers: any, maxWidth: number, formatPercents: any) {
-      containers.each(function() {
+      containers.each(function () {
         const containerForLabel = d3.select(this);
         const datum: any = containerForLabel.datum();
 
@@ -163,19 +163,19 @@ export class CategoryVisualizationComponent implements OnInit, AfterViewInit {
         explanation_source: value.explanation_source
       }));
 
-    const root: any = d3.hierarchy({name: title, children: data})
+    const root: any = d3.hierarchy({ name: title, children: data })
       .sum((d: any) => d.size)
       .sort((a: any, b: any) => b.value - a.value);
 
     const nodes = pack(root).children;
-    const temp = {x: root.x, y: root.y};
+    const temp = { x: root.x, y: root.y };
 
     function calculatePointAtRadius(r: number, p: any) {
       if ((p.x === 0) && (p.y === 0)) {
-        return {x: r, y: r};
+        return { x: r, y: r };
       }
       const q = r / Math.sqrt(p.x * p.x + p.y * p.y);
-      return {x: p.x * q, y: p.y * q};
+      return { x: p.x * q, y: p.y * q };
     }
 
     _.each(nodes, node => {
@@ -201,7 +201,7 @@ export class CategoryVisualizationComponent implements OnInit, AfterViewInit {
       (<any>node.data).legendPointer = [point1, point2, point3];
     });
 
-    return {root, nodes};
+    return { root, nodes };
   }
 
   ngOnInit() {
@@ -217,7 +217,7 @@ export class CategoryVisualizationComponent implements OnInit, AfterViewInit {
     const margin = 150;
     const padding = 10;
 
-    const {root, nodes} = this.prepareNodes(
+    const { root, nodes } = this.prepareNodes(
       this.category.name, this.category.values,
       diameter_w, margin, padding);
     this.createContainer(svg, diameter_w, diameter_h);
