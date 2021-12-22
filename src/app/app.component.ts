@@ -19,6 +19,7 @@ export function __T(content) {
   styleUrls: ['./app.component.less']
 })
 export class AppComponent implements OnInit {
+  public headline:string = 'מקור הכסף';
   public funcCategories: any[];
   public econCategories: any[];
   public incomeCategories: any[];
