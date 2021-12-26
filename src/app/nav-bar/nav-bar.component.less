@@ -1,14 +1,15 @@
 .nav-bar-container{
+    position: relative;
     width: 100vw;
     margin-top: 2rem;
     scroll-snap-align: top;
+    z-index: 1000;
 }
 
 .nav-bar{
     display: flex;
     justify-content: stretch;
     flex-direction: row-reverse;
-    box-shadow: 0 10px 20px;
     height: 100%;
 }
 
@@ -23,11 +24,25 @@
 }
 
 .selected-nav-option{
-    color: black;
+    color:#ff6666;
 }
 
 .page{
+    position: relative;
     margin-top: 2rem;
     height: 100vh;
-    text-align: center;
+    width: 100vw;
+}
+
+.para-header{
+    position: relative;
+    margin-right: 20vw;
+    font-size: 3rem;
+    color:#ff6666;
+}
+
+.para{
+    width: 60vw;
+    font-size: 2rem;
+    margin-right: 30vw;
 }
