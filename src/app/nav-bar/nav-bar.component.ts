@@ -6,9 +6,9 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./nav-bar.component.less']
 })
 export class NavBarComponent implements OnInit {
-  leftCaption: string = "left";
-  middleCaption: string = "middle";
-  rightCaption: string = "right";
+  leftCaption: string = "אגרות חוב וגרעון";
+  middleCaption: string = "מיסי הכנסה אל מול מיסי הוצאה";
+  rightCaption: string = "כמה אני מכניס למדינה";
 
   currentlySelected: string = "middle";
 

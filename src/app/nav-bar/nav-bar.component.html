@@ -1,15 +1,29 @@
 <div class="nav-bar-container">
   <div class="nav-bar">
-    <h1 class="nav-option" [ngClass]="{'selected-nav-option' : currentlySelected == 'left'}"
-      (click)="changeCurrentlySelected('left')">{{leftCaption}}</h1>
-    <h1 class="nav-option" [ngClass]="{'selected-nav-option' : currentlySelected == 'middle'}"
-      (click)="changeCurrentlySelected('middle')">{{middleCaption}}</h1>
-    <h1 class="nav-option" [ngClass]="{'selected-nav-option' : currentlySelected == 'right'}"
-      (click)="changeCurrentlySelected('right')">{{rightCaption}}</h1>
+    <h2 class="nav-option" [ngClass]="{'selected-nav-option' : currentlySelected == 'left'}"
+      (click)="changeCurrentlySelected('left')">{{leftCaption}}</h2>
+    <h2 class="nav-option" [ngClass]="{'selected-nav-option' : currentlySelected == 'middle'}"
+      (click)="changeCurrentlySelected('middle')">{{middleCaption}}</h2>
+    <h2 class="nav-option" [ngClass]="{'selected-nav-option' : currentlySelected == 'right'}"
+      (click)="changeCurrentlySelected('right')">{{rightCaption}}</h2>
 
   </div>
 
-  <div class="page" *ngIf="currentlySelected=='left'">LEFT</div>
-  <div class="page" *ngIf="currentlySelected=='middle'">MIDDLE</div>
-  <div class="page" *ngIf="currentlySelected=='right'">RIGHT</div>
+  <div class="page" *ngIf="currentlySelected=='left'">
+    LEFT
+  </div>
+
+  <div class="page" *ngIf="currentlySelected=='middle'">
+    <div class="para-header">דבר ראשון: מה זה מיסי הכנסה הוצאה?</div>
+    <div class="para">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+
+    <div class="para-header">מיסים ישירים ומיסים עקיפים</div>
+    <div class="para">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaa
+      aaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaa
+    </div>
+  </div>
+
+  <div class="page" *ngIf="currentlySelected=='right'">
+    RIGHT
+  </div>
 </div>
