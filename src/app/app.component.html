@@ -20,25 +20,20 @@
             </div>
 
         </div>
-        <main-page-summary [amount]="data" [year]="year"></main-page-summary>
+        <main-page-summary [amount]="totalAmount" [year]="year"></main-page-summary>
         <div class="category-visualizations">
             <category-visualization *ngFor="let category of funcCategories" [category]="category" data-kind="func">
             </category-visualization>
         </div>
-    </div>
-    <div class='bubbles'>
-        <speech-bubble [kind]='"question"'>
-            {{ __('גם כאן להוסיף מקום לפסקה') }}
-        </speech-bubble>
     </div>
     <div class='head'>
         <h1>{{headline}}</h1>
     </div>
     <div class='para'>
         <div>
-            {{ __('הכלבים התפתחו מהזאבים. ממוצע תוחלת החיים שלהם הוא בין 11 ל-14 שנים[1], אך כלבים מעורבים וכלבים מגזעים
-            מסוימים כמו כלב כנעני, סכיפרקה וגזעים נוספים של כלבי ציד יכולים לחיות גם בין 18 ל-22 שנים. ככלל, כלבים קטנים
-            מאריכים חיים יותר מכלבים גדולים.') }}
+            ניתן לראות בגרפים למעלה חלוקה גסה של הכנסות תקציב המדינה. אם תרצו תמשיכו לגלול ותגיעו למספר סוגיות אשר
+            מאפשרות לכם
+            להבין יותר לעומק את הכנסות תקציב המדינה.
             <br>
             <br>
             <br>

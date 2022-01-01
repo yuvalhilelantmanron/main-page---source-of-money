@@ -9,9 +9,9 @@ export const VALUE_SCALE = {
 export const DEFAULT_LOCALE = 'he-IL';
 
 export const CATEGORIES_THEMES = {
-  'הכנסות ישירות': 'blue',
-  'הכנסות עקיפות': 'tan',
-  'ארות חוב': 'violet',
+  'מסים ישירים': 'blue',
+  'מסים עקיפים': 'tan',
+  'אגרות': 'violet',
   'הכנסות אחרות': 'olive',
 };
 

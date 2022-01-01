@@ -207,7 +207,7 @@ export class CategoryVisualizationComponent implements OnInit, AfterViewInit {
   ngOnInit() {
     this.theme = CATEGORIES_THEMES[this.category.name] || '';
     this.theme += ' vis-kind-' + this.kind;
-    this.scale = this.category.scale;
+    this.scale = this.category.scale || 1;
   }
 
   ngAfterViewInit() {
