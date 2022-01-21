@@ -28,15 +28,9 @@ export class AppComponent implements OnInit {
   public __ = __T;
   public adVisible = false;
 
+  public data: any;
+
   constructor(@Inject(BUBBLES) private bubbles: any) {
-    // this.year = this.bubbles.year;
-    // this.funcCategories = bubbles.func;
-    // this.econCategories = bubbles.econ;
-    // this.incomeCategories = bubbles.income;
-    // this.totalAmount = 0;
-    // this.funcCategories.forEach((category: any) => {
-    //   this.totalAmount += category.amount;
-    // });
     this.getData(bubbles);
   }
 
@@ -45,6 +39,7 @@ export class AppComponent implements OnInit {
     var raw = await fetch('https://next.obudget.org/api/query?query=SELECT%20year,%20func_cls_title_2-%3E%3E0%20as%20func_title,%20sum(net_revised)%20AS%20revised,%20sum(net_allocated)%20AS%20allocated,%20sum(net_executed)%20AS%20executed%20FROM%20budget%20WHERE%20depth%20=%204%20and%20code%20like%20%270000%%%27%20group%20by%201,%202%20order%20by%202,%201')
     var data = await raw.json();
     data = data.rows;
+    this.data = data;
 
     //gets the most current year
     var lastTitle = data[0].func_title;

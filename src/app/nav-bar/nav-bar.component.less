@@ -1,49 +1,65 @@
-.nav-bar-container{
-    position: relative;
-    width: 100vw;
-    margin-top: 2rem;
-    scroll-snap-align: top;
-    z-index: 1000;
+.nav-bar-container {
+  position: relative;
+  width: 100vw;
+  margin-top: 2rem;
+  scroll-snap-align: top;
+  z-index: 1000;
 }
 
-.nav-bar{
-    display: flex;
-    justify-content: stretch;
-    flex-direction: row-reverse;
-    height: 100%;
+.nav-bar {
+  display: flex;
+  justify-content: stretch;
+  flex-direction: row-reverse;
+  height: 100%;
 }
 
-.nav-option{
-    width: 34vw;
-    text-align: center;
-    cursor: pointer;
-    color: lightgray;
-    border-right: 2px solid lightgray;
-    height: 100%;
-    transition: 0.3s;
+.nav-option {
+  width: 34vw;
+  text-align: center;
+  cursor: pointer;
+  color: lightgray;
+  border-right: 2px solid lightgray;
+  height: 100%;
+  transition: 0.3s;
 }
 
-.selected-nav-option{
-    color:#ff6666;
+.selected-nav-option {
+  color: #ff6666;
 }
 
-.page{
-    position: relative;
-    margin-top: 2rem;
-    height: 100vh;
-    width: 100vw;
+.page {
+  position: relative;
+  margin-top: 2rem;
+  height: 100vh;
+  width: 100vw;
 }
 
-.para-header{
-    position: relative;
-    margin-right: 20vw;
-    font-size: 3rem;
-    color:#ff6666;
+.para-header {
+  position: relative;
+  margin-right: 20vw;
+  font-size: 3rem;
+  color: #ff6666;
 }
 
-.para{
-    width: 50vw;
-    font-size: 2rem;
-    margin-right: 25vw;
-    font-family: inherit;
+.para {
+  width: 50vw;
+  font-size: 2rem;
+  margin-right: 25vw;
+  font-family: inherit;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+chart {
+  width: 50%;
+  @media screen and (max-width: 1200px) {
+    width: 90%;
+  }
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
 }
