@@ -6,9 +6,19 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./nav-bar.component.less']
 })
 export class NavBarComponent implements OnInit {
+  propertyTypes: Array<string> = ['בית', 'דירה'];
   leftCaption: string = "left";
   middleCaption: string = "middle";
   rightCaption: string = "right";
+  inIncome: number;
+  inKids: number;
+  inType : string = ""
+  ans1 : string = ""
+  ans2 : string = ""
+  ans3 : string = ""
+  ans4 : string = ""
+  num: number = 1;
+  tax: number;
 
   currentlySelected: string = "middle";
 
@@ -22,4 +32,16 @@ export class NavBarComponent implements OnInit {
     this.currentlySelected = newSelected;
   }
 
+  logval(income: number,kids: number,type: string){
+
+    this.inKids = kids;
+    this.inIncome = income;
+    this.inType = type;
+    this.tax = income*3;
+    this.ans1 = "אתה משלם כ";
+    this.ans2 =  "₪" + income*3;
+    this.ans3 = "מיסים למדינה";
+    this.ans4 = "יש לך " + kids + "ילדים ואתה גר ב" + type;
+    
+  }
 }

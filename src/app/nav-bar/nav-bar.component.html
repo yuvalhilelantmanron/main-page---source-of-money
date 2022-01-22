@@ -1,15 +1,79 @@
 <div class="nav-bar-container">
   <div class="nav-bar">
-    <h1 class="nav-option" [ngClass]="{'selected-nav-option' : currentlySelected == 'left'}"
-      (click)="changeCurrentlySelected('left')">{{leftCaption}}</h1>
-    <h1 class="nav-option" [ngClass]="{'selected-nav-option' : currentlySelected == 'middle'}"
-      (click)="changeCurrentlySelected('middle')">{{middleCaption}}</h1>
-    <h1 class="nav-option" [ngClass]="{'selected-nav-option' : currentlySelected == 'right'}"
-      (click)="changeCurrentlySelected('right')">{{rightCaption}}</h1>
-
+    <h1
+      class="nav-option"
+      [ngClass]="{ 'selected-nav-option': currentlySelected == 'left' }"
+      (click)="changeCurrentlySelected('left')"
+    >
+      {{ leftCaption }}
+    </h1>
+    <h1
+      class="nav-option"
+      [ngClass]="{ 'selected-nav-option': currentlySelected == 'middle' }"
+      (click)="changeCurrentlySelected('middle')"
+    >
+      {{ middleCaption }}
+    </h1>
+    <h1
+      class="nav-option"
+      [ngClass]="{ 'selected-nav-option': currentlySelected == 'right' }"
+      (click)="changeCurrentlySelected('right')"
+    >
+      {{ rightCaption }}
+    </h1>
   </div>
 
-  <div class="page" *ngIf="currentlySelected=='left'">LEFT</div>
-  <div class="page" *ngIf="currentlySelected=='middle'">MIDDLE</div>
-  <div class="page" *ngIf="currentlySelected=='right'">RIGHT</div>
+  <div class="page" *ngIf="currentlySelected == 'left'">LEFT</div>
+  <div class="page" *ngIf="currentlySelected == 'middle'">MIDDLE</div>
+  <div class="page" *ngIf="currentlySelected == 'right'">
+    <div class="button1">
+      <div ng-controller="ctrl">
+        <input
+          #income
+          type="number"
+          ng-model="income"
+          placeholder="שכר חודשי ₪"
+        />
+      </div>
+      <br />
+
+      <div>
+        <input #kids type="number" ng-model="kids" placeholder="מספר ילדים" />
+      </div>
+      <br />
+      <div>
+        <select
+          #type
+          name="type"
+          id="property-type"
+          class="form-control"
+          ngModel
+          required
+        >
+          <option *ngFor="let type of propertyTypes" [value]="type">
+            {{ type }}
+          </option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <div class="ans">
+          <button (click)="logval(income.value, kids.value, type.value)">
+            חשב
+          </button>
+        </div>
+      </div>
+      <div>
+        <div class="ans1">
+          <br />
+          <br />
+          {{ ans1 }}
+          <div class="ans">
+            {{ ans2 }}
+          </div>
+          {{ ans3 }}
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
