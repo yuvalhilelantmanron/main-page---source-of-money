@@ -1,0 +1,59 @@
+<div class="button1">
+  <div ng-controller="ctrl">
+    <input
+      #income
+      type="number"
+      ng-model="income"
+      placeholder="שכר חודשי ₪"
+      [min]="0"
+    />
+  </div>
+  <br />
+
+  <div>
+    <input #kids type="number" ng-model="kids" placeholder="מספר ילדים" />
+  </div>
+  <br />
+  <div>
+    <select
+      #type
+      name="type"
+      id="property-type"
+      class="form-control"
+      ngModel
+      required
+    >
+      <option *ngFor="let type of propertyTypes" [value]="type">
+        {{ type }}
+      </option>
+    </select>
+  </div>
+  <br />
+  <div>
+    <div class="calc">
+      <button (click)="logval(income.value, kids.value, type.value)">
+        חשב
+      </button>
+    </div>
+  </div>
+  <div>
+    <div class="ans1">
+      <br />
+      <br />
+      {{ ans1 }}
+      <div class="ans">
+        {{ ans2 }}
+      </div>
+      {{ ans3 }}
+      <br />
+      <br />
+      <br />
+      {{ ans5 }}
+      <br />
+      <br />
+      <div class="imgs" style="display:{{ imgstr }}">
+        <img src="{{ img1 }}" target="_self" width="350" height="200" />
+      </div>
+    </div>
+  </div>
+</div>
