@@ -10,6 +10,8 @@ export class NavBarComponent {
   middleCaption: string = "מיסי הכנסה אל מול מיסי הוצאה";
   rightCaption: string = "כמה אני מכניס למדינה";
 
+  
+
   currentlySelected: string = "middle";
 
   @Input() fetchedData: any;
