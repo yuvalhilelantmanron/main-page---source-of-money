@@ -1,12 +1,6 @@
 <div class="button1">
   <div ng-controller="ctrl">
-    <input
-      #income
-      type="number"
-      ng-model="income"
-      placeholder="שכר חודשי ₪"
-      [min]="0"
-    />
+    <input #income type="number" ng-model="income" placeholder="שכר חודשי ₪" [min]="0" />
   </div>
   <br />
 
@@ -15,14 +9,7 @@
   </div>
   <br />
   <div>
-    <select
-      #type
-      name="type"
-      id="property-type"
-      class="form-control"
-      ngModel
-      required
-    >
+    <select #type name="type" id="property-type" class="form-control" ngModel required>
       <option *ngFor="let type of propertyTypes" [value]="type">
         {{ type }}
       </option>
@@ -37,22 +24,24 @@
     </div>
   </div>
   <div>
-    <div class="ans1">
-      <br />
-      <br />
-      {{ ans1 }}
-      <div class="ans">
-        {{ ans2 }}
+    <div *ngIf="showImgs" class="ans">
+      <div>
+        אתה משלם כ <label class="tax-label">₪{{tax}}</label> מיסים למדינה
       </div>
-      {{ ans3 }}
-      <br />
-      <br />
-      <br />
-      {{ ans5 }}
-      <br />
-      <br />
-      <div class="imgs" style="display:{{ imgstr }}">
-        <img src="{{ img1 }}" target="_self" width="350" height="200" />
+      המחשה של איפה המיסים שלך עוזרים:
+      <div class="imgs">
+        <div>
+          עזרת לתקן {{(tax/20).toFixed(2)}} תמרורים
+          <img src="/assets/img/intersectionImg.jpg" width="350" height="200" />
+        </div>
+        <div>
+          שילמת על הלימודים של {{(tax/100).toFixed(2)}} תלמידים
+          <img src="/assets/img/schoolImg.jpg" width="350" height="200" />
+        </div>
+        <div>
+          שילמת על {{(tax/200).toFixed(2)}} F16
+          <img src="/assets/img/jetImg.jpg" width="350" height="200" />
+        </div>
       </div>
     </div>
   </div>
