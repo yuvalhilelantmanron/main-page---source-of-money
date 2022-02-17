@@ -1,5 +1,6 @@
 <div class="button1">
   <div ng-controller="ctrl">
+    <!--number input of income-->
     <input
       #income
       type="number"
@@ -11,10 +12,12 @@
   <br />
 
   <div>
+    <!--number input of number of kids-->
     <input #kids type="number" ng-model="kids" placeholder="מספר ילדים" />
   </div>
   <br />
   <div>
+    <!--select input of type of home-->
     <select
       #type
       name="type"
@@ -31,6 +34,7 @@
   <br />
   <div>
     <div class="calc">
+      <!--calc button-->
       <button (click)="logval(income.value, kids.value, type.value)">
         חשב
       </button>
@@ -38,6 +42,7 @@
   </div>
   <div>
     <div class="ans1">
+      <!--ans after calc-->
       <br />
       <span class="blackText">{{ ans1 }}</span>&nbsp; <span class="redText">{{ ans2 }}</span>&nbsp;<span class="blackText">{{ ans3 }}</span>
     </div>
@@ -46,6 +51,7 @@
       {{ ans5 }}
       <br />
       <br />
+      <!--img disply based on ans-->
       <div class="imgs" style="display:{{ imgstr }}">
         <img src="{{ img1 }}" target="_self" width="350" height="200" />
       </div>
