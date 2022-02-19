@@ -38,7 +38,11 @@ select{
 }
 
 .ans1 {
-  font-size: 3rem;
+  font-size: 2rem;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .calc {
@@ -66,4 +70,17 @@ input {
 
 .calc button {
   border: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.redText {
+  color: #ff6666;
+}
+.blackText {
+  font-size: 2rem;
 }

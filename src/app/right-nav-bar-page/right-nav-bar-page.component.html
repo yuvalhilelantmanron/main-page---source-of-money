@@ -1,14 +1,17 @@
 <div class="button1">
   <div ng-controller="ctrl">
+    <!--number input of income-->
     <input #income type="number" ng-model="income" placeholder="שכר חודשי ₪" [min]="0" />
   </div>
   <br />
 
   <div>
+    <!--number input of number of kids-->
     <input #kids type="number" ng-model="kids" placeholder="מספר ילדים" />
   </div>
   <br />
   <div>
+    <!--select input of type of home-->
     <select #type name="type" id="property-type" class="form-control" ngModel required>
       <option *ngFor="let type of propertyTypes" [value]="type">
         {{ type }}
@@ -18,17 +21,20 @@
   <br />
   <div>
     <div class="calc">
+      <!--calc button-->
       <button (click)="logval(income.value, kids.value, type.value)">
         חשב
       </button>
     </div>
   </div>
   <div>
+    <!--ans after calc-->
     <div *ngIf="showImgs" class="ans">
       <div>
         אתה משלם כ <label class="tax-label">₪{{tax}}</label> מיסים למדינה
       </div>
       המחשה של איפה המיסים שלך עוזרים:
+      <!--img disply based on ans-->
       <div class="imgs">
         <div>
           עזרת לתקן {{(tax/20).toFixed(2)}} תמרורים
