@@ -16,6 +16,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ChartComponent } from './chart/chart.component';
 import { MiddleNavBarPageComponent } from './middle-nav-bar-page/middle-nav-bar-page.component';
 import { RightNavBarPageComponent } from './right-nav-bar-page/right-nav-bar-page.component';
+import { TaxGameComponent } from './tax-game/tax-game.component';
 
 declare let BUDGETKEY_NG2_COMPONENTS_THEME: any;
 declare const BUDGETKEY_THEME_ID: any;
@@ -50,6 +51,7 @@ if (typeof (BUDGETKEY_NG2_COMPONENTS_THEME) !== 'undefined') {
     ChartComponent,
     MiddleNavBarPageComponent,
     RightNavBarPageComponent,
+    TaxGameComponent,
   ],
   imports: [
     BrowserModule,
