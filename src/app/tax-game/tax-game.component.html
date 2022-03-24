@@ -1,3 +1,64 @@
-<p style="text-align: center;">
-  Component tax-game works!
-</p>
+<style>
+  .tax-selection {
+    text-align: center;
+  }
+  .tax-selection input {
+    margin: 20px 5% 20px 0;
+  }
+
+  .tax-input {
+    text-align: center;
+    margin: 20px;
+  }
+  .tax-input p {
+    display: inline-block;
+    margin: 0 10%;
+  }
+
+  .tax-result {
+    text-align: center;
+    margin: 20px;
+  }
+  .tax-result p {
+    display: inline-block;
+    margin: 0 10%;
+  }
+</style>
+
+<div class="tax-selection">
+  <input type="radio" id="ch1" name="tax-type" value="Tax 1" />
+  <label for="ch1">מס 1</label>
+  <input type="radio" id="ch2" name="tax-type" value="Tax 2" />
+  <label for="ch2">מס 2</label>
+  <input type="radio" id="ch3" name="tax-type" value="Tax 3" />
+  <label for="ch3">מס 3</label>
+  <input type="radio" id="ch4" name="tax-type" value="Tax 4" />
+  <label for="ch4">מס 4</label>
+  <input type="radio" id="ch5" name="tax-type" value="Tax 5" />
+  <label for="ch5">מס 5</label>
+</div>
+<div class="tax-input">
+  <p>
+    מס נוכחי <br />
+    <span id="curr-tax">123456789</span>₪
+  </p>
+  <p>
+    מס חדש <br />
+    <input id="tax-input-main" />
+  </p>
+  <p><button id="calc">חשב</button></p>
+</div>
+<div class="tax-result">
+  <p>
+    הכנסות נוכחיות <br />
+    <span id="curr-inc">123456789</span>₪
+  </p>
+  <p>
+    הפרש <br />
+    <span id="diff">12345678</span>₪
+  </p>
+  <p>
+    הכנסות חדשות <br />
+    <span id="new-inc">111111111</span>₪
+  </p>
+</div>
