@@ -1,0 +1,9 @@
+<div>
+  <p>שיעור המס הנוכחי: {{taxes[getTax()].current}} {{taxes[getTax()].text_to_show}}</p>
+  <input #new_tax type="number"  placeholder="שיעור המס החדש" (keyup.enter)="onEnter(new_tax.value)"/>
+  <button (click)="onEnter(new_tax.value)">submit</button>
+  <!-- בדיקה - שומר קלט לתוך משתנה בקלאס -->
+  <p>{{newtax}}</p>
+</div>
+
+

@@ -7,8 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SingleValueTaxComponent implements OnInit {
   @Input() tax_type: any;
-  @Input() new_tax: number;
-  diff: number;
+  newtax: number;
   taxes: any = {
     "delek": {
       tax_value: 21090000000, 
@@ -32,12 +31,16 @@ export class SingleValueTaxComponent implements OnInit {
   ngOnInit() {
   }
 
+  onEnter(value: number) {
+    this.newtax = value;
+  }
+
   getTax(){
     return this.tax_type;
   }
 
   getDiff() {
-    var simulated_value = this.taxes[this.tax_type].tax_value / (this.taxes[this.tax_type].current/100) * (this.new_tax/100);
+    var simulated_value = this.taxes[this.tax_type].tax_value / (this.taxes[this.tax_type].current/100) * (this.newtax/100);
     return simulated_value - this.taxes[this.tax_type].tax_value;
   }
 
