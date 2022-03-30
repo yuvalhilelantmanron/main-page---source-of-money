@@ -7,21 +7,21 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SingleValueTaxComponent implements OnInit {
   @Input() tax_type: any;
-  newtax: number;
+  new_rate: number;
   taxes: any = {
     "delek": {
-      tax_value: 21090000000, 
-      current: 30,
+      current_value: 21090000000, 
+      current_rate: 30,
       text_to_show: "אגורות לליטר"
     },
     "income": {
-      tax_value: 167297000000,
-      current: 25,
+      current_value: 167297000000,
+      current_rate: 25,
       text_to_show: "אחוזים"
     },
     "tabak": {
-      tax_value: 600000000,
-      current: 459,
+      current_value: 600000000,
+      current_rate: 459,
       text_to_show: 'ש"ח לק"ג'
     }
   }
@@ -32,7 +32,7 @@ export class SingleValueTaxComponent implements OnInit {
   }
 
   onEnter(value: number) {
-    this.newtax = value;
+    this.new_rate = value;
   }
 
   getTax(){
@@ -40,8 +40,8 @@ export class SingleValueTaxComponent implements OnInit {
   }
 
   getDiff() {
-    var simulated_value = this.taxes[this.tax_type].tax_value / (this.taxes[this.tax_type].current/100) * (this.newtax/100);
-    return simulated_value - this.taxes[this.tax_type].tax_value;
+    var new_value = this.taxes[this.tax_type].current_value / (this.taxes[this.tax_type].current_rate/100) * (this.new_rate/100);
+    return new_value - this.taxes[this.tax_type].current_value;
   }
 
 }
