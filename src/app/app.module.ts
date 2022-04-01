@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { BudgetKeyCommonModule, THEME_ID_TOKEN, LANG_TOKEN, THEME_TOKEN } from 'budgetkey-ng2-components';
@@ -60,6 +61,7 @@ if (typeof (BUDGETKEY_NG2_COMPONENTS_THEME) !== 'undefined') {
     BudgetKeyCommonModule,
     BudgetkeyNg2AuthModule,
     MushonkeyModule,
+    FormsModule,
   ],
   providers: providers,
   bootstrap: [AppComponent]

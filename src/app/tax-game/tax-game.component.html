@@ -1,5 +1,4 @@
 <div style="text-align: center;">
-  <app-single-value-tax tax_type="delek"></app-single-value-tax>
-  <button (click)="getDiff()">calculate difference</button>
-  <p>diff: {{diff}}</p>
+  <app-single-value-tax (onChange)="diff = $event.value" tax_type="delek"></app-single-value-tax>
+  <h1>Difference: {{diff}}</h1>
 </div>

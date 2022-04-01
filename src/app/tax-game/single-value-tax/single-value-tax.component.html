@@ -1,8 +1,6 @@
 <div>
   <p>שיעור המס הנוכחי: {{taxes[getTax()].current_rate}} {{taxes[getTax()].text_to_show}}</p>
-  <input #rate type="number"  placeholder="שיעור המס החדש" (keyup.enter)="onEnter(rate.value)"/>
-  <button (click)="onEnter(rate.value)">submit</button>
-  <p>{{new_rate}}</p>
+  <input [(ngModel)]="new_rate" type="number"  placeholder="שיעור המס החדש" (ngModelChange)="getDiff()"/>
 </div>
 
 

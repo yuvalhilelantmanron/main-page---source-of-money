@@ -1,6 +1,4 @@
-import { Component, ViewChild, OnInit } from '@angular/core';
-import { SingleValueTaxComponent } from './single-value-tax/single-value-tax.component';
-
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-tax-game',
@@ -8,16 +6,11 @@ import { SingleValueTaxComponent } from './single-value-tax/single-value-tax.com
   styleUrls: ['./tax-game.component.less']
 })
 export class TaxGameComponent implements OnInit {
-  @ViewChild(SingleValueTaxComponent) svt;
   diff: number;
 
   constructor() { }
 
   ngOnInit() {
-  }
-
-  getDiff() {
-    this.diff = this.svt.getDiff()
   }
 
 }

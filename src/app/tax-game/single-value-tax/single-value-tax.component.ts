@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-single-value-tax',
@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SingleValueTaxComponent implements OnInit {
   @Input() tax_type: any;
+  @Output() onChange = new EventEmitter();
   new_rate: number;
   taxes: any = {
     "delek": {
@@ -31,17 +32,14 @@ export class SingleValueTaxComponent implements OnInit {
   ngOnInit() {
   }
 
-  onEnter(value: number) {
-    this.new_rate = value;
-  }
-
   getTax(){
     return this.tax_type;
   }
 
   getDiff() {
     var new_value = this.taxes[this.tax_type].current_value / (this.taxes[this.tax_type].current_rate/100) * (this.new_rate/100);
-    return new_value - this.taxes[this.tax_type].current_value;
+
+    this.onChange.emit({value: new_value - this.taxes[this.tax_type].current_value})
   }
 
 }
