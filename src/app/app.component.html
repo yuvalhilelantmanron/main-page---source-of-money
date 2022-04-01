@@ -22,7 +22,8 @@
         </div>
         <main-page-summary [amount]="totalAmount" [year]="year"></main-page-summary>
         <div class="category-visualizations">
-            <category-visualization *ngFor="let category of funcCategories" [category]="category" data-kind="func">
+            <category-visualization #bubbles *ngFor="let category of funcCategories" [category]="category"
+                data-kind="func">
             </category-visualization>
         </div>
     </div>
