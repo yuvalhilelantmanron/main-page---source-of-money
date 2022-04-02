@@ -1,8 +1,22 @@
 .tax-selection {
   text-align: center;
-  input {
-    margin: 20px 5% 20px 5px;
+
+  button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    padding: 20px 5%;
   }
+  button:hover {
+    background-color: #ddd;
+  }
+  button.active {
+    background-color: #ccc;
+  }
+
   .tax-cng {
     opacity: 75%;
   }
