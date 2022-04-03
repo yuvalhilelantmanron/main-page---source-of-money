@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { BudgetKeyCommonModule, THEME_ID_TOKEN, LANG_TOKEN, THEME_TOKEN } from 'budgetkey-ng2-components';
@@ -17,6 +18,7 @@ import { ChartComponent } from './chart/chart.component';
 import { MiddleNavBarPageComponent } from './middle-nav-bar-page/middle-nav-bar-page.component';
 import { RightNavBarPageComponent } from './right-nav-bar-page/right-nav-bar-page.component';
 import { TaxGameComponent } from './tax-game/tax-game.component';
+import { SingleValueTaxComponent } from './tax-game/single-value-tax/single-value-tax.component';
 
 declare let BUDGETKEY_NG2_COMPONENTS_THEME: any;
 declare const BUDGETKEY_THEME_ID: any;
@@ -52,12 +54,14 @@ if (typeof (BUDGETKEY_NG2_COMPONENTS_THEME) !== 'undefined') {
     MiddleNavBarPageComponent,
     RightNavBarPageComponent,
     TaxGameComponent,
+    SingleValueTaxComponent,
   ],
   imports: [
     BrowserModule,
     BudgetKeyCommonModule,
     BudgetkeyNg2AuthModule,
     MushonkeyModule,
+    FormsModule,
   ],
   providers: providers,
   bootstrap: [AppComponent]
