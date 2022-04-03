@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tax-game.component.less']
 })
 export class TaxGameComponent implements OnInit {
+  diff: number;
 
   constructor() { }
 

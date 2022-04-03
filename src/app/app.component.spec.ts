@@ -11,6 +11,7 @@ import { CategoryVisualizationInfoPopupComponent } from './category-visualizatio
 import { BUBBLES } from './constants';
 import { bubbles } from './bubbles';
 import { SpeechBubbleComponent } from './speech-bubble/speech-bubble.component';
+import { SingleValueTaxComponent } from './tax-game/single-value-tax/single-value-tax.component';
 
 
 describe('AppComponent', () => {

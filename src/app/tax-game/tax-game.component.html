@@ -1,3 +1,4 @@
-<p style="text-align: center;">
-  Component tax-game works!
-</p>
+<div style="text-align: center;">
+  <app-single-value-tax (onChange)="diff = $event.value" tax_type="delek"></app-single-value-tax>
+  <h1>Difference: {{diff}}</h1>
+</div>
