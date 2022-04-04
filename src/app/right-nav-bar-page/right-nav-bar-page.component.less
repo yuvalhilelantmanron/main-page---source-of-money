@@ -27,7 +27,8 @@ select{
 }
 .ans {
   text-align: center;
-  width: 50rem;
+  // width: 50rem;
+  width: 100vw;
   margin: 5rem 0;
   font-size: 3rem;
 }
@@ -54,6 +55,7 @@ select{
 
 .imgs {
   display: flex;
+  flex-flow:row wrap;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -62,6 +64,8 @@ select{
 .imgs div{
   text-align: center;
   font-size: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 input {

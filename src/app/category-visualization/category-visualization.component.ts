@@ -1,10 +1,11 @@
-import { Component, OnInit, Input, ViewChild, AfterViewInit, ElementRef } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, AfterViewInit, ElementRef, HostListener } from '@angular/core';
 import { UtilsService } from '../utils.service';
 import { CATEGORIES_THEMES } from '../constants';
 import { __T } from '../app.component';
 
 import * as _ from 'lodash';
 import * as d3 from 'd3';
+import { NgOnChangesFeature } from '@angular/core/src/render3';
 
 @Component({
   selector: 'category-visualization',
@@ -14,6 +15,7 @@ import * as d3 from 'd3';
 export class CategoryVisualizationComponent implements OnInit, AfterViewInit {
   @Input() category: any;
   @Input() kind: any;
+  @Input() scroll: any;
 
   @ViewChild('wrapper') rootElement: ElementRef;
   @ViewChild('container') svg: ElementRef;
@@ -23,6 +25,10 @@ export class CategoryVisualizationComponent implements OnInit, AfterViewInit {
   theme = '';
   currentBubble: any;
   scale: number;
+
+  circles: any;
+  legendLines: any;
+  legendLabels: any;
 
   formatPercents(value: number): string {
     return this.utils.formatNumber(value, 1) + '%';
@@ -208,6 +214,7 @@ export class CategoryVisualizationComponent implements OnInit, AfterViewInit {
     this.theme = CATEGORIES_THEMES[this.category.name] || '';
     this.theme += ' vis-kind-' + this.kind;
     this.scale = this.category.scale || 1;
+
   }
 
   ngAfterViewInit() {
@@ -221,19 +228,19 @@ export class CategoryVisualizationComponent implements OnInit, AfterViewInit {
       this.category.name, this.category.values,
       diameter_w, margin, padding);
     this.createContainer(svg, diameter_w, diameter_h);
-    const circles = this.renderCircles(this.createContainer(svg, diameter_w, diameter_h), nodes);
-    const legendLines = this.renderLegendLines(this.createContainer(svg, diameter_w, diameter_h), nodes);
-    const legendLabels = this.renderLegendLabels(
+    this.circles = this.renderCircles(this.createContainer(svg, diameter_w, diameter_h), nodes);
+    this.legendLines = this.renderLegendLines(this.createContainer(svg, diameter_w, diameter_h), nodes);
+    this.legendLabels = this.renderLegendLabels(
       this.createContainer(svg, diameter_w, diameter_h),
       root, this.category, nodes, margin, padding
     );
 
     d3.select(this.rootElement.nativeElement)
-      .on('mouseover', () => update(true, true, this.scale))
-      .on('mouseout', () => update(false, false, this.scale));
+      .on('mouseover', () => this.update(true, true, this.scale))
+      .on('mouseout', () => this.update(false, false, this.scale));
 
     const that = this;
-    circles
+    this.circles
       .on('mouseover', function (datum: any) {
         const selfBounds = this.getBoundingClientRect();
         const parentBounds = that.rootElement.nativeElement.getBoundingClientRect();
@@ -261,32 +268,48 @@ export class CategoryVisualizationComponent implements OnInit, AfterViewInit {
         this.currentBubble = null;
       });
 
-    update(false, false, this.scale);
+    this.update(false, false, this.scale);
+  }
 
-    function update(zoomCircles: boolean, showLabels: boolean, circleScale: number) {
-      const scale = zoomCircles ? 1 : 0.7;
-      circleScale = zoomCircles ? 1 : circleScale;
-      const opacity = showLabels ? 1 : 0;
-      const delay = zoomCircles ? 0 : 100;
+  @HostListener('window:scroll', ['$event'])
 
-      circles
-        .transition()
-        .delay(delay)
-        .duration(500)
-        .ease(d3.easeBackOut)
-        .attr('transform', (d: any) => 'scale(' + circleScale + ')' + ' translate(' + d.x * scale + ',' + d.y * scale + ')');
+  onScroll() {
+    if (window.innerWidth > 600) return
 
-      legendLines
-        .transition()
-        .duration(200)
-        .ease(d3.easeQuad)
-        .style('opacity', opacity);
+    console.log([this.rootElement.nativeElement.getBoundingClientRect().y, window.innerHeight, window.pageYOffset])
 
-      legendLabels
-        .transition()
-        .duration(200)
-        .ease(d3.easeQuad)
-        .style('opacity', opacity);
+    if (this.rootElement.nativeElement.getBoundingClientRect().y < window.innerHeight * 2 / 3
+      && this.rootElement.nativeElement.getBoundingClientRect().y > window.innerHeight / 7) {
+      this.update(true, true, this.scale);
     }
+    else {
+      this.update(false, false, this.scale);
+    }
+  }
+
+  update(zoomCircles: boolean, showLabels: boolean, circleScale: number) {
+    const scale = zoomCircles ? 1 : 0.7;
+    circleScale = zoomCircles ? 1 : circleScale;
+    const opacity = showLabels ? 1 : 0;
+    const delay = zoomCircles ? 0 : 100;
+
+    this.circles
+      .transition()
+      .delay(delay)
+      .duration(500)
+      .ease(d3.easeBackOut)
+      .attr('transform', (d: any) => 'scale(' + circleScale + ')' + ' translate(' + d.x * scale + ',' + d.y * scale + ')');
+
+    this.legendLines
+      .transition()
+      .duration(200)
+      .ease(d3.easeQuad)
+      .style('opacity', opacity);
+
+    this.legendLabels
+      .transition()
+      .duration(200)
+      .ease(d3.easeQuad)
+      .style('opacity', opacity);
   }
 }

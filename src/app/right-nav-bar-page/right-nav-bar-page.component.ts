@@ -10,11 +10,7 @@ export class RightNavBarPageComponent implements OnInit {
   inIncome: number;
   inKids: number;
   inType: string = ""
-  ans1: string = ""
-  ans2: string = ""
-  ans3: string = ""
   ans4: string = ""
-  ans5: string = ""
   img1: string = ""
   num: number = 1;
   tax: number;

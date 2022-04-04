@@ -72,17 +72,31 @@ export class MiddleNavBarPageComponent implements OnChanges {
   ngOnChanges() {
     if (!this.fetchedData) return;
 
-    for (let item of this.fetchedData) {
-      if (item.executed == null) continue;
+    let sortedData = [{},{}];
+    for(let item of this.fetchedData){   
       if (item.func_title == 'מסים ישירים') {
-        this.taxTypesData[0].y.push(item.executed);
-        this.taxTypesData[0].x.push(item.year);
+        if(!sortedData[0][item.year])
+          sortedData[0][item.year] = 0;
+        sortedData[0][item.year] += item.executed;
       }
       else if (item.func_title == 'מסים עקיפים') {
-        this.taxTypesData[1].y.push(item.executed);
-        this.taxTypesData[1].x.push(item.year);
-      }
+        if(!sortedData[1][item.year])
+          sortedData[1][item.year] = 0;
+        sortedData[1][item.year] += item.executed;
+      }                         
     }
+
+    for(let year in sortedData[0]){
+      this.taxTypesData[0].y.push(sortedData[0][year]);
+      this.taxTypesData[0].x.push(year);
+    }
+
+    for(let year in sortedData[1]){
+      this.taxTypesData[1].y.push(sortedData[1][year]);
+      this.taxTypesData[1].x.push(year);
+    }
+
+    console.log(this.taxTypesData);
     this.taxTypesData = this.taxTypesData.slice();
   }
 }
