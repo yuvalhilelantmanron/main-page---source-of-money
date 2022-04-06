@@ -32,6 +32,7 @@
     "d3": "^5.14.2",
     "fs": "0.0.1-security",
     "lodash": "^4.17.15",
+    "mapbox-gl": "^2.7.1",
     "mushonkey": "^0.2.0",
     "node-fetch": "^2.6.0",
     "nunjucks": "^3.2.0",

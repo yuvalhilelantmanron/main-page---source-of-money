@@ -276,8 +276,6 @@ export class CategoryVisualizationComponent implements OnInit, AfterViewInit {
   onScroll() {
     if (window.innerWidth > 600) return
 
-    console.log([this.rootElement.nativeElement.getBoundingClientRect().y, window.innerHeight, window.pageYOffset])
-
     if (this.rootElement.nativeElement.getBoundingClientRect().y < window.innerHeight * 2 / 3
       && this.rootElement.nativeElement.getBoundingClientRect().y > window.innerHeight / 7) {
       this.update(true, true, this.scale);

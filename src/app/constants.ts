@@ -16,3 +16,5 @@ export const CATEGORIES_THEMES = {
 };
 
 export const BUBBLES = new InjectionToken('bubbles');
+
+export const MAPDATA = new InjectionToken('mapData')
