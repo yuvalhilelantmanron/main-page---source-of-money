@@ -1,12 +1,12 @@
 <div class="tax-selection">
   <button class="tax-btn" (click)="changeTax($event, 1)">
-    מס 1 <span id="tax1-cng" class="tax-cng">({{ tax1Cng }}₪)</span>
+    דלק <span id="tax1-cng" class="tax-cng">({{ tax1Cng }}₪)</span>
   </button>
   <button class="tax-btn" (click)="changeTax($event, 2)">
-    מס 2 <span id="tax2-cng" class="tax-cng">({{ tax2Cng }}₪)</span>
+    הכנסה <span id="tax2-cng" class="tax-cng">({{ tax2Cng }}₪)</span>
   </button>
   <button class="tax-btn" (click)="changeTax($event, 3)">
-    מס 3 <span id="tax3-cng" class="tax-cng">({{ tax3Cng }}₪)</span>
+    טבק <span id="tax3-cng" class="tax-cng">({{ tax3Cng }}₪)</span>
   </button>
   <button class="tax-btn" (click)="changeTax($event, 4)">
     מס 4 <span id="tax4-cng" class="tax-cng">({{ tax4Cng }}₪)</span>
@@ -16,15 +16,32 @@
   </button>
 </div>
 <div class="tax-input">
-  <p>
-    מס נוכחי <br />
-    <span id="curr-tax">123456789</span>₪
-  </p>
-  <p>
-    מס חדש <br />
-    <input id="tax-input-main" />
-  </p>
-  <p><button id="calc">חשב</button></p>
+  <div *ngIf="currTax == 'delek'">
+    <p>
+      <app-single-value-tax
+        (onChange)="diff = $event.value"
+        tax_type="delek"
+      ></app-single-value-tax>
+    </p>
+  </div>
+
+  <div *ngIf="currTax == 'income'">
+    <p>
+      <app-single-value-tax
+        (onChange)="diff = $event.value"
+        tax_type="income"
+      ></app-single-value-tax>
+    </p>
+  </div>
+
+  <div *ngIf="currTax == 'tabak'">
+    <p>
+      <app-single-value-tax
+        (onChange)="diff = $event.value"
+        tax_type="tabak"
+      ></app-single-value-tax>
+    </p>
+  </div>
 </div>
 <div class="tax-result">
   <p>
@@ -33,14 +50,11 @@
   </p>
   <p>
     הפרש <br />
-    <span id="diff">12345678</span>₪
+    <span id="diff">{{ diff }}</span
+    >₪
   </p>
   <p>
     הכנסות חדשות <br />
-    <span id="new-inc">111111111</span>₪
+    <span id="new-inc">123456789</span>₪
   </p>
-</div>
-<div style="text-align: center;">
-  <app-single-value-tax (onChange)="diff = $event.value" tax_type="delek"></app-single-value-tax>
-  <h1>Difference: {{diff}}</h1>
 </div>

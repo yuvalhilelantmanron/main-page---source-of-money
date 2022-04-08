@@ -6,12 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tax-game.component.less']
 })
 export class TaxGameComponent implements OnInit {
-  diff: number;
+  diff: number = 0;
+
   tax1Cng = "+1";
   tax2Cng = "+2";
   tax3Cng = "+3";
   tax4Cng = "+4";
   tax5Cng = "+5";
+  
+  taxes: any = {
+      1: "delek", 
+      2: "income",
+      3: "tabak"
+  }
+  currTax: string = this.taxes[1];
 
   constructor() { }
 
@@ -19,7 +27,7 @@ export class TaxGameComponent implements OnInit {
   }
 
   public changeTax(evt, tax) {
-    // TODO: Change tax type
+    this.currTax = this.taxes[tax];
 
     // Remove highlight
     let taxButtons = document.getElementsByClassName("tax-btn");
