@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UtilsService } from '../utils.service'
 
 @Component({
   selector: 'app-tax-game',
@@ -23,7 +24,7 @@ export class TaxGameComponent implements OnInit {
   }
   currTax: string = this.taxes[1];
 
-  constructor() { }
+  constructor(private utils: UtilsService) { }
 
   ngOnInit() {
   }
@@ -41,16 +42,7 @@ export class TaxGameComponent implements OnInit {
     evt.currentTarget.className += " active";
   }
 
-
-  formatNum(num) {
-    // Adds commas to long numbers (123456 -> 123,456)
-    var str = num.toString().split('.');
-    if (str[0].length >= 5) {
-        str[0] = str[0].replace(/(\d)(?=(\d{3})+$)/g, '$1,');
-    }
-    if (str[1] && str[1].length >= 5) {
-        str[1] = str[1].replace(/(\d{3})/g, '$1 ');
-    }
-    return str.join('.');
+  formatNum(value) : string {
+    return this.utils.formatNumber(value, 2);
   }
 }
