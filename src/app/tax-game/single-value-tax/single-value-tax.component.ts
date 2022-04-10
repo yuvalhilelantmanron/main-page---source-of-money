@@ -12,29 +12,29 @@ export class SingleValueTaxComponent implements OnInit {
   latest_year: number = 2020;
   taxes: any = {
     "delek": {
-      code: '0000180101',
       get_current_value: async () => {
-        var raw = await fetch("https://next.obudget.org/api/query?query=SELECT%20history,year%20FROM%20budget%20WHERE%20code=%27"+this.taxes['delek'].code+"%27");
+        var tax_code = '0000180101';
+        var raw = await fetch("https://next.obudget.org/api/query?query=SELECT%20history%20FROM%20budget%20WHERE%20code=%27"+tax_code+"%27AND%20year>=2020%20ORDER%20BY%20year%20ASC%20LIMIT%201");
         var data = await raw.json();
-        return this.getData(data);
+        return data.rows[0].history[this.latest_year].net_executed;
       },
       current_rate: 3.13,
       text_to_show: "שקלים לליטר"
     },
     "maam": {
-      code: '0000140201',
       get_current_value: async () => {
-        var raw = await fetch("https://next.obudget.org/api/query?query=SELECT%20history,year%20FROM%20budget%20WHERE%20code=%27"+this.taxes['maam'].code+"%27");
+        var tax_code = '0000140201';
+        var raw = await fetch("https://next.obudget.org/api/query?query=SELECT%20history%20FROM%20budget%20WHERE%20code=%27"+tax_code+"%27AND%20year>=2020%20ORDER%20BY%20year%20ASC%20LIMIT%201");
         var data = await raw.json();
-        return this.getData(data);
+        return data.rows[0].history[this.latest_year].net_executed;
       },
       current_rate: 17,
       text_to_show: "אחוזים"
     },
     "tabak": {
-      code: '00001501',
       get_current_value: async () => {
-        var raw = await fetch("https://next.obudget.org/api/query?query=SELECT%20net_executed%20FROM%20budget%20WHERE%20code=%27"+this.taxes['tabak'].code+"%27AND%20year=%27"+this.latest_year+"%27");
+        var tax_code = '00001501';
+        var raw = await fetch("https://next.obudget.org/api/query?query=SELECT%20net_executed%20FROM%20budget%20WHERE%20code=%27"+tax_code+"%27AND%20year=%27"+this.latest_year+"%27");
         var data = await raw.json();
         return data.rows[0].net_executed
       },
@@ -46,16 +46,6 @@ export class SingleValueTaxComponent implements OnInit {
   constructor() { }
 
   async ngOnInit() {
-  }
-
-  getData(data) {
-    data = data.rows;
-    for (var key in data) {
-      if(data[key].year > this.latest_year)
-        data = data[key];
-    }
-
-    return data.history[this.latest_year].net_executed;
   }
 
   getTax(){
