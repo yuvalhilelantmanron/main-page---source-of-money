@@ -1,4 +1,62 @@
-<div style="text-align: center;">
-  <app-single-value-tax (onChange)="diff = $event.value" tax_type="delek"></app-single-value-tax>
-  <h1>Difference: {{diff}}</h1>
+<div class="tax-selection">
+  <button class="tax-btn" (click)="changeTax($event, 1)">
+    דלק <span id="tax1-cng" class="tax-cng">({{ tax1Cng }}₪)</span>
+  </button>
+  <button class="tax-btn" (click)="changeTax($event, 2)">
+    מע"מ <span id="tax2-cng" class="tax-cng">({{ tax2Cng }}₪)</span>
+  </button>
+  <button class="tax-btn" (click)="changeTax($event, 3)">
+    טבק <span id="tax3-cng" class="tax-cng">({{ tax3Cng }}₪)</span>
+  </button>
+  <button class="tax-btn" (click)="changeTax($event, 4)">
+    מס 4 <span id="tax4-cng" class="tax-cng">({{ tax4Cng }}₪)</span>
+  </button>
+  <button class="tax-btn" (click)="changeTax($event, 5)">
+    מס 5 <span id="tax5-cng" class="tax-cng">({{ tax5Cng }}₪)</span>
+  </button>
+</div>
+<div class="tax-input">
+  <div *ngIf="currTax == 'delek'">
+    <p>
+      <app-single-value-tax
+        (onChange)="diff = $event.value"
+        tax_type="delek"
+      ></app-single-value-tax>
+    </p>
+  </div>
+
+  <div *ngIf="currTax == 'income'">
+    <p>
+      <app-single-value-tax
+        (onChange)="diff = $event.value"
+        tax_type="income"
+      ></app-single-value-tax>
+    </p>
+  </div>
+
+  <div *ngIf="currTax == 'tabak'">
+    <p>
+      <app-single-value-tax
+        (onChange)="diff = $event.value"
+        tax_type="tabak"
+      ></app-single-value-tax>
+    </p>
+  </div>
+</div>
+<div class="tax-result">
+  <p>
+    הכנסות נוכחיות <br />
+    <span id="curr-inc">{{ formatNum(totalIncome) }}</span
+    >₪
+  </p>
+  <p>
+    הפרש <br />
+    <span id="diff">{{ formatNum(diff) }}</span
+    >₪
+  </p>
+  <p>
+    הכנסות חדשות <br />
+    <span id="new-inc">{{ formatNum(totalIncome + diff) }}</span
+    >₪
+  </p>
 </div>
