@@ -1,0 +1,2783 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/29090735",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1381350,
+            "reltags": {
+              "admin_level": "8",
+              "alt_name:ur": "بیت المقدس",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "ele": "715",
+              "fixme": "cannot edit, this should have place=city",
+              "int_name": "Jerusalem",
+              "name": "ירושלים",
+              "name:ar": "القدس",
+              "name:ckb": "قودس",
+              "name:cs": "Jeruzalém",
+              "name:de": "Jerusalem",
+              "name:el": "Ιερουσαλήμ",
+              "name:en": "Jerusalem",
+              "name:fi": "Jerusalem",
+              "name:fr": "Jérusalem",
+              "name:fy": "Jeruzalim",
+              "name:he": "ירושלים",
+              "name:hu": "Jeruzsálem",
+              "name:it": "Gerusalemme",
+              "name:ko": "예루살렘",
+              "name:mi": "Hiruhārama",
+              "name:nl": "Jeruzalem",
+              "name:ro": "Ierusalim",
+              "name:ru": "Иерусалим",
+              "name:szl": "Jeruzalym",
+              "name:tzl": "Ierusalem",
+              "name:ur": "یروشلم",
+              "note": "edited tags to match naming conventions in node 29090735 (Jerusalem)",
+              "official_name": "القدس",
+              "population": "882652",
+              "short_name:ur": "القدس",
+              "type": "boundary",
+              "website": "https://www.jerusalem.muni.il/",
+              "wikidata": "Q1218"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.2257626,
+          31.7788242
+        ]
+      },
+      "id": "node/29090735"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/196303399",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1380013,
+            "reltags": {
+              "admin_level": "8",
+              "alt_name:ar": "أشدود",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "ele": "23",
+              "name": "אשדוד",
+              "name:ar": "أشدود",
+              "name:el": "Ασντόντ",
+              "name:en": "Ashdod",
+              "name:fi": "Ashdod",
+              "name:fr": "Ashdod",
+              "name:he": "אשדוד",
+              "name:pl": "Aszdod",
+              "name:ru": "Ашдод",
+              "name:ur": "اشدود",
+              "place": "city",
+              "population": "251837",
+              "type": "boundary",
+              "wikidata": "Q171639",
+              "wikipedia": "he:אשדוד"
+            }
+          },
+          {
+            "role": "label",
+            "rel": 1380013,
+            "reltags": {
+              "admin_level": "8",
+              "alt_name:ar": "أشدود",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "ele": "23",
+              "name": "אשדוד",
+              "name:ar": "أشدود",
+              "name:el": "Ασντόντ",
+              "name:en": "Ashdod",
+              "name:fi": "Ashdod",
+              "name:fr": "Ashdod",
+              "name:he": "אשדוד",
+              "name:pl": "Aszdod",
+              "name:ru": "Ашдод",
+              "name:ur": "اشدود",
+              "place": "city",
+              "population": "251837",
+              "type": "boundary",
+              "wikidata": "Q171639",
+              "wikipedia": "he:אשדוד"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.6529922,
+          31.7977314
+        ]
+      },
+      "id": "node/196303399"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/196307269",
+        "@relations": [
+          {
+            "role": "label",
+            "rel": 1382460,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "ele": "34",
+              "name": "חולון",
+              "name:en": "Holon",
+              "name:fr": "Holon",
+              "name:he": "חולון",
+              "place": "city",
+              "population": "211032",
+              "type": "boundary",
+              "website": "https://www.holon.muni.il/",
+              "wikidata": "Q192213",
+              "wikipedia": "en:Holon"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.7804076,
+          32.0193121
+        ]
+      },
+      "id": "node/196307269"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/202433223",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1246731,
+            "reltags": {
+              "admin_level": "8",
+              "alt_name:ar": "نيس زيونا;نس تسيونا",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "ele": "39",
+              "land_area": "administrative",
+              "name": "נס ציונה",
+              "name:ar": "نس تصيونا",
+              "name:cs": "Nes Cijona",
+              "name:en": "Nes Ziona",
+              "name:fr": "Ness Ziona",
+              "name:he": "נס ציונה",
+              "name:ru": "Нес-Циона",
+              "population": "48723",
+              "type": "boundary",
+              "website": "http://www.nzc.org.il/",
+              "wikidata": "Q168162",
+              "wikipedia": "he:נס ציונה"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.7990609,
+          31.9295577
+        ]
+      },
+      "id": "node/202433223"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/214022033",
+        "@relations": [
+          {
+            "role": "label",
+            "rel": 1383760,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "ele": "327",
+              "name": "נוף הגליל",
+              "name:ar": "نوف هجليل",
+              "name:en": "Nof HaGalil",
+              "name:fr": "Nof HaGalil",
+              "name:he": "נוף הגליל",
+              "old_name": "נצרת עילית",
+              "old_name:ar": "ناصيرات عيليت",
+              "old_name:ar1": "الناصرة العليا",
+              "old_name:en": "Nazareth Ilit",
+              "old_name:fr": "Nazareth Ilit",
+              "old_name:he": "נצרת עילית",
+              "population": "50268",
+              "type": "boundary",
+              "website": "https://www.nof-hagalil.muni.il/",
+              "wikidata": "Q167659",
+              "wikipedia": "he:נוף הגליל"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3183216,
+          32.7023065
+        ]
+      },
+      "id": "node/214022033"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/245976052",
+        "@relations": [
+          {
+            "role": "label",
+            "rel": 1381478,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "באר יעקב",
+              "name:en": "Beer Yaakov",
+              "name:fr": "Be'er Ya'akov",
+              "name:he": "באר יעקב",
+              "name:ru": "Беэр-Яаков",
+              "type": "boundary",
+              "wikidata": "Q2640170",
+              "wikipedia": "he:באר יעקב"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8398648,
+          31.9443532
+        ]
+      },
+      "id": "node/245976052"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/275283306",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1376826,
+            "reltags": {
+              "admin_level": "8",
+              "alt_name:ar": "ديمونا",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "ele": "463",
+              "name": "דימונה",
+              "name:ar": "ديمونة",
+              "name:de": "Dimona",
+              "name:en": "Dimona",
+              "name:fr": "Dimona",
+              "name:he": "דימונה",
+              "name:ks": "دیمونا",
+              "name:ur": "دیمونا",
+              "population": "33666",
+              "start_date": "1955",
+              "type": "boundary",
+              "website": "http://www.dimona.muni.il",
+              "wikidata": "Q152396",
+              "wikipedia": "en:Dimona"
+            }
+          },
+          {
+            "role": "label",
+            "rel": 1376826,
+            "reltags": {
+              "admin_level": "8",
+              "alt_name:ar": "ديمونا",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "ele": "463",
+              "name": "דימונה",
+              "name:ar": "ديمونة",
+              "name:de": "Dimona",
+              "name:en": "Dimona",
+              "name:fr": "Dimona",
+              "name:he": "דימונה",
+              "name:ks": "دیمونا",
+              "name:ur": "دیمونا",
+              "population": "33666",
+              "start_date": "1955",
+              "type": "boundary",
+              "website": "http://www.dimona.muni.il",
+              "wikidata": "Q152396",
+              "wikipedia": "en:Dimona"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0366482,
+          31.0686612
+        ]
+      },
+      "id": "node/275283306"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/275283315",
+        "@relations": [
+          {
+            "role": "label",
+            "rel": 1381394,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "קרית עקרון",
+              "name:en": "Kiryat Ekron",
+              "name:fr": "Kiryat Ekron",
+              "name:he": "קרית עקרון",
+              "type": "boundary",
+              "wikidata": "Q2640159",
+              "wikipedia": "he:קריית עקרון"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.823337,
+          31.8607858
+        ]
+      },
+      "id": "node/275283315"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/275547478",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1380385,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "קרית מלאכי",
+              "name:ar": "كريات ملاخي",
+              "name:en": "Kiryat Malachi",
+              "name:fr": "Kiryat-Malakhi",
+              "name:he": "קרית מלאכי",
+              "type": "boundary",
+              "wikidata": "Q501543",
+              "wikipedia": "he:קריית מלאכי"
+            }
+          },
+          {
+            "role": "label",
+            "rel": 1380385,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "קרית מלאכי",
+              "name:ar": "كريات ملاخي",
+              "name:en": "Kiryat Malachi",
+              "name:fr": "Kiryat-Malakhi",
+              "name:he": "קרית מלאכי",
+              "type": "boundary",
+              "wikidata": "Q501543",
+              "wikipedia": "he:קריית מלאכי"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.7449477,
+          31.7297152
+        ]
+      },
+      "id": "node/275547478"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/275547482",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1379485,
+            "reltags": {
+              "admin_level": "8",
+              "alt_name:ar": "كريات غات",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "ele": "128",
+              "name": "קרית גת",
+              "name:af": "Kirjat Gat",
+              "name:ar": "كريات جات",
+              "name:az-Arab": "کریات گات",
+              "name:azb": "کریات گات",
+              "name:de": "Kirjat Gat",
+              "name:en": "Kiryat Gat",
+              "name:es": "Kiryat Gat",
+              "name:fa": "کریات گت",
+              "name:fr": "Kiryat Gat",
+              "name:he": "קרית גת",
+              "name:hy": "Կիրյաթ Գաթ",
+              "name:ks": "کریات جات",
+              "name:nl": "Kirjat Gat",
+              "name:pt": "Qiryat Gat",
+              "name:sv": "Qiryat Gat",
+              "name:ur": "کریات جات",
+              "population": "59408",
+              "type": "boundary",
+              "website": "https://www.qiryat-gat.muni.il/",
+              "wikidata": "Q152406",
+              "wikipedia": "he:קריית גת",
+              "wikipedia:ar": "كريات جات"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.7711983,
+          31.6093998
+        ]
+      },
+      "id": "node/275547482"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/275585094",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1376910,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "ערד",
+              "name:en": "Arad",
+              "name:fr": "Arad",
+              "name:he": "ערד",
+              "name:ur": "عراد",
+              "population": "25530",
+              "type": "boundary",
+              "wikidata": "Q152473",
+              "wikipedia": "he:ערד"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.214581,
+          31.2612199
+        ]
+      },
+      "id": "node/275585094"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/275957491",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1379241,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "ele": "308",
+              "name": "ראש פינה",
+              "name:en": "Rosh Pina",
+              "name:fr": "Rosh Pina",
+              "name:he": "ראש פינה",
+              "population": "3304",
+              "type": "boundary",
+              "website": "http://www.rosh-pinna.muni.il",
+              "wikidata": "Q525649",
+              "wikipedia": "en:Rosh Pinna"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5438245,
+          32.968215
+        ]
+      },
+      "id": "node/275957491"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/277528108",
+        "@relations": [
+          {
+            "role": "label",
+            "rel": 1382817,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "contact:website": "http://www.bnei-brak.muni.il",
+              "ele": "26",
+              "landuse": "residential",
+              "name": "בני ברק",
+              "name:ar": "بني براك",
+              "name:cs": "Bnej Brak",
+              "name:en": "Bnei Brak",
+              "name:fr": "Bnei Brak",
+              "name:he": "בני ברק",
+              "name:pl": "Bene Berak",
+              "name:ru": "Бней-Брак",
+              "place": "town",
+              "population": "203573",
+              "type": "boundary",
+              "website": "http://www.bnei-brak.muni.il",
+              "wikidata": "Q152467",
+              "wikipedia": "he:בני ברק"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8324376,
+          32.0873899
+        ]
+      },
+      "id": "node/277528108"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/277528109",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1382923,
+            "reltags": {
+              "admin_level": "8",
+              "alt_name:ar": "غفعتاييم;جفعاتايم;جيفعتايم",
+              "area": "yes",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "contact:website": "http://www.givatayim.muni.il",
+              "ele": "42",
+              "landuse": "residential",
+              "name": "גבעתיים",
+              "name:ar": "غفعتايم",
+              "name:cs": "Giv'atajim",
+              "name:en": "Givatayim",
+              "name:fa": "گیواتائیم",
+              "name:fr": "Givatayim",
+              "name:he": "גבעתיים",
+              "name:ru": "Гиватаим",
+              "name:ur": "جفعاتایم",
+              "place": "town",
+              "population": "62546",
+              "type": "boundary",
+              "website": "http://www.givatayim.muni.il",
+              "wikidata": "Q152413",
+              "wikipedia": "he:גבעתיים"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8113279,
+          32.0729606
+        ]
+      },
+      "id": "node/277528109"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/278470076",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1399119,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "أبو سنان",
+              "name:ar": "أبو سنان",
+              "name:en": "Abu Snan",
+              "name:fr": "Abu Snan",
+              "name:he": "אבו סנאן",
+              "type": "boundary",
+              "wikidata": "Q2572624",
+              "wikipedia": "en:Abu Snan"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.1716603,
+          32.958648
+        ]
+      },
+      "id": "node/278470076"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/278470479",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1391709,
+            "reltags": {
+              "admin_level": "8",
+              "alt_name:ar": "فريديس;فـُرَيـْدِيس",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "الفريديس",
+              "name:ar": "الفريديس",
+              "name:en": "Fureidis",
+              "name:fr": "Fureidis",
+              "name:he": "פוריידיס",
+              "type": "boundary",
+              "wikidata": "Q1011538",
+              "wikipedia": "ar:الفريديس"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9542319,
+          32.5988242
+        ]
+      },
+      "id": "node/278470479"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/278472603",
+        "@relations": [
+          {
+            "role": "label",
+            "rel": 1382494,
+            "reltags": {
+              "admin_level": "8",
+              "alt_name": "Tellu",
+              "alt_name:ar": "تل أبيب;يافا",
+              "alt_name:de": "Tel Aviv",
+              "alt_name:el": "Τελ Αβίβ-Γιάφα",
+              "alt_name:en": "Tel Aviv",
+              "alt_name:ro": "Tel Aviv",
+              "alt_name:ru": "Тель-Авив-Яффа",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "contact:website": "http://www.tel-aviv.gov.il",
+              "ele": "17",
+              "name": "תל אביב-יפו",
+              "name:am": "ቴል አቪቭ-ያፎ",
+              "name:ar": "تل أبيب-يافا",
+              "name:arc": "ܬܠ ܐܒܝܒ",
+              "name:de": "Tel Aviv-Yafo",
+              "name:el": "Τελ Αβίβ",
+              "name:en": "Tel Aviv-Yafo",
+              "name:es": "Tel Aviv-Yafo",
+              "name:et": "Tel Aviv-Yafo",
+              "name:fa": "تل آویو-یافا",
+              "name:fi": "Tel Aviv-Yafo",
+              "name:fr": "Tel Aviv-Yafo",
+              "name:he": "תל אביב-יפו",
+              "name:he2": "תל אביב",
+              "name:hi": "तेल अविव",
+              "name:ko": "텔아비브",
+              "name:lb": "Tel Aviv-Yafo",
+              "name:pl": "Tel Awiw",
+              "name:ro": "Tel Aviv",
+              "name:ru": "Тель-Авив",
+              "name:ur": "تل ابیب",
+              "name:zh": "特拉維夫-雅法",
+              "name:zh-Hans": "特拉维夫-雅法",
+              "name:zh-Hant": "特拉維夫-雅法",
+              "place": "city",
+              "population": "438818",
+              "start_date": "1909",
+              "type": "boundary",
+              "website": "http://www.tel-aviv.gov.il",
+              "wikidata": "Q33935",
+              "wikipedia": "en:Tel Aviv"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.7818064,
+          32.0852997
+        ]
+      },
+      "id": "node/278472603"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/278472981",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1380017,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "בני עי\"ש",
+              "name:en": "Bnei Ayish",
+              "name:fr": "Bnei Ayish",
+              "name:he": "בני עי\"ש",
+              "type": "boundary",
+              "wikidata": "Q2915758",
+              "wikipedia": "he:בני עי\"ש"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.7605995,
+          31.7891954
+        ]
+      },
+      "id": "node/278472981"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/278473497",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1392894,
+            "reltags": {
+              "admin_level": "8",
+              "alt_name:he": "ג'יסר א-זרקא",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "جسر الزرقاء",
+              "name:ar": "جسر الزرقاء",
+              "name:en": "Jisr az-Zarqa",
+              "name:fr": "Jisr az-Zarqa",
+              "name:he": "ג׳סר א-זרקא",
+              "type": "boundary",
+              "wikidata": "Q764601",
+              "wikipedia": "ar:جسر الزرقاء"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9132199,
+          32.5375618
+        ]
+      },
+      "id": "node/278473497"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/278473683",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1379484,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "מועצה אזורית שפיר",
+              "name:ar": "مجلس إقليمي شفير",
+              "name:en": "Shafir Regional Council",
+              "name:es": "Concejo Regional Shafir",
+              "name:fr": "Conseil régional de Shafir",
+              "name:he": "מועצה אזורית שפיר",
+              "name:nl": "Regionale Raad van Shafir",
+              "type": "boundary",
+              "wikidata": "Q2222059",
+              "wikipedia": "he:מועצה אזורית שפיר"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.7071255,
+          31.6951844
+        ]
+      },
+      "id": "node/278473683"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/278473689",
+        "@relations": [
+          {
+            "role": "label",
+            "rel": 1381532,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "ele": "57",
+              "name": "לוד",
+              "name:ar": "اللد",
+              "name:en": "Lod",
+              "name:fr": "Lod",
+              "name:he": "לוד",
+              "name:it": "Lidda",
+              "name:ro": "Lida",
+              "name:ro_1": "Lod",
+              "name:ro_2": "Lydda",
+              "name:ro_3": "Lodd",
+              "name:ru": "Лод",
+              "population": "81202",
+              "type": "boundary",
+              "website": "http://www.lod.muni.il/",
+              "wikidata": "Q207540",
+              "wikipedia": "he:לוד"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8884857,
+          31.9489012
+        ]
+      },
+      "id": "node/278473689"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/278473727",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1379262,
+            "reltags": {
+              "admin_level": "8",
+              "alt_name:ar": "طوبا زنغرية;طوبه زنغرية‎;طوبا زنجرية",
+              "alt_name:he": "טובא זנגרייה",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "ele": "294",
+              "name": "طوبا الزنغرية",
+              "name:ar": "طوبا الزنغرية",
+              "name:en": "Tuba Zangariya",
+              "name:fr": "Tuba-Zangariyye",
+              "name:he": "טובא זנגריה",
+              "population": "6530",
+              "start_date": "1908",
+              "type": "boundary",
+              "website": "http://www.tuba-zangariyye.muni.il",
+              "wikidata": "Q1028203",
+              "wikipedia": "ar:طوبا الزنغرية"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5944243,
+          32.9663198
+        ]
+      },
+      "id": "node/278473727"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/278474273",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1379342,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "ele": "438",
+              "name": "חצור הגלילית",
+              "name:cs": "Chacor ha-Glilit",
+              "name:en": "Hatzor HaGlilit",
+              "name:fr": "Hatzor-Haglilit",
+              "name:he": "חצור הגלילית",
+              "population": "8834",
+              "type": "boundary",
+              "website": "http://www.hatzorg.co.il",
+              "wikidata": "Q2588837",
+              "wikipedia": "en:Hatzor HaGlilit"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.543327,
+          32.9791697
+        ]
+      },
+      "id": "node/278474273"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/278474577",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1380001,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "ele": "89",
+              "name": "שדרות",
+              "name:en": "Sderot",
+              "name:fr": "Sdérot",
+              "name:he": "שדרות",
+              "population": "27512",
+              "start_date": "1951",
+              "type": "boundary",
+              "wikidata": "Q123196",
+              "wikipedia": "he:שדרות"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.5969696,
+          31.526474
+        ]
+      },
+      "id": "node/278474577"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/278474639",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1379102,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "אופקים",
+              "name:": "اوفاقیم",
+              "name:ar": "أوفاكيم",
+              "name:en": "Ofakim",
+              "name:fr": "Ofaqim",
+              "name:he": "אופקים",
+              "population": "31178",
+              "type": "boundary",
+              "website": "http://www.ofaqim.muni.il/",
+              "wikidata": "Q167632",
+              "wikipedia": "he:אופקים"
+            }
+          },
+          {
+            "role": "label",
+            "rel": 1379102,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "אופקים",
+              "name:": "اوفاقیم",
+              "name:ar": "أوفاكيم",
+              "name:en": "Ofakim",
+              "name:fr": "Ofaqim",
+              "name:he": "אופקים",
+              "population": "31178",
+              "type": "boundary",
+              "website": "http://www.ofaqim.muni.il/",
+              "wikidata": "Q167632",
+              "wikipedia": "he:אופקים"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.6208537,
+          31.3125831
+        ]
+      },
+      "id": "node/278474639"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/278475752",
+        "@relations": [
+          {
+            "role": "label",
+            "rel": 1392988,
+            "reltags": {
+              "admin_level": "8",
+              "alt_name:he": "סח'נין",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "ele": "223",
+              "name": "سخنين",
+              "name:ar": "سخنين",
+              "name:cs": "Sachnín",
+              "name:en": "Sakhnin",
+              "name:fa": "سخنین",
+              "name:fr": "Sakhnin",
+              "name:he": "סכנין",
+              "name:ru": "Сахнин",
+              "name:ur": "سخنین",
+              "population": "29856",
+              "type": "boundary",
+              "website": "http://www.sakhnin.muni.il",
+              "wikidata": "Q168330",
+              "wikipedia": "ar:سخنين"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3023184,
+          32.8638052
+        ]
+      },
+      "id": "node/278475752"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/278476247",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1393026,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "بيت جن",
+              "name:ar": "بيت جن",
+              "name:en": "Bet Jan",
+              "name:fr": "Beit Jann",
+              "name:he": "בית ג'ן",
+              "type": "boundary",
+              "wikidata": "Q814900",
+              "wikipedia": "ar:بيت جن"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3781433,
+          32.9644737
+        ]
+      },
+      "id": "node/278476247"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/278476277",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1383756,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "long_name:ar": "الشبلي - أم الغنم‎",
+              "name": "الشبلي-أم الغنم‎",
+              "name:ar": "الشبلي-أم الغنم‎",
+              "name:en": "Shibli - Umm el Ghanam",
+              "name:fr": "Shibli-Umm al-Ghanam",
+              "name:he": "שבלי - אום אל-ר'נם",
+              "short_name:ar": "شبلي-أم الغنم‎",
+              "type": "boundary",
+              "wikidata": "Q2601842",
+              "wikipedia": "he:שבלי - אום אל-גנם"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3960008,
+          32.6937221
+        ]
+      },
+      "id": "node/278476277"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/278476455",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1401800,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "קריית טבעון",
+              "name:en": "Kiryat Tivon",
+              "name:fr": "Kiryat Tivon",
+              "name:he": "קריית טבעון",
+              "name:ru": "Кирьят-Тивон",
+              "type": "boundary",
+              "wikidata": "Q1743479",
+              "wikipedia": "he:קריית טבעון"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.126841,
+          32.7161543
+        ]
+      },
+      "id": "node/278476455"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/278476781",
+        "@relations": [
+          {
+            "role": "label",
+            "rel": 1381458,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "ele": "76",
+              "name": "רמלה",
+              "name:ar": "الرملة",
+              "name:en": "Ramla",
+              "name:fr": "Ramla",
+              "name:he": "רמלה",
+              "name:it": "Ramla",
+              "population": "80786",
+              "type": "boundary",
+              "website": "http://www.ramla.muni.il/",
+              "wikidata": "Q221447",
+              "wikipedia": "he:רמלה"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8623473,
+          31.9279988
+        ]
+      },
+      "id": "node/278476781"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/278476860",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1403095,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "دالية الكرمل",
+              "name:ar": "دالية الكرمل",
+              "name:en": "Daliyat al-Karmel",
+              "name:fr": "Daliat el Karmel",
+              "name:he": "דלית אל-כרמל",
+              "type": "boundary",
+              "wikidata": "Q2667061",
+              "wikipedia": "ar:دالية الكرمل"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0482785,
+          32.6922393
+        ]
+      },
+      "id": "node/278476860"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/278476881",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1376782,
+            "reltags": {
+              "admin_level": "8",
+              "alt_name:ar": "أشكلون;عسقلون;مجدل",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "ele": "36",
+              "name": "אשקלון",
+              "name:ar": "عسقلان",
+              "name:arc": "ܐܫܩܠܘܢ",
+              "name:el": "Ασκελόν",
+              "name:en": "Ashkelon",
+              "name:fi": "Ashkelon",
+              "name:fr": "Ascalon",
+              "name:he": "אשקלון",
+              "name:it": "Ascalona",
+              "name:pl": "Aszkelon",
+              "name:ru": "Ашкелон",
+              "name:syc": "ܐܫܩܠܘܢ",
+              "name:ur": "عسقلان",
+              "population": "152439",
+              "type": "boundary",
+              "website": "http://www.ashkelon.muni.il/",
+              "wikidata": "Q60956",
+              "wikipedia": "he:אשקלון"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.5730157,
+          31.6644874
+        ]
+      },
+      "id": "node/278476881"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/278476926",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1403485,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "عسفيا",
+              "name:ar": "عسفيا",
+              "name:en": "Isfiya",
+              "name:fr": "Isfiya",
+              "name:he": "עוספייא",
+              "type": "boundary",
+              "wikidata": "Q2890836",
+              "wikipedia": "ar:عسفيا"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0671011,
+          32.7152045
+        ]
+      },
+      "id": "node/278476926"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/278477272",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1386842,
+            "reltags": {
+              "admin_level": "8",
+              "alt_name:ar": "أعبلين",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "إعبلين",
+              "name:ar": "إعبلين",
+              "name:ar1": "عبلين",
+              "name:ar2": "اعبلين",
+              "name:cs": "I'billin",
+              "name:en": "Ibilin",
+              "name:es": "I'billin",
+              "name:fi": "I'billin",
+              "name:fr": "I'billin",
+              "name:he": "אעבלין",
+              "name:nn": "I'billin",
+              "name:pl": "I’billin",
+              "name:ru": "Ибилин",
+              "type": "boundary",
+              "wikidata": "Q2915647",
+              "wikipedia": "ar:إعبلين"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.19133,
+          32.8209166
+        ]
+      },
+      "id": "node/278477272"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/278477509",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1246791,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "ele": "51",
+              "land_area": "administrative",
+              "name": "רחובות",
+              "name:ar": "رحوفوت",
+              "name:cs": "Rechovot",
+              "name:en": "Rehovot",
+              "name:fr": "Rehovot",
+              "name:he": "רחובות",
+              "population": "150349",
+              "type": "boundary",
+              "website": "https://www.rehovot.muni.il/",
+              "wikidata": "Q207350",
+              "wikipedia": "he:רחובות"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8105616,
+          31.8952532
+        ]
+      },
+      "id": "node/278477509"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/278477631",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1392828,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "זכרון יעקב",
+              "name:ar": "زخرون يعكوف",
+              "name:en": "Zichron Ya'akov",
+              "name:fr": "Zikhron Yaakov",
+              "name:he": "זכרון יעקב",
+              "type": "boundary",
+              "wikidata": "Q198399",
+              "wikipedia": "he:זכרון יעקב"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9529966,
+          32.5711587
+        ]
+      },
+      "id": "node/278477631"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/278477903",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1376825,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "ele": "331",
+              "name": "עומר",
+              "name:ar": "عومر",
+              "name:en": "Omer",
+              "name:fr": "Omer",
+              "name:he": "עומר",
+              "population": "7514",
+              "type": "boundary",
+              "website": "http://www.omer.muni.il",
+              "wikidata": "Q1968636",
+              "wikipedia": "he:עומר (יישוב)"
+            }
+          },
+          {
+            "role": "label",
+            "rel": 1376825,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "ele": "331",
+              "name": "עומר",
+              "name:ar": "عومر",
+              "name:en": "Omer",
+              "name:fr": "Omer",
+              "name:he": "עומר",
+              "population": "7514",
+              "type": "boundary",
+              "website": "http://www.omer.muni.il",
+              "wikidata": "Q1968636",
+              "wikipedia": "he:עומר (יישוב)"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.847616,
+          31.2659365
+        ]
+      },
+      "id": "node/278477903"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/278478059",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1379121,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "ele": "95",
+              "name": "יסוד המעלה",
+              "name:en": "Yesud HaMaala",
+              "name:fr": "Yessod Haméala",
+              "name:he": "יסוד המעלה",
+              "population": "1644",
+              "type": "boundary",
+              "wikidata": "Q2639602",
+              "wikipedia": "he:יסוד המעלה"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.6030157,
+          33.0573811
+        ]
+      },
+      "id": "node/278478059"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/278478116",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1386837,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "البعينة",
+              "name:ar": "البعينة",
+              "name:ar1": "البعينة نجيدات",
+              "name:en": "Biina Nujeidat",
+              "name:fr": "Bu'eine Nujeidat",
+              "name:he": "בועיינה ניג'ידאת",
+              "type": "boundary",
+              "wikidata": "Q2655774",
+              "wikipedia": "en:Bu'eine Nujeidat"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.3646736,
+          32.8056259
+        ]
+      },
+      "id": "node/278478116"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/278478190",
+        "@relations": [
+          {
+            "role": "label",
+            "rel": 1382458,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "ele": "23",
+              "name": "בת ים",
+              "name:en": "Bat Yam",
+              "name:fr": "Bat Yam",
+              "name:he": "בת ים",
+              "name:pl": "Bat Jam",
+              "name:ru": "Бат-Ям",
+              "place": "city",
+              "population": "158565",
+              "type": "boundary",
+              "website": "http://www.bat-yam.muni.il/",
+              "wikidata": "Q208725",
+              "wikipedia": "he:בת ים"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.7505283,
+          32.0154565
+        ]
+      },
+      "id": "node/278478190"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/278478216",
+        "@relations": [
+          {
+            "role": "label",
+            "rel": 1387991,
+            "reltags": {
+              "admin_level": "8",
+              "alt_name:ar": "بعنة",
+              "alt_name:en": "Bi'ina;Al-Bi'na;Al-Bi'ina;Al-Baana;el-Baneh;Al-Baneh",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "البعنة",
+              "name:ar": "البعنة",
+              "name:en": "Bi'na",
+              "name:fr": "Bi'ina",
+              "name:he": "בענה",
+              "type": "boundary",
+              "wikidata": "Q2890909",
+              "wikipedia": "ar:البعنة"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.272169,
+          32.9280587
+        ]
+      },
+      "id": "node/278478216"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/278478336",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1379103,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "ele": "130",
+              "name": "נתיבות",
+              "name:en": "Netivot",
+              "name:fr": "Netivot",
+              "name:he": "נתיבות",
+              "population": "36961",
+              "start_date": "1956",
+              "type": "boundary",
+              "wikidata": "Q167649",
+              "wikipedia": "he:נתיבות"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.5884252,
+          31.4213546
+        ]
+      },
+      "id": "node/278478336"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/278478389",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1376758,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "מצפה רמון",
+              "name:ar": "متسبي رمون",
+              "name:en": "Mizpe Ramon",
+              "name:fr": "Mitzpe Ramon",
+              "name:he": "מצפה רמון",
+              "name:ur": "متسبی رمون",
+              "type": "boundary",
+              "wikidata": "Q741793",
+              "wikipedia": "he:מצפה רמון"
+            }
+          },
+          {
+            "role": "label",
+            "rel": 1376758,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "מצפה רמון",
+              "name:ar": "متسبي رمون",
+              "name:en": "Mizpe Ramon",
+              "name:fr": "Mitzpe Ramon",
+              "name:he": "מצפה רמון",
+              "name:ur": "متسبی رمون",
+              "type": "boundary",
+              "wikidata": "Q741793",
+              "wikipedia": "he:מצפה רמון"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8012169,
+          30.6119687
+        ]
+      },
+      "id": "node/278478389"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/278478516",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1379423,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "מועצה אזורית לכיש",
+              "name:en": "Lachish Regional Council",
+              "name:fr": "Lakhish",
+              "name:he": "מועצה אזורית לכיש",
+              "type": "boundary",
+              "wikidata": "Q2594249",
+              "wikipedia": "he:מועצה אזורית לכיש"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.70469,
+          31.6226942
+        ]
+      },
+      "id": "node/278478516"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/278478605",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1379335,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "ele": "900",
+              "name": "צפת",
+              "name:ar": "صفد",
+              "name:cs": "Safed",
+              "name:en": "Zefat",
+              "name:en1": "Safed",
+              "name:en2": "Tzfat",
+              "name:en3": "Tzefat",
+              "name:en4": "Zfat",
+              "name:fr": "Safed",
+              "name:he": "צפת",
+              "name:ru": "Цфат",
+              "name:ur": "صفد",
+              "population": "33358",
+              "type": "boundary",
+              "website": "https://www.zefat.muni.il/",
+              "wikidata": "Q188336",
+              "wikipedia": "he:צפת"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.502451,
+          32.9646301
+        ]
+      },
+      "id": "node/278478605"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/278478706",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1399264,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "بسمة طبعون",
+              "name:ar": "بسمة طبعون",
+              "name:en": "Basmat Tabun",
+              "name:fr": "Basmat Tab'un",
+              "name:he": "בסמת טבעון",
+              "type": "boundary",
+              "wikidata": "Q2651477",
+              "wikipedia": "he:בסמת טבעון"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.1546502,
+          32.7362276
+        ]
+      },
+      "id": "node/278478706"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/280115936",
+        "@relations": [
+          {
+            "role": "label",
+            "rel": 1379225,
+            "reltags": {
+              "admin_level": "8",
+              "alt_name:ar": "راهط",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "ele": "222",
+              "name": "رهط",
+              "name:ar": "رهط",
+              "name:bn": "রাহাত",
+              "name:en": "Rahat",
+              "name:fa": "رهط",
+              "name:fr": "Rahat",
+              "name:he": "רהט",
+              "name:ur": "رہط",
+              "population": "63922",
+              "type": "boundary",
+              "website": "https://www.rahat-muni.com/",
+              "wikidata": "Q167617",
+              "wikipedia": "ar:رهط (مدينة)"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.7546784,
+          31.3933637
+        ]
+      },
+      "id": "node/280115936"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/348385591",
+        "@relations": [
+          {
+            "role": "label",
+            "rel": 1383630,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "ele": "48",
+              "name": "רעננה",
+              "name:ar": "رعنانا",
+              "name:en": "Raanana",
+              "name:fr": "Raanana",
+              "name:he": "רעננה",
+              "name:ur": "رعنانا",
+              "population": "91534",
+              "type": "boundary",
+              "website": "https://www.raanana.muni.il/",
+              "wikidata": "Q309164",
+              "wikipedia": "he:רעננה"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8675905,
+          32.1861481
+        ]
+      },
+      "id": "node/348385591"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/353022551",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1379226,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "להבים",
+              "name:en": "Lehavim",
+              "name:fr": "Lehavim",
+              "name:he": "להבים",
+              "type": "boundary",
+              "wikidata": "Q1589806",
+              "wikipedia": "he:להבים"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8136886,
+          31.3703233
+        ]
+      },
+      "id": "node/353022551"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/389991575",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1399133,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "ele": "122",
+              "name": "אלעד",
+              "name:ar": "إلعاد",
+              "name:en": "Elad",
+              "name:fr": "El'ad",
+              "name:he": "אלעד",
+              "name:ur": "ایلعاد",
+              "population": "47033",
+              "type": "boundary",
+              "website": "http://www.elad.muni.il/",
+              "wikidata": "Q152399",
+              "wikipedia": "he:אלעד"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9521522,
+          32.0500659
+        ]
+      },
+      "id": "node/389991575"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/404335599",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1375244,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "ele": "1034",
+              "name": "مسعدة",
+              "name:ar": "مسعدة",
+              "name:en": "Masade",
+              "name:fr": "Mas'ade",
+              "name:he": "מסעדה",
+              "population": "3557",
+              "type": "boundary",
+              "wikidata": "Q2655013",
+              "wikipedia": "he:מסעדה (יישוב)"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.7574829,
+          33.2311981
+        ]
+      },
+      "id": "node/404335599"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/536507510",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1376828,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "מיתר",
+              "name:ar": "ميتار",
+              "name:en": "Meitar",
+              "name:fr": "Meitar",
+              "name:he": "מיתר",
+              "name:ru": "Мейтар",
+              "type": "boundary",
+              "wikidata": "Q1246119",
+              "wikipedia": "he:מיתר (יישוב)"
+            }
+          },
+          {
+            "role": "label",
+            "rel": 1376828,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "מיתר",
+              "name:ar": "ميتار",
+              "name:en": "Meitar",
+              "name:fr": "Meitar",
+              "name:he": "מיתר",
+              "name:ru": "Мейтар",
+              "type": "boundary",
+              "wikidata": "Q1246119",
+              "wikipedia": "he:מיתר (יישוב)"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9384389,
+          31.3270854
+        ]
+      },
+      "id": "node/536507510"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/558575432",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1376829,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "حورة",
+              "name:ar": "حورة",
+              "name:en": "Hora",
+              "name:fr": "Hura",
+              "name:he": "חורה",
+              "type": "boundary",
+              "wikidata": "Q1638374",
+              "wikipedia": "ar:حورة (إسرائيل)",
+              "wikipedia:ar": "حورة (إسرائيل)"
+            }
+          },
+          {
+            "role": "label",
+            "rel": 1376829,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "حورة",
+              "name:ar": "حورة",
+              "name:en": "Hora",
+              "name:fr": "Hura",
+              "name:he": "חורה",
+              "type": "boundary",
+              "wikidata": "Q1638374",
+              "wikipedia": "ar:حورة (إسرائيل)",
+              "wikipedia:ar": "حورة (إسرائيل)"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9379061,
+          31.2972468
+        ]
+      },
+      "id": "node/558575432"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/599556378",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1376931,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "عرعرة النقب",
+              "name:ar": "عرعرة النقب",
+              "name:en": "Ar'arat an-Naqab",
+              "name:fr": "Ar'arat an-Naqab",
+              "name:he": "ערערה בנגב",
+              "short_name:ar": "عرعرة",
+              "type": "boundary",
+              "wikidata": "Q2915541",
+              "wikipedia": "ar:عرعرة النقب"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0230464,
+          31.1595078
+        ]
+      },
+      "id": "node/599556378"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/599556920",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1376911,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "كسيفة",
+              "name:ar": "كسيفة",
+              "name:en": "Kuseife",
+              "name:fr": "Kuseife",
+              "name:he": "כסייפה",
+              "type": "boundary",
+              "wikidata": "Q2652222",
+              "wikipedia": "ar:كسيفة"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0930574,
+          31.2465374
+        ]
+      },
+      "id": "node/599556920"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/599577806",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1377266,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "شقيب السلام",
+              "name:ar": "شقيب السلام",
+              "name:en": "Shaqib al-Salam",
+              "name:en1": "Segev Shalom",
+              "name:fr": "Shaqib al-Salam",
+              "name:he": "שגב שלום",
+              "type": "boundary",
+              "wikidata": "Q2633019",
+              "wikipedia": "ar:شقيب السلام"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8400872,
+          31.2008757
+        ]
+      },
+      "id": "node/599577806"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/739191371",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1376764,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "ירוחם",
+              "name:ar": "يروحام",
+              "name:de": "Jerocham",
+              "name:en": "Yeroham",
+              "name:fr": "Yeruham",
+              "name:he": "ירוחם",
+              "name:pl": "Yeruham",
+              "name:ru": "Йерухам",
+              "name:sv": "Yeroẖam",
+              "name:ur": "یرحم",
+              "type": "boundary",
+              "wikidata": "Q1687708",
+              "wikipedia": "he:ירוחם"
+            }
+          },
+          {
+            "role": "label",
+            "rel": 1376764,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "ירוחם",
+              "name:ar": "يروحام",
+              "name:de": "Jerocham",
+              "name:en": "Yeroham",
+              "name:fr": "Yeruham",
+              "name:he": "ירוחם",
+              "name:pl": "Yeruham",
+              "name:ru": "Йерухам",
+              "name:sv": "Yeroẖam",
+              "name:ur": "یرحم",
+              "type": "boundary",
+              "wikidata": "Q1687708",
+              "wikipedia": "he:ירוחם"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9250975,
+          30.9888033
+        ]
+      },
+      "id": "node/739191371"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/848726406",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1391710,
+            "reltags": {
+              "addr:postcode": "30***",
+              "admin_level": "8",
+              "alt_name:ar": "المجلس الإقليمي شاطئ الكرمل;مجلس إقليمي حوف هكرمل;المجلس الإقليمي حوف هكرمل;حوف هكرمل",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "מועצה אזורית חוף הכרמל",
+              "name:ar": "مجلس إقليمي شاطئ الكرمل",
+              "name:en": "Hof HaCarmel Regional Council",
+              "name:fr": "Côte de Carmel",
+              "name:he": "מועצה אזורית חוף הכרמל",
+              "short_name:ar": "شاطئ الكرمل",
+              "type": "boundary",
+              "wikidata": "Q1915911",
+              "wikipedia": "he:מועצה אזורית חוף הכרמל"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9577459,
+          32.6763677
+        ]
+      },
+      "id": "node/848726406"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/857612733",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1377971,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "מועצה אזורית מבואות החרמון",
+              "name:ar": "مجلس إقليمي مقدمات جبل الشيخ",
+              "name:ar1": "المجلس الإقليمي مقدمات جبل الشيخ",
+              "name:ar2": "مجلس إقليمي مفوئوت هحرمون",
+              "name:ar3": "المجلس الإقليمي مفوئوت هحرمون",
+              "name:en": "Mevoot HaHermon Regional Council",
+              "name:fr": "Mevo'ot HaHermon",
+              "name:he": "מועצה אזורית מבואות החרמון",
+              "population": "7200",
+              "short_name:ar": "مقدمات جبل الشيخ",
+              "short_name:ar1": "مفوئوت هحرمون",
+              "type": "boundary",
+              "wikidata": "Q2916811",
+              "wikipedia": "en:Mevo'ot HaHermon Regional Council"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.5695688,
+          33.1182986
+        ]
+      },
+      "id": "node/857612733"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/871894189",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1391828,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "מועצה אזורית מנשה",
+              "name:ar": "مجلس منشة الإقليمي",
+              "name:en": "Menashe Regional Council",
+              "name:fr": "Menashe",
+              "name:he": "מועצה אזורית מנשה",
+              "type": "boundary",
+              "wikidata": "Q731661",
+              "wikipedia": "he:מועצה אזורית מנשה"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0132774,
+          32.4671887
+        ]
+      },
+      "id": "node/871894189"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1108682937",
+        "@relations": [
+          {
+            "role": "townhall",
+            "rel": 1379102,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "אופקים",
+              "name:": "اوفاقیم",
+              "name:ar": "أوفاكيم",
+              "name:en": "Ofakim",
+              "name:fr": "Ofaqim",
+              "name:he": "אופקים",
+              "population": "31178",
+              "type": "boundary",
+              "website": "http://www.ofaqim.muni.il/",
+              "wikidata": "Q167632",
+              "wikipedia": "he:אופקים"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.6209886,
+          31.3151842
+        ]
+      },
+      "id": "node/1108682937"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1144627651",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1381394,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "קרית עקרון",
+              "name:en": "Kiryat Ekron",
+              "name:fr": "Kiryat Ekron",
+              "name:he": "קרית עקרון",
+              "type": "boundary",
+              "wikidata": "Q2640159",
+              "wikipedia": "he:קריית עקרון"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8230526,
+          31.8610183
+        ]
+      },
+      "id": "node/1144627651"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1654111437",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1379175,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "ele": "339",
+              "name": "קצרין",
+              "name:ar": "كتسرين",
+              "name:cs": "Kacrin",
+              "name:en": "Katzrin",
+              "name:fr": "Katzrin",
+              "name:he": "קצרין",
+              "name:ur": "قصرین",
+              "population": "6913",
+              "type": "boundary",
+              "wikidata": "Q1736959",
+              "wikipedia": "en:Katzrin"
+            }
+          },
+          {
+            "role": "admin_centre",
+            "rel": 1379176,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "מועצה אזורית גולן",
+              "name:ar": "مجلس الجولان الإقليمي‎‎",
+              "name:en": "Golan Regional Council",
+              "name:fr": "Golan",
+              "name:he": "מועצה אזורית גולן",
+              "population": "16500",
+              "type": "boundary",
+              "wikidata": "Q2391142",
+              "wikipedia": "he:מועצה אזורית גולן"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.6877004,
+          32.9920262
+        ]
+      },
+      "id": "node/1654111437"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1656107649",
+        "@relations": [
+          {
+            "role": "label",
+            "rel": 1387888,
+            "reltags": {
+              "admin_level": "8",
+              "alt_name:it": "Caifa",
+              "boundary": "administrative",
+              "ele": "103",
+              "name": "חיפה",
+              "name:am": "ሐይፋ",
+              "name:ar": "حيفا",
+              "name:arc": "ܚܝܦܐ",
+              "name:en": "Haifa",
+              "name:fi": "Haifa",
+              "name:fr": "Haïfa",
+              "name:he": "חיפה",
+              "name:it": "Haifa",
+              "name:ja": "ハイファ",
+              "name:ko": "하이파",
+              "name:mi": "Haiwha",
+              "name:ru": "Хайфа",
+              "name:syc": "ܚܝܦܐ",
+              "name:ur": "حیفا",
+              "place": "minicipality",
+              "population": "279591",
+              "type": "boundary",
+              "website": "https://www.haifa.muni.il/",
+              "wikidata": "Q41621",
+              "wikipedia": "en:Haifa"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.9983856,
+          32.8191218
+        ]
+      },
+      "id": "node/1656107649"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1657261912",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1375243,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "بقعاثا",
+              "name:ar": "بقعاثا",
+              "name:en": "Bukata",
+              "name:fr": "Buq'ata",
+              "name:he": "בוקעאתא",
+              "population": "6590",
+              "type": "boundary",
+              "wikidata": "Q2915523",
+              "wikipedia": "he:בוקעאתא"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.7779892,
+          33.20076
+        ]
+      },
+      "id": "node/1657261912"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1697981331",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1382493,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "ele": "37",
+              "landuse": "residential",
+              "name": "רמת גן",
+              "name:en": "Ramat Gan",
+              "name:fr": "Ramat Gan",
+              "name:he": "רמת גן",
+              "name:ru": "Рамат-Ган",
+              "place": "town",
+              "population": "164764",
+              "type": "boundary",
+              "website": "https://www.ramat-gan.muni.il/",
+              "wikidata": "Q192807",
+              "wikipedia": "en:Ramat Gan"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8246812,
+          32.0686867
+        ]
+      },
+      "id": "node/1697981331"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7784436595",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1379225,
+            "reltags": {
+              "admin_level": "8",
+              "alt_name:ar": "راهط",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "ele": "222",
+              "name": "رهط",
+              "name:ar": "رهط",
+              "name:bn": "রাহাত",
+              "name:en": "Rahat",
+              "name:fa": "رهط",
+              "name:fr": "Rahat",
+              "name:he": "רהט",
+              "name:ur": "رہط",
+              "population": "63922",
+              "type": "boundary",
+              "website": "https://www.rahat-muni.com/",
+              "wikidata": "Q167617",
+              "wikipedia": "ar:رهط (مدينة)"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.7547052,
+          31.3933294
+        ]
+      },
+      "id": "node/7784436595"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4462321217",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1382817,
+            "reltags": {
+              "admin_level": "8",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "contact:website": "http://www.bnei-brak.muni.il",
+              "ele": "26",
+              "landuse": "residential",
+              "name": "בני ברק",
+              "name:ar": "بني براك",
+              "name:cs": "Bnej Brak",
+              "name:en": "Bnei Brak",
+              "name:fr": "Bnei Brak",
+              "name:he": "בני ברק",
+              "name:pl": "Bene Berak",
+              "name:ru": "Бней-Брак",
+              "place": "town",
+              "population": "203573",
+              "type": "boundary",
+              "website": "http://www.bnei-brak.muni.il",
+              "wikidata": "Q152467",
+              "wikipedia": "he:בני ברק"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.8249749,
+          32.085788
+        ]
+      },
+      "id": "node/4462321217"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4672294477",
+        "@relations": [
+          {
+            "role": "admin_centre",
+            "rel": 1377972,
+            "reltags": {
+              "admin_level": "8",
+              "alt_name:ar": "الغجر",
+              "boundary": "administrative",
+              "complete:relation": "yes",
+              "name": "ע'ג'ר",
+              "name:ar": "غجر",
+              "name:de": "Ghajar",
+              "name:en": "Ghajar",
+              "name:fr": "Ghajar",
+              "name:he": "ע'ג'ר",
+              "type": "boundary",
+              "wikidata": "Q1261045",
+              "wikipedia": "he:ע'ג'ר"
+            }
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.6234309,
+          33.2708961
+        ]
+      },
+      "id": "node/4672294477"
+    }
+  ]
+}

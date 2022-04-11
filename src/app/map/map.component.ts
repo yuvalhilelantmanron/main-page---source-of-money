@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import * as mapboxgl from 'mapbox-gl';
-import { MAPDATA } from '../constants';
+import * as mapData from '../mapData.json';
 
 
 @Component({
@@ -9,9 +9,8 @@ import { MAPDATA } from '../constants';
   styleUrls: ['./map.component.less']
 })
 export class MapComponent implements OnInit {
-
   map: mapboxgl.Map;
-  style = 'mapbox://styles/mapbox/outdoors-v9';
+  style = 'mapbox://styles/mapbox/navigation-day-v1';
   lat = 31.55;
   lng = 34.99;
 
@@ -32,10 +31,24 @@ export class MapComponent implements OnInit {
     });
 
     this.map.on('load', () => {
-      // console.log(this.mapData);
-      // this.map.addSource('mapData', this.mapData);
+      // console.log((mapData as any).default);
+      this.map.addSource('cityData', {
+        'type': 'geojson',
+        'data': (mapData as any).default
+      });
+
+
+      this.map.addLayer(
+        {
+          "id": "city",
+          "source": "cityData",
+          "type": "circle",
+          "circle-radius": {
+            property: 'population',
+            type: 'exponential',
+          }
+        }
+      );
     })
   }
-
-
 }
