@@ -12,12 +12,6 @@ export class TaxGameComponent implements OnInit {
 
   diff: number = 0;
 
-  tax1Cng = "+1";
-  tax2Cng = "+2";
-  tax3Cng = "+3";
-  tax4Cng = "+4";
-  tax5Cng = "+5";
-  
   taxes: any = {
       1: "delek", 
       2: "maam",
