@@ -25,11 +25,11 @@
     </p>
   </div>
 
-  <div *ngIf="currTax == 'income'">
+  <div *ngIf="currTax == 'maam'">
     <p>
       <app-single-value-tax
         (onChange)="diff = $event.value"
-        tax_type="income"
+        tax_type="maam"
       ></app-single-value-tax>
     </p>
   </div>

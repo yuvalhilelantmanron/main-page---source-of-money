@@ -19,7 +19,7 @@ export class TaxGameComponent implements OnInit {
   
   taxes: any = {
       1: "delek", 
-      2: "income",
+      2: "maam",
       3: "tabak"
   }
   currTax: string = this.taxes[1];

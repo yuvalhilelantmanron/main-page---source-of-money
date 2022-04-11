@@ -6,7 +6,7 @@ import { Component, OnInit, Input, OnChanges, SimpleChanges } from '@angular/cor
   styleUrls: ['./nav-bar.component.less']
 })
 export class NavBarComponent {
-  leftCaption: string = "אגרות חוב וגרעון";
+  leftCaption: string = "משחק המסים";
   middleCaption: string = "מיסי הכנסה אל מול מיסי הוצאה";
   rightCaption: string = "כמה אני מכניס למדינה";
 
