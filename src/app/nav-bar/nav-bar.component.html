@@ -23,7 +23,65 @@
     </h2>
   </div>
 
-  <div class="page" *ngIf="currentlySelected == 'left'">LEFT</div>
+  <div class="page" *ngIf="currentlySelected == 'left'">
+    <div class="left">
+      <br>
+      הכנסות מיסים לפי תעשיות <!-- כותרת -->
+      <br>
+      <br>
+    </div>
+    <div class="Industries">
+        <div>
+        <p>תעשית המזון</p> <!-- תעשיה ראשונה -->
+        <img src="/assets/img/food_patter_icon_150227.svg" width="350" height="200" /> <!-- תמונה ראשונה -->
+        <p> מהווה 12.5 אחוז מהכנסות המיסים </p> <!-- כמה כל תעשיה מכניסה / מייצגת -->
+      </div>
+      <div>
+        <p>תעשית ההייטק</p>
+        <img src="/assets/img/pc-computer-with-monitor_icon-icons.com_56249.svg" width="350" height="200" />
+        <p> מהווה 12.5 אחוז מהכנסות המיסים </p>
+      </div>
+      <div>
+        <p>תעשית החקלאות</p>
+        <img src="/assets/img/tractor_vehicle_farmer_farming_agriculture_icon_183561.svg" width="350" height="200" />
+        <p> מהווה 12.5 אחוז מהכנסות המיסים </p>
+      </div>
+      <div>
+        <p>תעשית הכריה וחציבה</p>
+        <img src="/assets/img/3605334-construction-digger-excavation-excavator-industry-machinery-mining_107857.svg" width="350" height="200" />
+        <p> מהווה 12.5 אחוז מהכנסות המיסים </p>
+      </div>
+    </div> <!-- עד פה ה4 תעשיות העליונות -->
+    
+    <div>
+      <br>
+      <br>
+      <br>
+    </div> <!-- לרדת שורה ל 4 הבאים -->
+
+    <div class="Industries">
+      <div>
+      <p>תעשית המזון</p>
+      <img src="/assets/img/food_patter_icon_150227.svg" width="350" height="200" />
+      <p> מהווה 12.5 אחוז מהכנסות המיסים </p>
+    </div>
+    <div>
+      <p>תעשית ההייטק</p>
+      <img src="/assets/img/pc-computer-with-monitor_icon-icons.com_56249.svg" width="350" height="200" />
+      <p> מהווה 12.5 אחוז מהכנסות המיסים </p>
+    </div>
+    <div>
+      <p>תעשית החקלאות</p>
+      <img src="/assets/img/tractor_vehicle_farmer_farming_agriculture_icon_183561.svg" width="350" height="200" />
+      <p> מהווה 12.5 אחוז מהכנסות המיסים </p>
+    </div>
+    <div>
+      <p>תעשית הכריה וחציבה</p>
+      <img src="/assets/img/3605334-construction-digger-excavation-excavator-industry-machinery-mining_107857.svg" width="350" height="200" />
+      <p> מהווה 12.5 אחוז מהכנסות המיסים </p>
+    </div>
+  </div>
+  </div>
 
   <div class="page" *ngIf="currentlySelected == 'middle'">
     <middle-nav-bar-page [fetchedData]="fetchedData"></middle-nav-bar-page>
@@ -33,3 +91,4 @@
     <right-nav-bar-page></right-nav-bar-page>
   </div>
 </div>
+
