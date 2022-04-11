@@ -7,7 +7,8 @@ import { UtilsService } from '../utils.service'
   styleUrls: ['./tax-game.component.less']
 })
 export class TaxGameComponent implements OnInit {
-  totalIncome: number = 123456789; // TODO: Get real total income
+  public totalIncome: number = 0;
+  public year: number = 2020;
 
   diff: number = 0;
 
@@ -24,9 +25,18 @@ export class TaxGameComponent implements OnInit {
   }
   currTax: string = this.taxes[1];
 
-  constructor(private utils: UtilsService) { }
+  constructor(private utils: UtilsService) {
+    this.getData();
+  }
 
   ngOnInit() {
+  }
+
+  async getData() {
+    var tax_code = '0000';
+    var raw = await fetch("https://next.obudget.org/api/query?query=SELECT%20history%20FROM%20budget%20WHERE%20code=%27"+tax_code+"%27AND%20year>=2020%20ORDER%20BY%20year%20ASC%20LIMIT%201");
+    var data = await raw.json();
+    this.totalIncome = data.rows[0].history[this.year].net_executed;
   }
 
   public changeTax(evt, tax) {
