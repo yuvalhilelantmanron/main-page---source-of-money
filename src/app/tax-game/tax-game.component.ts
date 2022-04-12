@@ -98,11 +98,22 @@ export class TaxGameComponent implements OnInit {
   }
 
   changeStatus(evt, number, status) {
-    if (status == 2)
+    if (status == 2) {
       this.taxes[number].status.cancel = !this.taxes[number].status.cancel;
-    else if (status == 1)
+      this.taxes[number].status.ignore = false;
+    } else if (status == 1) {
       this.taxes[number].status.ignore = !this.taxes[number].status.ignore;
+      this.taxes[number].status.cancel = false;
+    }
 
+    let taxButtons = document.getElementsByClassName('status-btn');
+    for (let i = 0; i < taxButtons.length; i++) {
+      if (taxButtons[i] != evt.currentTarget)
+        taxButtons[i].className = taxButtons[i].className.replace(
+          ' active',
+          '',
+        );
+    }
     if (evt.currentTarget.className.search(' active') != -1)
       evt.currentTarget.className = evt.currentTarget.className.replace(
         ' active',
