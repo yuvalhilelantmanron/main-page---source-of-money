@@ -1,24 +1,46 @@
 .tax-selection {
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
-  button {
-    background-color: inherit;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
+  div.tax-btns {
+    display: flex;
+    flex-direction: column;
     transition: 0.3s;
-    padding: 20px 5%;
-  }
-  button:hover {
-    background-color: #ddd;
-  }
-  button.active {
-    background-color: #ccc;
-  }
+    width: 25vw;
 
-  .tax-cng {
-    opacity: 75%;
+    button {
+      background-color: inherit;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+
+    button.tax-btn {
+      transition: 0.3s;
+      padding: 20px 30px;
+    }
+    button.tax-btn:hover {
+      background-color: #ddd;
+    }
+
+    button.active {
+      background-color: #ccc;
+    }
+
+    .tax-cng {
+      opacity: 75%;
+    }
+
+    div button {
+      width: 50%;
+      height: 100%;
+      transition: 0.3s;
+    }
+    div button:hover {
+      background-color: #ddd;
+    }
   }
 }
 
