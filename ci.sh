@@ -8,7 +8,7 @@ DEPLOY_GIT_USER=budgetkey-deployer
 
 DEPLOY_COMMIT_MESSAGE="automatic update of source-of-money-app-main-page"
 DEPLOY_VALUES_CHART_NAME=source-of-money-app-main-page
-DOCKER_IMAGE=hub.docker.com/inbararan/source-of-money-app-main-page
+DOCKER_IMAGE=hub.docker.com/inbararan/source-of-money
 
 
 if [ "${1}" == "install" ]; then
