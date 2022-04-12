@@ -25,13 +25,16 @@ export class SingleValueTaxComponent implements OnInit {
         var data = await raw.json();
         return data.rows[0].history[this.latest_year].net_executed;
       },
-      current_rate: 3.13,
-      units: 'שקלים לליטר',
-      demo_text: ' לדוגמה ניקח מיכל של',
-      demo_placeholder: '40',
-      demo_units: 'ליטרים',
-      demo_result_text: 'תשלום עבור מילוי של מיכל זה ',
-      normalizer: 1,
+      current_rate: 3.05585,
+      units: "שקלים לליטר",
+      demo_text: " לדוגמה ניקח מיכל של",
+      demo_placeholder: "40",
+      demo_units: "ליטרים",
+      demo_result_text: "תשלום עבור מילוי של מיכל זה ",
+      neutralizer: 1,
+      description: "הוא מס בסכום קבוע עבור כל ליטר ומטרתו לצמצם את צריכת הדלק בישראל.",
+      url: "https://next.obudget.org/i/budget/0000180101/2019?li=0&theme=budgetkey",
+      title: "מס דלק"
     },
     maam: {
       get_current_value: async () => {
@@ -45,12 +48,15 @@ export class SingleValueTaxComponent implements OnInit {
         return data.rows[0].history[this.latest_year].net_executed;
       },
       current_rate: 17,
-      units: 'אחוזים',
-      demo_text: ' לדוגמה ניקח מוצר שמחירו',
-      demo_placeholder: '3000',
-      demo_units: 'שקלים',
-      demo_result_text: 'תשלום עבור מוצר זה',
-      normalizer: 100,
+      units: "אחוזים",
+      demo_text: " לדוגמה ניקח מוצר שמחירו",
+      demo_placeholder: "3000",
+      demo_units: "שקלים",
+      demo_result_text: "תשלום עבור מוצר זה",
+      neutralizer: 100,
+      description: '(מס ערך מוסף) הוא מס המוטל על כל קניה. סכום המע"מ מחושב בשיעור קבוע ממחיר הרכישה.',
+      url: "https://next.obudget.org/i/budget/0000140201/2019?li=0&theme=budgetkey",
+      title: 'מע"מ'
     },
     tabak: {
       get_current_value: async () => {
@@ -65,22 +71,24 @@ export class SingleValueTaxComponent implements OnInit {
         var data = await raw.json();
         return data.rows[0].net_executed;
       },
-      current_rate: 459,
+      current_rate: 1097.24,
       units: 'ש"ח לק"ג',
-      demo_text: ' לדוגמה טבק לגלגול במשקל',
-      demo_placeholder: '50',
-      demo_units: 'גרם',
-      demo_result_text: 'תשלום עבור הטבק',
-      normalizer: 1000,
-    },
-  };
+      demo_text: " לדוגמה טבק לגלגול במשקל",
+      demo_placeholder: "50",
+      demo_units: "גרם",
+      demo_result_text: "תשלום עבור הטבק",
+      neutralizer: 1000,
+      description: "מוטל על מוצרי טבק בסכום קבוע לקילוגרם ומטרתו לצמצם צריכה של מוצרים כמו סיגריות.",
+      url: "https://next.obudget.org/i/budget/00001501/2016?li=1&theme=budgetkey",
+      title: "מס טבק"
+    }
+  }
 
   constructor(private utils: UtilsService) {}
 
   async ngOnInit() {
     this.demo_value = this.taxes[this.tax_type].demo_placeholder;
 
-    console.log(this.tax_type);
     await this.getTotal();
   }
 
