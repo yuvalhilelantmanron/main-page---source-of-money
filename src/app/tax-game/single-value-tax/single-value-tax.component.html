@@ -1,6 +1,23 @@
 <div>
-  <p>שיעור המס הנוכחי: {{taxes[getTax()].current_rate}} {{taxes[getTax()].text_to_show}}</p>
+  <p>שיעור המס הנוכחי: {{taxes[getTax()].current_rate}} {{taxes[getTax()].units}}</p>
   <input [(ngModel)]="new_rate" type="number"  placeholder="שיעור המס החדש" (ngModelChange)="getDiff()"/>
+
+  <div>
+    <div>
+      <br>
+        <p>{{taxes[getTax()].demo_text}} 
+        <input [(ngModel)]="demo_value" type="number" placeholder={{taxes[getTax()].demo_placeholder}}/>
+        {{ taxes[getTax()].demo_units }}</p>
+      </div>
+      <div  [hidden]="!getNewRate()">
+        <p>{{taxes[getTax()].demo_result_text}} 
+          {{ (getNewRate()>taxes[getTax()].current_rate) ? "יעלה ב" : "ירד ב"}}
+          {{abs(demo_value * (taxes[getTax()].current_rate-getNewRate())/taxes[getTax()].normalizer)}}
+          שקלים
+        </p>
+      </div>
+    
+  </div>
 </div>
 
 

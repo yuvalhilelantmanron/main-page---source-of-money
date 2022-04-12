@@ -10,6 +10,7 @@ export class SingleValueTaxComponent implements OnInit {
   @Output() onChange = new EventEmitter();
   new_rate: number;
   latest_year: number = 2020;
+  demo_value: number;
   taxes: any = {
     "delek": {
       get_current_value: async () => {
@@ -19,7 +20,12 @@ export class SingleValueTaxComponent implements OnInit {
         return data.rows[0].history[this.latest_year].net_executed;
       },
       current_rate: 3.13,
-      text_to_show: "שקלים לליטר"
+      units: "שקלים לליטר",
+      demo_text: " לדוגמה ניקח מיכל של",
+      demo_placeholder: "40",
+      demo_units: "ליטרים",
+      demo_result_text: "תשלום עבור מילוי של מיכל זה ",
+      normalizer: 1
     },
     "maam": {
       get_current_value: async () => {
@@ -29,7 +35,12 @@ export class SingleValueTaxComponent implements OnInit {
         return data.rows[0].history[this.latest_year].net_executed;
       },
       current_rate: 17,
-      text_to_show: "אחוזים"
+      units: "אחוזים",
+      demo_text: " לדוגמה ניקח מוצר שמחירו",
+      demo_placeholder: "3000",
+      demo_units: "שקלים",
+      demo_result_text: "תשלום עבור מוצר זה",
+      normalizer: 100
     },
     "tabak": {
       get_current_value: async () => {
@@ -39,17 +50,32 @@ export class SingleValueTaxComponent implements OnInit {
         return data.rows[0].net_executed
       },
       current_rate: 459,
-      text_to_show: 'ש"ח לק"ג'
+      units: 'ש"ח לק"ג',
+      demo_text: " לדוגמה טבק לגלגול במשקל",
+      demo_placeholder: "50",
+      demo_units: "גרם",
+      demo_result_text: "תשלום עבור הטבק",
+      normalizer: 1000
     }
   }
 
   constructor() { }
 
   async ngOnInit() {
+    this.demo_value = this.taxes[this.tax_type].demo_placeholder;
+    
   }
 
   getTax(){
     return this.tax_type;
+  }
+
+  getNewRate(){
+    return this.new_rate;
+  }
+
+  abs(number) {
+    return Math.abs(number);
   }
 
   async getDiff() {
