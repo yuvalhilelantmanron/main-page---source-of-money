@@ -1,15 +1,15 @@
 <div class="tax-selection">
   <button class="tax-btn active" (click)="changeTax($event, 1)">
     דלק <br />
-    <span id="tax1-cng" class="tax-cng">({{ formatNum(tax1Cng) }}₪)</span>
+    <span id="tax1-cng" class="tax-cng">({{ formatNum(tax1Diff) }}₪)</span>
   </button>
   <button class="tax-btn" (click)="changeTax($event, 2)">
     מע"מ <br />
-    <span id="tax2-cng" class="tax-cng">({{ formatNum(tax2Cng) }}%)</span>
+    <span id="tax2-cng" class="tax-cng">({{ formatNum(tax2Diff) }}₪)</span>
   </button>
   <button class="tax-btn" (click)="changeTax($event, 3)">
     טבק <br />
-    <span id="tax3-cng" class="tax-cng">({{ formatNum(tax3Cng) }}₪)</span>
+    <span id="tax3-cng" class="tax-cng">({{ formatNum(tax3Diff) }}₪)</span>
   </button>
 </div>
 <div class="tax-input">

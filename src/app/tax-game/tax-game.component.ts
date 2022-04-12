@@ -55,11 +55,22 @@ export class TaxGameComponent implements OnInit {
     evt.currentTarget.className += ' active';
   }
 
-  formatNum(value): string {
-    return this.utils.formatNumber(value, 2);
-  }
-
   totalDiff() {
     return this.tax1Diff + this.tax2Diff + this.tax3Diff;
+  }
+
+  formatNum(value): string {
+    return (
+      this.formatValue(value) +
+      (this.valueSuffix(value) ? ' ' + this.valueSuffix(value) + ' ' : '')
+    );
+  }
+
+  formatValue(value): string {
+    return this.utils.bareFormatValue(value, 2);
+  }
+
+  valueSuffix(value): string {
+    return this.utils.getValueSuffix(value);
   }
 }
