@@ -2,6 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { BudgetKeyCommonModule, THEME_ID_TOKEN, LANG_TOKEN, THEME_TOKEN } from 'budgetkey-ng2-components';
 import { BudgetkeyNg2AuthModule, getAuthServiceConfigProvider } from 'budgetkey-ng2-auth';
@@ -26,6 +29,9 @@ declare const BUDGETKEY_LANG: any;
 //deleteted - declate const bubbles: any
 
 export const LANG = typeof (BUDGETKEY_LANG) === 'undefined' ? 'he' : BUDGETKEY_LANG;
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 
 const providers: any[] = [
   { provide: THEME_ID_TOKEN, useValue: typeof (BUDGETKEY_THEME_ID) === 'undefined' ? null : BUDGETKEY_THEME_ID },
@@ -62,6 +68,14 @@ if (typeof (BUDGETKEY_NG2_COMPONENTS_THEME) !== 'undefined') {
     BudgetkeyNg2AuthModule,
     MushonkeyModule,
     FormsModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory, 
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: providers,
   bootstrap: [AppComponent]

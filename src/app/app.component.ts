@@ -1,6 +1,6 @@
 import { Component, Inject, OnInit, HostListener } from '@angular/core';
 import { BUBBLES } from './constants';
-
+import { TranslateService} from '@ngx-translate/core';
 
 const _TRANSLATIONS = window['TRANSLATIONS'] || {};
 
@@ -30,9 +30,13 @@ export class AppComponent implements OnInit {
 
   public data: any;
 
-  constructor(@Inject(BUBBLES) private bubbles: any) {
-    // this.getData(bubbles);
+  constructor(@Inject(BUBBLES) private bubbles: any, public translate: TranslateService) {
     this.newGetData();
+    this.getData(bubbles);
+    translate.addLangs(['he', 'ar']);
+    translate.setDefaultLang('he');
+    const browserLang = translate.getBrowserLang();
+    translate.use(browserLang.match(/he|ar/) ? browserLang : 'he');
   }
 
   async getData(bubbles) {
@@ -70,7 +74,7 @@ export class AppComponent implements OnInit {
 
     async newGetData() {
     //fetches data from url
-    var raw = await fetch('https://next.obudget.org/api/query?query=SELECT%20year,%20func_cls_title_2-%3E%3E0%20as%20func_title,%20title,%20sum(net_revised)%20AS%20revised,%20sum(net_allocated)%20AS%20allocated,%20sum(net_executed)%20AS%20executed%20FROM%20budget%20WHERE%20depth%20=%202%20and%20code%20like%20%270000%%%27%20group%20by%201,%202,%203%20order%20by%202,%201');
+    var raw = await fetch('https://next.obudget.org/api/query?query=SELECT%20year,%20func_cls_title_2-%3E%3E0%20as%20func_title,%20title,%20sum(net_revised)%20AS%20revised,%20sum(net_allocated)%20AS%20allocated,%20sum(net_executed)%20AS%20executed,%20code%20AS%20code%20FROM%20budget%20WHERE%20depth%20=%202%20and%20code%20like%20%270000%%%27%20group%20by%201,%202,%203,%207%20order%20by%202,%201');
     var data = await raw.json();
     data = data.rows;
     this.data = data;
@@ -92,7 +96,7 @@ export class AppComponent implements OnInit {
         minimizedData[item.func_title] = {name: item.func_title, scale: 1, amount: 0, values:{}};
       
       minimizedData[item.func_title].amount += item.allocated;
-      minimizedData[item.func_title].values[item.title] = {amount:item.allocated};
+      minimizedData[item.func_title].values[item.title] = {amount:item.allocated, href:`https://next.obudget.org/i/budget/${item.code}/${item.year}`};
       this.totalAmount += item.allocated;
     }
 
