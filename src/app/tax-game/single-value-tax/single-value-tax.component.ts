@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { UtilsService } from '../../utils.service';
 
 @Component({
   selector: 'app-single-value-tax',
@@ -25,12 +26,12 @@ export class SingleValueTaxComponent implements OnInit {
         return data.rows[0].history[this.latest_year].net_executed;
       },
       current_rate: 3.13,
-      units: "שקלים לליטר",
-      demo_text: " לדוגמה ניקח מיכל של",
-      demo_placeholder: "40",
-      demo_units: "ליטרים",
-      demo_result_text: "תשלום עבור מילוי של מיכל זה ",
-      normalizer: 1
+      units: 'שקלים לליטר',
+      demo_text: ' לדוגמה ניקח מיכל של',
+      demo_placeholder: '40',
+      demo_units: 'ליטרים',
+      demo_result_text: 'תשלום עבור מילוי של מיכל זה ',
+      normalizer: 1,
     },
     maam: {
       get_current_value: async () => {
@@ -44,12 +45,12 @@ export class SingleValueTaxComponent implements OnInit {
         return data.rows[0].history[this.latest_year].net_executed;
       },
       current_rate: 17,
-      units: "אחוזים",
-      demo_text: " לדוגמה ניקח מוצר שמחירו",
-      demo_placeholder: "3000",
-      demo_units: "שקלים",
-      demo_result_text: "תשלום עבור מוצר זה",
-      normalizer: 100
+      units: 'אחוזים',
+      demo_text: ' לדוגמה ניקח מוצר שמחירו',
+      demo_placeholder: '3000',
+      demo_units: 'שקלים',
+      demo_result_text: 'תשלום עבור מוצר זה',
+      normalizer: 100,
     },
     tabak: {
       get_current_value: async () => {
@@ -66,19 +67,19 @@ export class SingleValueTaxComponent implements OnInit {
       },
       current_rate: 459,
       units: 'ש"ח לק"ג',
-      demo_text: " לדוגמה טבק לגלגול במשקל",
-      demo_placeholder: "50",
-      demo_units: "גרם",
-      demo_result_text: "תשלום עבור הטבק",
-      normalizer: 1000
+      demo_text: ' לדוגמה טבק לגלגול במשקל',
+      demo_placeholder: '50',
+      demo_units: 'גרם',
+      demo_result_text: 'תשלום עבור הטבק',
+      normalizer: 1000,
     },
   };
 
-  constructor() {}
+  constructor(private utils: UtilsService) {}
 
   async ngOnInit() {
     this.demo_value = this.taxes[this.tax_type].demo_placeholder;
-    
+
     console.log(this.tax_type);
     await this.getTotal();
   }
@@ -87,12 +88,16 @@ export class SingleValueTaxComponent implements OnInit {
     return this.tax_type;
   }
 
-  getNewRate(){
+  getNewRate() {
     return this.new_rate;
   }
 
   abs(number) {
     return Math.abs(number);
+  }
+
+  formatNum(value): string {
+    return this.utils.formatNumberWithSuffix(value, 2);
   }
 
   async getDiff() {

@@ -18,31 +18,33 @@ const suffixes = _.chain(<any>VALUE_SCALE)
   .reverse()
   .value();
 
-
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class UtilsService {
-
-  constructor() { }
+  constructor() {}
 
   formatNumber(
-    value: number, fractionDigits: number,
-    trimTrailingZeros = true, locale: string | null = DEFAULT_LOCALE
+    value: number,
+    fractionDigits: number,
+    trimTrailingZeros = true,
+    locale: string | null = DEFAULT_LOCALE,
   ): string {
     let result = Number(value).toFixed(fractionDigits);
     if (locale) {
       result = Number(result).toLocaleString(locale);
     }
-    if (trimTrailingZeros && (result.indexOf('.') !== -1)) {
+    if (trimTrailingZeros && result.indexOf('.') !== -1) {
       result = result.replace(/0+$/, '').replace(/\.$/, '');
     }
     return result;
   }
 
   formatValue(
-    value: number, fractionDigits: number,
-    trimTrailingZeros = true, locale: string | null = DEFAULT_LOCALE
+    value: number,
+    fractionDigits: number,
+    trimTrailingZeros = true,
+    locale: string | null = DEFAULT_LOCALE,
   ): string {
     let suffix = '';
     for (let i = 0; i < suffixes.length; i++) {
@@ -53,13 +55,17 @@ export class UtilsService {
       }
     }
 
-    return this.formatNumber(value, fractionDigits, trimTrailingZeros, locale) +
-      (suffix !== '' ? ' ' + suffix : '');
+    return (
+      this.formatNumber(value, fractionDigits, trimTrailingZeros, locale) +
+      (suffix !== '' ? ' ' + suffix : '')
+    );
   }
 
   bareFormatValue(
-    value: number, fractionDigits: number,
-    trimTrailingZeros = true, locale: string | null = DEFAULT_LOCALE
+    value: number,
+    fractionDigits: number,
+    trimTrailingZeros = true,
+    locale: string | null = DEFAULT_LOCALE,
   ): string {
     for (let i = 0; i < suffixes.length; i++) {
       if (Math.abs(value) >= suffixes[i][0]) {
@@ -80,4 +86,10 @@ export class UtilsService {
     return null;
   }
 
+  formatNumberWithSuffix(value: number, fractionDigits: number): string {
+    return (
+      this.bareFormatValue(value, fractionDigits) +
+      (this.getValueSuffix(value) ? ' ' + this.getValueSuffix(value) + ' ' : '')
+    );
+  }
 }

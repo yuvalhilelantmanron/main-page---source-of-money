@@ -70,18 +70,7 @@ export class TaxGameComponent implements OnInit {
   }
 
   formatNum(value): string {
-    return (
-      this.formatValue(value) +
-      (this.valueSuffix(value) ? ' ' + this.valueSuffix(value) + ' ' : '')
-    );
-  }
-
-  formatValue(value): string {
-    return this.utils.bareFormatValue(value, 2);
-  }
-
-  valueSuffix(value): string {
-    return this.utils.getValueSuffix(value);
+    return this.utils.formatNumberWithSuffix(value, 2);
   }
 
   getStatus(number): string {
