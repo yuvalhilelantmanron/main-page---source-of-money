@@ -5,11 +5,11 @@
       <span class="tax-cng">({{ formatNum(taxes[1].diff) }}₪)</span>
     </button>
     <div>
-      <button class="status-btn" (click)="changeStatus($event, 1, 2)">
+      <button class="status-btn status-1" (click)="changeStatus($event, 1, 2)">
         ביטול המס <br />
         <span class="tax-cng">המס יוריד {{ formatNum(taxes[1].total) }}₪</span>
       </button>
-      <button class="status-btn" (click)="changeStatus($event, 1, 1)">
+      <button class="status-btn status-1" (click)="changeStatus($event, 1, 1)">
         התעלמות מהשינויים <br />
         <span class="tax-cng">המס יוסיף {{ formatNum(0) }}₪</span>
       </button>
@@ -22,11 +22,11 @@
       <span class="tax-cng">({{ formatNum(taxes[2].diff) }}₪)</span>
     </button>
     <div>
-      <button class="status-btn" (click)="changeStatus($event, 2, 2)">
+      <button class="status-btn status-2" (click)="changeStatus($event, 2, 2)">
         ביטול המס<br />
         <span class="tax-cng">המס יוריד {{ formatNum(taxes[2].total) }}₪</span>
       </button>
-      <button class="status-btn" (click)="changeStatus($event, 2, 1)">
+      <button class="status-btn status-2" (click)="changeStatus($event, 2, 1)">
         התעלמות מהשינויים <br />
         <span class="tax-cng">המס יוסיף {{ formatNum(0) }}₪</span>
       </button>
@@ -39,11 +39,11 @@
       <span class="tax-cng">({{ formatNum(taxes[3].diff) }}₪)</span>
     </button>
     <div>
-      <button class="status-btn" (click)="changeStatus($event, 3, 2)">
+      <button class="status-btn status-3" (click)="changeStatus($event, 3, 2)">
         ביטול המס<br />
         <span class="tax-cng">המס יוריד {{ formatNum(taxes[3].total) }}₪</span>
       </button>
-      <button class="status-btn" (click)="changeStatus($event, 3, 1)">
+      <button class="status-btn status-3" (click)="changeStatus($event, 3, 1)">
         התעלמות מהשינויים <br />
         <span class="tax-cng">המס יוסיף {{ formatNum(0) }}₪</span>
       </button>
