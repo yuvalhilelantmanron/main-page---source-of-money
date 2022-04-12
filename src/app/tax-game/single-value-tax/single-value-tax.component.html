@@ -16,7 +16,7 @@
       <div  [hidden]="!getNewRate()">
         <p>{{taxes[getTax()].demo_result_text}} 
           {{ (getNewRate()>taxes[getTax()].current_rate) ? "יעלה ב" : "ירד ב"}}
-          {{abs(demo_value * (taxes[getTax()].current_rate-getNewRate())/taxes[getTax()].neutralizer)}}
+          {{abs(demo_value * (taxes[getTax()].current_rate-getNewRate())/taxes[getTax()].normalizer)}}
           שקלים
         </p>
       </div>
