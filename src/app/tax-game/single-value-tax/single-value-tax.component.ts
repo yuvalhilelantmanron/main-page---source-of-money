@@ -19,7 +19,7 @@ export class SingleValueTaxComponent implements OnInit {
         var data = await raw.json();
         return data.rows[0].history[this.latest_year].net_executed;
       },
-      current_rate: 3.13,
+      current_rate: 3.05585,
       units: "שקלים לליטר",
       demo_text: " לדוגמה ניקח מיכל של",
       demo_placeholder: "40",
@@ -55,7 +55,7 @@ export class SingleValueTaxComponent implements OnInit {
         var data = await raw.json();
         return data.rows[0].net_executed
       },
-      current_rate: 459,
+      current_rate: 1097.24,
       units: 'ש"ח לק"ג',
       demo_text: " לדוגמה טבק לגלגול במשקל",
       demo_placeholder: "50",
