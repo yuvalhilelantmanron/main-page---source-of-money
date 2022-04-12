@@ -140,12 +140,17 @@ export class CategoryVisualizationComponent implements OnInit, AfterViewInit {
         }
         containerForLabel.text(null); // clear container
 
-        _.each(fragments, (text: string, index: number) => {
-          containerForLabel.append('text')
-            .attr('x', 0)
-            .attr('y', (index + 1) * 1.1 + 'em')
-            .text(text);
-        });
+        containerForLabel.append('text')
+          .attr('x', 0)
+          .attr('y', 0)
+          .text((<any>datum.data).name);
+
+        // _.each(fragments, (text: string, index: number) => {
+        //   containerForLabel.append('text')
+        //     .attr('x', 0)
+        //     .attr('y', (index + 1) * 1.1 + 'em')
+        //     .text(text);
+        // });
       });
     }
 
@@ -213,7 +218,7 @@ export class CategoryVisualizationComponent implements OnInit, AfterViewInit {
   ngOnInit() {
     this.theme = CATEGORIES_THEMES[this.category.name] || '';
     this.theme += ' vis-kind-' + this.kind;
-    this.scale = this.category.scale || 1;
+    this.scale = 1;
 
   }
 
@@ -222,7 +227,7 @@ export class CategoryVisualizationComponent implements OnInit, AfterViewInit {
     const diameter_w = +svg.attr('width');
     const diameter_h = +svg.attr('height');
     const margin = 150;
-    const padding = 10;
+    const padding = 15;
 
     const { root, nodes } = this.prepareNodes(
       this.category.name, this.category.values,
@@ -245,13 +250,15 @@ export class CategoryVisualizationComponent implements OnInit, AfterViewInit {
         const selfBounds = this.getBoundingClientRect();
         const parentBounds = that.rootElement.nativeElement.getBoundingClientRect();
 
-        let explanation = 'אין מידע';
+        // let explanation = 'אין מידע';
+        let explanation = '';
         if ((<any>datum.data).explanation) {
           explanation = (<any>datum.data).explanation +
             '<br/><small>מקור:' +
             ((<any>datum.data).explanation_source) +
             '</small>';
         }
+
         that.currentBubble = {
           name: (<any>datum.data).name,
           explanation: explanation,

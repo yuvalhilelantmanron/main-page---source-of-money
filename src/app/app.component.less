@@ -16,6 +16,7 @@
   transition-delay: 0s;
   transition-duration: 1s;
   z-index: 100;
+
   span {
     font-size: 16px;
     color: white;
@@ -65,6 +66,7 @@
     justify-items: center;
     width: 60%;
     grid-template-columns: 1fr 1fr;
+
     @media screen and (max-width: 600px) {
       grid-template-columns: 1fr;
       width: 100%;
@@ -127,16 +129,14 @@
   left: 30vw;
   color: #ff6666;
 }
+
 .para {
   width: 60vw;
   font-size: 2rem;
   position: relative;
   text-align: right;
-  @media screen and (max-width: 600px) {
-    width:85vw;
-  }
-}
 
-.page-cover {
-  scroll-snap-type: mandatory;
+  @media screen and (max-width: 600px) {
+    width: 85vw;
+  }
 }
