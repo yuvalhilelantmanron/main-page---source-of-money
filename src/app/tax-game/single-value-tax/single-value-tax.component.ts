@@ -88,7 +88,6 @@ export class SingleValueTaxComponent implements OnInit {
 
   async ngOnInit() {
     this.demo_value = this.taxes[this.tax_type].demo_placeholder;
-
     await this.getTotal();
   }
 
