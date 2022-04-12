@@ -5,7 +5,7 @@ interface Tax {
   name: string;
   diff: string;
   cng: string;
-  status: string;
+  status: any;
 }
 
 @Component({
@@ -17,16 +17,28 @@ export class TaxGameComponent implements OnInit {
   public totalIncome: number = 0;
   public year: number = 2020;
 
-  taxStatus: any = {
-    0: 'רגיל',
-    1: 'איפוס',
-    2: 'התעלמות',
-  };
-
   taxes: any = {
-    1: { name: 'delek', diff: 0, total: 0, cng: 0, status: 0 },
-    2: { name: 'maam', diff: 0, total: 0, cng: 0, status: 0 },
-    3: { name: 'tabak', diff: 0, total: 0, cng: 0, status: 0 },
+    1: {
+      name: 'delek',
+      diff: 0,
+      total: 0,
+      cng: 0,
+      status: { cancel: false, ignore: false },
+    },
+    2: {
+      name: 'maam',
+      diff: 0,
+      total: 0,
+      cng: 0,
+      status: { cancel: false, ignore: false },
+    },
+    3: {
+      name: 'tabak',
+      diff: 0,
+      total: 0,
+      cng: 0,
+      status: { cancel: false, ignore: false },
+    },
   };
   currTax: string = this.taxes[1].name;
 
@@ -63,8 +75,9 @@ export class TaxGameComponent implements OnInit {
   totalDiff() {
     let total = 0;
     for (let i = 1; i <= 3; i++) {
-      if (this.taxes[i].status == 0) total += this.taxes[i].diff;
-      if (this.taxes[i].status == 1) total -= this.taxes[i].total;
+      if (this.taxes[i].status.ignore) continue;
+      if (this.taxes[i].status.cancel) total -= this.taxes[i].total;
+      else total += this.taxes[i].diff;
     }
     return total;
   }
@@ -84,11 +97,17 @@ export class TaxGameComponent implements OnInit {
     return this.utils.getValueSuffix(value);
   }
 
-  getStatus(number): string {
-    return this.taxStatus[this.taxes[number].status];
-  }
+  changeStatus(evt, number, status) {
+    if (status == 2)
+      this.taxes[number].status.cancel = !this.taxes[number].status.cancel;
+    else if (status == 1)
+      this.taxes[number].status.ignore = !this.taxes[number].status.ignore;
 
-  changeStatus(number) {
-    this.taxes[number].status = (this.taxes[number].status + 1) % 3;
+    if (evt.currentTarget.className.search(' active') != -1)
+      evt.currentTarget.className = evt.currentTarget.className.replace(
+        ' active',
+        '',
+      );
+    else evt.currentTarget.className += ' active';
   }
 }

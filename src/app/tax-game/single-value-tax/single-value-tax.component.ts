@@ -61,7 +61,6 @@ export class SingleValueTaxComponent implements OnInit {
   constructor() {}
 
   async ngOnInit() {
-    console.log(this.tax_type);
     await this.getTotal();
   }
 
