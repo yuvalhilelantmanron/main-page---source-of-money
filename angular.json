@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "budgetkey-app-main-page": {
+    "source-of-money-app-main-page": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/budgetkey-app-main-page",
+            "outputPath": "dist/source-of-money-app-main-page",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -65,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "budgetkey-app-main-page:build"
+            "browserTarget": "source-of-money-app-main-page:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "budgetkey-app-main-page:build:production"
+              "browserTarget": "source-of-money-app-main-page:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "budgetkey-app-main-page:build"
+            "browserTarget": "source-of-money-app-main-page:build"
           }
         },
         "test": {
@@ -112,7 +112,7 @@
         }
       }
     },
-    "budgetkey-app-main-page-e2e": {
+    "source-of-money-app-main-page-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -121,11 +121,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "budgetkey-app-main-page:serve"
+            "devServerTarget": "source-of-money-app-main-page:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "budgetkey-app-main-page:serve:production"
+              "devServerTarget": "source-of-money-app-main-page:serve:production"
             }
           }
         },
@@ -141,5 +141,5 @@
       }
     }
   },
-  "defaultProject": "budgetkey-app-main-page"
+  "defaultProject": "source-of-money-app-main-page"
 }
