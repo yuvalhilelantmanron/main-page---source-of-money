@@ -31,7 +31,7 @@ export class SingleValueTaxComponent implements OnInit {
       demo_placeholder: "40",
       demo_units: "ליטרים",
       demo_result_text: "תשלום עבור מילוי של מיכל זה ",
-      neutralizer: 1,
+      normalizer: 1,
       description: "הוא מס בסכום קבוע עבור כל ליטר ומטרתו לצמצם את צריכת הדלק בישראל.",
       url: "https://next.obudget.org/i/budget/0000180101/2019?li=0&theme=budgetkey",
       title: "מס דלק"
@@ -53,7 +53,7 @@ export class SingleValueTaxComponent implements OnInit {
       demo_placeholder: "3000",
       demo_units: "שקלים",
       demo_result_text: "תשלום עבור מוצר זה",
-      neutralizer: 100,
+      normalizer: 100,
       description: '(מס ערך מוסף) הוא מס המוטל על כל קניה. סכום המע"מ מחושב בשיעור קבוע ממחיר הרכישה.',
       url: "https://next.obudget.org/i/budget/0000140201/2019?li=0&theme=budgetkey",
       title: 'מע"מ'
@@ -77,7 +77,7 @@ export class SingleValueTaxComponent implements OnInit {
       demo_placeholder: "50",
       demo_units: "גרם",
       demo_result_text: "תשלום עבור הטבק",
-      neutralizer: 1000,
+      normalizer: 1000,
       description: "מוטל על מוצרי טבק בסכום קבוע לקילוגרם ומטרתו לצמצם צריכה של מוצרים כמו סיגריות.",
       url: "https://next.obudget.org/i/budget/00001501/2016?li=1&theme=budgetkey",
       title: "מס טבק"
