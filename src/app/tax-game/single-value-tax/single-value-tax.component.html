@@ -1,6 +1,13 @@
 <div>
-  <p>שיעור המס הנוכחי: {{taxes[getTax()].current_rate}} {{taxes[getTax()].text_to_show}}</p>
-  <input [(ngModel)]="new_rate" type="number"  placeholder="שיעור המס החדש" (ngModelChange)="getDiff()"/>
+  <p>
+    שיעור המס הנוכחי: {{ taxes[getTax()].current_rate }}
+    {{ taxes[getTax()].text_to_show }}
+  </p>
+  <input
+    [(ngModel)]="new_rate"
+    type="number"
+    placeholder="שיעור המס החדש"
+    (ngModelChange)="getDiff()"
+    onload="alert('ads')"
+  />
 </div>
-
-

@@ -17,10 +17,16 @@ export class TaxGameComponent implements OnInit {
   public totalIncome: number = 0;
   public year: number = 2020;
 
+  taxStatus: any = {
+    0: 'רגיל',
+    1: 'איפוס',
+    2: 'התעלמות',
+  };
+
   taxes: any = {
-    1: { name: 'delek', diff: 0, cng: 0, status: 'active' },
-    2: { name: 'maam', diff: 0, cng: 0, status: 'active' },
-    3: { name: 'tabak', diff: 0, cng: 0, status: 'active' },
+    1: { name: 'delek', diff: 0, total: 0, cng: 0, status: 0 },
+    2: { name: 'maam', diff: 0, total: 0, cng: 0, status: 0 },
+    3: { name: 'tabak', diff: 0, total: 0, cng: 0, status: 0 },
   };
   currTax: string = this.taxes[1].name;
 
@@ -55,7 +61,12 @@ export class TaxGameComponent implements OnInit {
   }
 
   totalDiff() {
-    return this.taxes[1].diff + this.taxes[2].diff + this.taxes[3].diff;
+    let total = 0;
+    for (let i = 1; i <= 3; i++) {
+      if (this.taxes[i].status == 0) total += this.taxes[i].diff;
+      if (this.taxes[i].status == 1) total -= this.taxes[i].total;
+    }
+    return total;
   }
 
   formatNum(value): string {
@@ -71,5 +82,13 @@ export class TaxGameComponent implements OnInit {
 
   valueSuffix(value): string {
     return this.utils.getValueSuffix(value);
+  }
+
+  getStatus(number): string {
+    return this.taxStatus[this.taxes[number].status];
+  }
+
+  changeStatus(number) {
+    this.taxes[number].status = (this.taxes[number].status + 1) % 3;
   }
 }
