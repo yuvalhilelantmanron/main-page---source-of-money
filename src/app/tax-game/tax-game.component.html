@@ -15,6 +15,7 @@
       </button>
     </div>
   </div>
+
   <div class="tax-btns">
     <button class="tax-btn" (click)="changeTax($event, 2)">
       מע"מ <br />
@@ -31,6 +32,7 @@
       </button>
     </div>
   </div>
+
   <div class="tax-btns">
     <button class="tax-btn" (click)="changeTax($event, 3)">
       טבק <br />
@@ -46,6 +48,13 @@
         <span class="tax-cng">המס יוסיף {{ formatNum(0) }}₪</span>
       </button>
     </div>
+  </div>
+
+  <div class="tax-btns other">
+    <button class="tax-btn" (click)="changeTax($event, 4)">
+      שונות <br />
+      <span class="tax-cng">({{ formatNum(taxes[4].diff) }})₪</span>
+    </button>
   </div>
 </div>
 
@@ -78,6 +87,10 @@
         tax_type="tabak"
       ></app-single-value-tax>
     </p>
+  </div>
+
+  <div [hidden]="!(currTax == 'other')">
+    <p>Other taxes here</p>
   </div>
 </div>
 <div class="tax-result">

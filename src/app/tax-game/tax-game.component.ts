@@ -39,6 +39,13 @@ export class TaxGameComponent implements OnInit {
       cng: 0,
       status: { cancel: false, ignore: false },
     },
+    4: {
+      name: 'other',
+      diff: 0,
+      total: 0,
+      cng: 0,
+      status: { cancel: false, ignore: false },
+    },
   };
   currTax: string = this.taxes[1].name;
 
