@@ -1,2783 +1,2360 @@
 {
   "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2022-04-12T06:39:39Z",
   "features": [
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/29090735",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1381350,
-            "reltags": {
-              "admin_level": "8",
-              "alt_name:ur": "بیت المقدس",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "ele": "715",
-              "fixme": "cannot edit, this should have place=city",
-              "int_name": "Jerusalem",
-              "name": "ירושלים",
-              "name:ar": "القدس",
-              "name:ckb": "قودس",
-              "name:cs": "Jeruzalém",
-              "name:de": "Jerusalem",
-              "name:el": "Ιερουσαλήμ",
-              "name:en": "Jerusalem",
-              "name:fi": "Jerusalem",
-              "name:fr": "Jérusalem",
-              "name:fy": "Jeruzalim",
-              "name:he": "ירושלים",
-              "name:hu": "Jeruzsálem",
-              "name:it": "Gerusalemme",
-              "name:ko": "예루살렘",
-              "name:mi": "Hiruhārama",
-              "name:nl": "Jeruzalem",
-              "name:ro": "Ierusalim",
-              "name:ru": "Иерусалим",
-              "name:szl": "Jeruzalym",
-              "name:tzl": "Ierusalem",
-              "name:ur": "یروشلم",
-              "note": "edited tags to match naming conventions in node 29090735 (Jerusalem)",
-              "official_name": "القدس",
-              "population": "882652",
-              "short_name:ur": "القدس",
-              "type": "boundary",
-              "website": "https://www.jerusalem.muni.il/",
-              "wikidata": "Q1218"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.2257626,
-          31.7788242
-        ]
-      },
-      "id": "node/29090735"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/196303399",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1380013,
-            "reltags": {
-              "admin_level": "8",
-              "alt_name:ar": "أشدود",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "ele": "23",
-              "name": "אשדוד",
-              "name:ar": "أشدود",
-              "name:el": "Ασντόντ",
-              "name:en": "Ashdod",
-              "name:fi": "Ashdod",
-              "name:fr": "Ashdod",
-              "name:he": "אשדוד",
-              "name:pl": "Aszdod",
-              "name:ru": "Ашдод",
-              "name:ur": "اشدود",
-              "place": "city",
-              "population": "251837",
-              "type": "boundary",
-              "wikidata": "Q171639",
-              "wikipedia": "he:אשדוד"
-            }
-          },
-          {
-            "role": "label",
-            "rel": 1380013,
-            "reltags": {
-              "admin_level": "8",
-              "alt_name:ar": "أشدود",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "ele": "23",
-              "name": "אשדוד",
-              "name:ar": "أشدود",
-              "name:el": "Ασντόντ",
-              "name:en": "Ashdod",
-              "name:fi": "Ashdod",
-              "name:fr": "Ashdod",
-              "name:he": "אשדוד",
-              "name:pl": "Aszdod",
-              "name:ru": "Ашдод",
-              "name:ur": "اشدود",
-              "place": "city",
-              "population": "251837",
-              "type": "boundary",
-              "wikidata": "Q171639",
-              "wikipedia": "he:אשדוד"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.6529922,
-          31.7977314
-        ]
-      },
-      "id": "node/196303399"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/196307269",
-        "@relations": [
-          {
-            "role": "label",
-            "rel": 1382460,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "ele": "34",
-              "name": "חולון",
-              "name:en": "Holon",
-              "name:fr": "Holon",
-              "name:he": "חולון",
-              "place": "city",
-              "population": "211032",
-              "type": "boundary",
-              "website": "https://www.holon.muni.il/",
-              "wikidata": "Q192213",
-              "wikipedia": "en:Holon"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.7804076,
-          32.0193121
-        ]
-      },
-      "id": "node/196307269"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/202433223",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1246731,
-            "reltags": {
-              "admin_level": "8",
-              "alt_name:ar": "نيس زيونا;نس تسيونا",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "ele": "39",
-              "land_area": "administrative",
-              "name": "נס ציונה",
-              "name:ar": "نس تصيونا",
-              "name:cs": "Nes Cijona",
-              "name:en": "Nes Ziona",
-              "name:fr": "Ness Ziona",
-              "name:he": "נס ציונה",
-              "name:ru": "Нес-Циона",
-              "population": "48723",
-              "type": "boundary",
-              "website": "http://www.nzc.org.il/",
-              "wikidata": "Q168162",
-              "wikipedia": "he:נס ציונה"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.7990609,
-          31.9295577
-        ]
-      },
-      "id": "node/202433223"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/214022033",
-        "@relations": [
-          {
-            "role": "label",
-            "rel": 1383760,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "ele": "327",
-              "name": "נוף הגליל",
-              "name:ar": "نوف هجليل",
-              "name:en": "Nof HaGalil",
-              "name:fr": "Nof HaGalil",
-              "name:he": "נוף הגליל",
-              "old_name": "נצרת עילית",
-              "old_name:ar": "ناصيرات عيليت",
-              "old_name:ar1": "الناصرة العليا",
-              "old_name:en": "Nazareth Ilit",
-              "old_name:fr": "Nazareth Ilit",
-              "old_name:he": "נצרת עילית",
-              "population": "50268",
-              "type": "boundary",
-              "website": "https://www.nof-hagalil.muni.il/",
-              "wikidata": "Q167659",
-              "wikipedia": "he:נוף הגליל"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.3183216,
-          32.7023065
-        ]
-      },
-      "id": "node/214022033"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/245976052",
-        "@relations": [
-          {
-            "role": "label",
-            "rel": 1381478,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "באר יעקב",
-              "name:en": "Beer Yaakov",
-              "name:fr": "Be'er Ya'akov",
-              "name:he": "באר יעקב",
-              "name:ru": "Беэр-Яаков",
-              "type": "boundary",
-              "wikidata": "Q2640170",
-              "wikipedia": "he:באר יעקב"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.8398648,
-          31.9443532
-        ]
-      },
-      "id": "node/245976052"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/275283306",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1376826,
-            "reltags": {
-              "admin_level": "8",
-              "alt_name:ar": "ديمونا",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "ele": "463",
-              "name": "דימונה",
-              "name:ar": "ديمونة",
-              "name:de": "Dimona",
-              "name:en": "Dimona",
-              "name:fr": "Dimona",
-              "name:he": "דימונה",
-              "name:ks": "دیمونا",
-              "name:ur": "دیمونا",
-              "population": "33666",
-              "start_date": "1955",
-              "type": "boundary",
-              "website": "http://www.dimona.muni.il",
-              "wikidata": "Q152396",
-              "wikipedia": "en:Dimona"
-            }
-          },
-          {
-            "role": "label",
-            "rel": 1376826,
-            "reltags": {
-              "admin_level": "8",
-              "alt_name:ar": "ديمونا",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "ele": "463",
-              "name": "דימונה",
-              "name:ar": "ديمونة",
-              "name:de": "Dimona",
-              "name:en": "Dimona",
-              "name:fr": "Dimona",
-              "name:he": "דימונה",
-              "name:ks": "دیمونا",
-              "name:ur": "دیمونا",
-              "population": "33666",
-              "start_date": "1955",
-              "type": "boundary",
-              "website": "http://www.dimona.muni.il",
-              "wikidata": "Q152396",
-              "wikipedia": "en:Dimona"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.0366482,
-          31.0686612
-        ]
-      },
-      "id": "node/275283306"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/275283315",
-        "@relations": [
-          {
-            "role": "label",
-            "rel": 1381394,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "קרית עקרון",
-              "name:en": "Kiryat Ekron",
-              "name:fr": "Kiryat Ekron",
-              "name:he": "קרית עקרון",
-              "type": "boundary",
-              "wikidata": "Q2640159",
-              "wikipedia": "he:קריית עקרון"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.823337,
-          31.8607858
-        ]
-      },
-      "id": "node/275283315"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/275547478",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1380385,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "קרית מלאכי",
-              "name:ar": "كريات ملاخي",
-              "name:en": "Kiryat Malachi",
-              "name:fr": "Kiryat-Malakhi",
-              "name:he": "קרית מלאכי",
-              "type": "boundary",
-              "wikidata": "Q501543",
-              "wikipedia": "he:קריית מלאכי"
-            }
-          },
-          {
-            "role": "label",
-            "rel": 1380385,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "קרית מלאכי",
-              "name:ar": "كريات ملاخي",
-              "name:en": "Kiryat Malachi",
-              "name:fr": "Kiryat-Malakhi",
-              "name:he": "קרית מלאכי",
-              "type": "boundary",
-              "wikidata": "Q501543",
-              "wikipedia": "he:קריית מלאכי"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.7449477,
-          31.7297152
-        ]
-      },
-      "id": "node/275547478"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/275547482",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1379485,
-            "reltags": {
-              "admin_level": "8",
-              "alt_name:ar": "كريات غات",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "ele": "128",
-              "name": "קרית גת",
-              "name:af": "Kirjat Gat",
-              "name:ar": "كريات جات",
-              "name:az-Arab": "کریات گات",
-              "name:azb": "کریات گات",
-              "name:de": "Kirjat Gat",
-              "name:en": "Kiryat Gat",
-              "name:es": "Kiryat Gat",
-              "name:fa": "کریات گت",
-              "name:fr": "Kiryat Gat",
-              "name:he": "קרית גת",
-              "name:hy": "Կիրյաթ Գաթ",
-              "name:ks": "کریات جات",
-              "name:nl": "Kirjat Gat",
-              "name:pt": "Qiryat Gat",
-              "name:sv": "Qiryat Gat",
-              "name:ur": "کریات جات",
-              "population": "59408",
-              "type": "boundary",
-              "website": "https://www.qiryat-gat.muni.il/",
-              "wikidata": "Q152406",
-              "wikipedia": "he:קריית גת",
-              "wikipedia:ar": "كريات جات"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.7711983,
-          31.6093998
-        ]
-      },
-      "id": "node/275547482"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/275585094",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1376910,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "ערד",
-              "name:en": "Arad",
-              "name:fr": "Arad",
-              "name:he": "ערד",
-              "name:ur": "عراد",
-              "population": "25530",
-              "type": "boundary",
-              "wikidata": "Q152473",
-              "wikipedia": "he:ערד"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.214581,
-          31.2612199
-        ]
-      },
-      "id": "node/275585094"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/275957491",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1379241,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "ele": "308",
-              "name": "ראש פינה",
-              "name:en": "Rosh Pina",
-              "name:fr": "Rosh Pina",
-              "name:he": "ראש פינה",
-              "population": "3304",
-              "type": "boundary",
-              "website": "http://www.rosh-pinna.muni.il",
-              "wikidata": "Q525649",
-              "wikipedia": "en:Rosh Pinna"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.5438245,
-          32.968215
-        ]
-      },
-      "id": "node/275957491"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/277528108",
-        "@relations": [
-          {
-            "role": "label",
-            "rel": 1382817,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "contact:website": "http://www.bnei-brak.muni.il",
-              "ele": "26",
-              "landuse": "residential",
-              "name": "בני ברק",
-              "name:ar": "بني براك",
-              "name:cs": "Bnej Brak",
-              "name:en": "Bnei Brak",
-              "name:fr": "Bnei Brak",
-              "name:he": "בני ברק",
-              "name:pl": "Bene Berak",
-              "name:ru": "Бней-Брак",
-              "place": "town",
-              "population": "203573",
-              "type": "boundary",
-              "website": "http://www.bnei-brak.muni.il",
-              "wikidata": "Q152467",
-              "wikipedia": "he:בני ברק"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.8324376,
-          32.0873899
-        ]
-      },
-      "id": "node/277528108"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/277528109",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1382923,
-            "reltags": {
-              "admin_level": "8",
-              "alt_name:ar": "غفعتاييم;جفعاتايم;جيفعتايم",
-              "area": "yes",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "contact:website": "http://www.givatayim.muni.il",
-              "ele": "42",
-              "landuse": "residential",
-              "name": "גבעתיים",
-              "name:ar": "غفعتايم",
-              "name:cs": "Giv'atajim",
-              "name:en": "Givatayim",
-              "name:fa": "گیواتائیم",
-              "name:fr": "Givatayim",
-              "name:he": "גבעתיים",
-              "name:ru": "Гиватаим",
-              "name:ur": "جفعاتایم",
-              "place": "town",
-              "population": "62546",
-              "type": "boundary",
-              "website": "http://www.givatayim.muni.il",
-              "wikidata": "Q152413",
-              "wikipedia": "he:גבעתיים"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.8113279,
-          32.0729606
-        ]
-      },
-      "id": "node/277528109"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/278470076",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1399119,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "أبو سنان",
-              "name:ar": "أبو سنان",
-              "name:en": "Abu Snan",
-              "name:fr": "Abu Snan",
-              "name:he": "אבו סנאן",
-              "type": "boundary",
-              "wikidata": "Q2572624",
-              "wikipedia": "en:Abu Snan"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.1716603,
-          32.958648
-        ]
-      },
-      "id": "node/278470076"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/278470479",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1391709,
-            "reltags": {
-              "admin_level": "8",
-              "alt_name:ar": "فريديس;فـُرَيـْدِيس",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "الفريديس",
-              "name:ar": "الفريديس",
-              "name:en": "Fureidis",
-              "name:fr": "Fureidis",
-              "name:he": "פוריידיס",
-              "type": "boundary",
-              "wikidata": "Q1011538",
-              "wikipedia": "ar:الفريديس"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.9542319,
-          32.5988242
-        ]
-      },
-      "id": "node/278470479"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/278472603",
-        "@relations": [
-          {
-            "role": "label",
-            "rel": 1382494,
-            "reltags": {
-              "admin_level": "8",
-              "alt_name": "Tellu",
-              "alt_name:ar": "تل أبيب;يافا",
-              "alt_name:de": "Tel Aviv",
-              "alt_name:el": "Τελ Αβίβ-Γιάφα",
-              "alt_name:en": "Tel Aviv",
-              "alt_name:ro": "Tel Aviv",
-              "alt_name:ru": "Тель-Авив-Яффа",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "contact:website": "http://www.tel-aviv.gov.il",
-              "ele": "17",
-              "name": "תל אביב-יפו",
-              "name:am": "ቴል አቪቭ-ያፎ",
-              "name:ar": "تل أبيب-يافا",
-              "name:arc": "ܬܠ ܐܒܝܒ",
-              "name:de": "Tel Aviv-Yafo",
-              "name:el": "Τελ Αβίβ",
-              "name:en": "Tel Aviv-Yafo",
-              "name:es": "Tel Aviv-Yafo",
-              "name:et": "Tel Aviv-Yafo",
-              "name:fa": "تل آویو-یافا",
-              "name:fi": "Tel Aviv-Yafo",
-              "name:fr": "Tel Aviv-Yafo",
-              "name:he": "תל אביב-יפו",
-              "name:he2": "תל אביב",
-              "name:hi": "तेल अविव",
-              "name:ko": "텔아비브",
-              "name:lb": "Tel Aviv-Yafo",
-              "name:pl": "Tel Awiw",
-              "name:ro": "Tel Aviv",
-              "name:ru": "Тель-Авив",
-              "name:ur": "تل ابیب",
-              "name:zh": "特拉維夫-雅法",
-              "name:zh-Hans": "特拉维夫-雅法",
-              "name:zh-Hant": "特拉維夫-雅法",
-              "place": "city",
-              "population": "438818",
-              "start_date": "1909",
-              "type": "boundary",
-              "website": "http://www.tel-aviv.gov.il",
-              "wikidata": "Q33935",
-              "wikipedia": "en:Tel Aviv"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.7818064,
-          32.0852997
-        ]
-      },
-      "id": "node/278472603"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/278472981",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1380017,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "בני עי\"ש",
-              "name:en": "Bnei Ayish",
-              "name:fr": "Bnei Ayish",
-              "name:he": "בני עי\"ש",
-              "type": "boundary",
-              "wikidata": "Q2915758",
-              "wikipedia": "he:בני עי\"ש"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.7605995,
-          31.7891954
-        ]
-      },
-      "id": "node/278472981"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/278473497",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1392894,
-            "reltags": {
-              "admin_level": "8",
-              "alt_name:he": "ג'יסר א-זרקא",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "جسر الزرقاء",
-              "name:ar": "جسر الزرقاء",
-              "name:en": "Jisr az-Zarqa",
-              "name:fr": "Jisr az-Zarqa",
-              "name:he": "ג׳סר א-זרקא",
-              "type": "boundary",
-              "wikidata": "Q764601",
-              "wikipedia": "ar:جسر الزرقاء"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.9132199,
-          32.5375618
-        ]
-      },
-      "id": "node/278473497"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/278473683",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1379484,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "מועצה אזורית שפיר",
-              "name:ar": "مجلس إقليمي شفير",
-              "name:en": "Shafir Regional Council",
-              "name:es": "Concejo Regional Shafir",
-              "name:fr": "Conseil régional de Shafir",
-              "name:he": "מועצה אזורית שפיר",
-              "name:nl": "Regionale Raad van Shafir",
-              "type": "boundary",
-              "wikidata": "Q2222059",
-              "wikipedia": "he:מועצה אזורית שפיר"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.7071255,
-          31.6951844
-        ]
-      },
-      "id": "node/278473683"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/278473689",
-        "@relations": [
-          {
-            "role": "label",
-            "rel": 1381532,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "ele": "57",
-              "name": "לוד",
-              "name:ar": "اللد",
-              "name:en": "Lod",
-              "name:fr": "Lod",
-              "name:he": "לוד",
-              "name:it": "Lidda",
-              "name:ro": "Lida",
-              "name:ro_1": "Lod",
-              "name:ro_2": "Lydda",
-              "name:ro_3": "Lodd",
-              "name:ru": "Лод",
-              "population": "81202",
-              "type": "boundary",
-              "website": "http://www.lod.muni.il/",
-              "wikidata": "Q207540",
-              "wikipedia": "he:לוד"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.8884857,
-          31.9489012
-        ]
-      },
-      "id": "node/278473689"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/278473727",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1379262,
-            "reltags": {
-              "admin_level": "8",
-              "alt_name:ar": "طوبا زنغرية;طوبه زنغرية‎;طوبا زنجرية",
-              "alt_name:he": "טובא זנגרייה",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "ele": "294",
-              "name": "طوبا الزنغرية",
-              "name:ar": "طوبا الزنغرية",
-              "name:en": "Tuba Zangariya",
-              "name:fr": "Tuba-Zangariyye",
-              "name:he": "טובא זנגריה",
-              "population": "6530",
-              "start_date": "1908",
-              "type": "boundary",
-              "website": "http://www.tuba-zangariyye.muni.il",
-              "wikidata": "Q1028203",
-              "wikipedia": "ar:طوبا الزنغرية"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.5944243,
-          32.9663198
-        ]
-      },
-      "id": "node/278473727"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/278474273",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1379342,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "ele": "438",
-              "name": "חצור הגלילית",
-              "name:cs": "Chacor ha-Glilit",
-              "name:en": "Hatzor HaGlilit",
-              "name:fr": "Hatzor-Haglilit",
-              "name:he": "חצור הגלילית",
-              "population": "8834",
-              "type": "boundary",
-              "website": "http://www.hatzorg.co.il",
-              "wikidata": "Q2588837",
-              "wikipedia": "en:Hatzor HaGlilit"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.543327,
-          32.9791697
-        ]
-      },
-      "id": "node/278474273"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/278474577",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1380001,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "ele": "89",
-              "name": "שדרות",
-              "name:en": "Sderot",
-              "name:fr": "Sdérot",
-              "name:he": "שדרות",
-              "population": "27512",
-              "start_date": "1951",
-              "type": "boundary",
-              "wikidata": "Q123196",
-              "wikipedia": "he:שדרות"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.5969696,
-          31.526474
-        ]
-      },
-      "id": "node/278474577"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/278474639",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1379102,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "אופקים",
-              "name:": "اوفاقیم",
-              "name:ar": "أوفاكيم",
-              "name:en": "Ofakim",
-              "name:fr": "Ofaqim",
-              "name:he": "אופקים",
-              "population": "31178",
-              "type": "boundary",
-              "website": "http://www.ofaqim.muni.il/",
-              "wikidata": "Q167632",
-              "wikipedia": "he:אופקים"
-            }
-          },
-          {
-            "role": "label",
-            "rel": 1379102,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "אופקים",
-              "name:": "اوفاقیم",
-              "name:ar": "أوفاكيم",
-              "name:en": "Ofakim",
-              "name:fr": "Ofaqim",
-              "name:he": "אופקים",
-              "population": "31178",
-              "type": "boundary",
-              "website": "http://www.ofaqim.muni.il/",
-              "wikidata": "Q167632",
-              "wikipedia": "he:אופקים"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.6208537,
-          31.3125831
-        ]
-      },
-      "id": "node/278474639"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/278475752",
-        "@relations": [
-          {
-            "role": "label",
-            "rel": 1392988,
-            "reltags": {
-              "admin_level": "8",
-              "alt_name:he": "סח'נין",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "ele": "223",
-              "name": "سخنين",
-              "name:ar": "سخنين",
-              "name:cs": "Sachnín",
-              "name:en": "Sakhnin",
-              "name:fa": "سخنین",
-              "name:fr": "Sakhnin",
-              "name:he": "סכנין",
-              "name:ru": "Сахнин",
-              "name:ur": "سخنین",
-              "population": "29856",
-              "type": "boundary",
-              "website": "http://www.sakhnin.muni.il",
-              "wikidata": "Q168330",
-              "wikipedia": "ar:سخنين"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.3023184,
-          32.8638052
-        ]
-      },
-      "id": "node/278475752"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/278476247",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1393026,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "بيت جن",
-              "name:ar": "بيت جن",
-              "name:en": "Bet Jan",
-              "name:fr": "Beit Jann",
-              "name:he": "בית ג'ן",
-              "type": "boundary",
-              "wikidata": "Q814900",
-              "wikipedia": "ar:بيت جن"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.3781433,
-          32.9644737
-        ]
-      },
-      "id": "node/278476247"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/278476277",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1383756,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "long_name:ar": "الشبلي - أم الغنم‎",
-              "name": "الشبلي-أم الغنم‎",
-              "name:ar": "الشبلي-أم الغنم‎",
-              "name:en": "Shibli - Umm el Ghanam",
-              "name:fr": "Shibli-Umm al-Ghanam",
-              "name:he": "שבלי - אום אל-ר'נם",
-              "short_name:ar": "شبلي-أم الغنم‎",
-              "type": "boundary",
-              "wikidata": "Q2601842",
-              "wikipedia": "he:שבלי - אום אל-גנם"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.3960008,
-          32.6937221
-        ]
-      },
-      "id": "node/278476277"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/278476455",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1401800,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "קריית טבעון",
-              "name:en": "Kiryat Tivon",
-              "name:fr": "Kiryat Tivon",
-              "name:he": "קריית טבעון",
-              "name:ru": "Кирьят-Тивон",
-              "type": "boundary",
-              "wikidata": "Q1743479",
-              "wikipedia": "he:קריית טבעון"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.126841,
-          32.7161543
-        ]
-      },
-      "id": "node/278476455"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/278476781",
-        "@relations": [
-          {
-            "role": "label",
-            "rel": 1381458,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "ele": "76",
-              "name": "רמלה",
-              "name:ar": "الرملة",
-              "name:en": "Ramla",
-              "name:fr": "Ramla",
-              "name:he": "רמלה",
-              "name:it": "Ramla",
-              "population": "80786",
-              "type": "boundary",
-              "website": "http://www.ramla.muni.il/",
-              "wikidata": "Q221447",
-              "wikipedia": "he:רמלה"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.8623473,
-          31.9279988
-        ]
-      },
-      "id": "node/278476781"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/278476860",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1403095,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "دالية الكرمل",
-              "name:ar": "دالية الكرمل",
-              "name:en": "Daliyat al-Karmel",
-              "name:fr": "Daliat el Karmel",
-              "name:he": "דלית אל-כרמל",
-              "type": "boundary",
-              "wikidata": "Q2667061",
-              "wikipedia": "ar:دالية الكرمل"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.0482785,
-          32.6922393
-        ]
-      },
-      "id": "node/278476860"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/278476881",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1376782,
-            "reltags": {
-              "admin_level": "8",
-              "alt_name:ar": "أشكلون;عسقلون;مجدل",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "ele": "36",
-              "name": "אשקלון",
-              "name:ar": "عسقلان",
-              "name:arc": "ܐܫܩܠܘܢ",
-              "name:el": "Ασκελόν",
-              "name:en": "Ashkelon",
-              "name:fi": "Ashkelon",
-              "name:fr": "Ascalon",
-              "name:he": "אשקלון",
-              "name:it": "Ascalona",
-              "name:pl": "Aszkelon",
-              "name:ru": "Ашкелон",
-              "name:syc": "ܐܫܩܠܘܢ",
-              "name:ur": "عسقلان",
-              "population": "152439",
-              "type": "boundary",
-              "website": "http://www.ashkelon.muni.il/",
-              "wikidata": "Q60956",
-              "wikipedia": "he:אשקלון"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.5730157,
-          31.6644874
-        ]
-      },
-      "id": "node/278476881"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/278476926",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1403485,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "عسفيا",
-              "name:ar": "عسفيا",
-              "name:en": "Isfiya",
-              "name:fr": "Isfiya",
-              "name:he": "עוספייא",
-              "type": "boundary",
-              "wikidata": "Q2890836",
-              "wikipedia": "ar:عسفيا"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.0671011,
-          32.7152045
-        ]
-      },
-      "id": "node/278476926"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/278477272",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1386842,
-            "reltags": {
-              "admin_level": "8",
-              "alt_name:ar": "أعبلين",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "إعبلين",
-              "name:ar": "إعبلين",
-              "name:ar1": "عبلين",
-              "name:ar2": "اعبلين",
-              "name:cs": "I'billin",
-              "name:en": "Ibilin",
-              "name:es": "I'billin",
-              "name:fi": "I'billin",
-              "name:fr": "I'billin",
-              "name:he": "אעבלין",
-              "name:nn": "I'billin",
-              "name:pl": "I’billin",
-              "name:ru": "Ибилин",
-              "type": "boundary",
-              "wikidata": "Q2915647",
-              "wikipedia": "ar:إعبلين"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.19133,
-          32.8209166
-        ]
-      },
-      "id": "node/278477272"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/278477509",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1246791,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "ele": "51",
-              "land_area": "administrative",
-              "name": "רחובות",
-              "name:ar": "رحوفوت",
-              "name:cs": "Rechovot",
-              "name:en": "Rehovot",
-              "name:fr": "Rehovot",
-              "name:he": "רחובות",
-              "population": "150349",
-              "type": "boundary",
-              "website": "https://www.rehovot.muni.il/",
-              "wikidata": "Q207350",
-              "wikipedia": "he:רחובות"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.8105616,
-          31.8952532
-        ]
-      },
-      "id": "node/278477509"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/278477631",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1392828,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "זכרון יעקב",
-              "name:ar": "زخرون يعكوف",
-              "name:en": "Zichron Ya'akov",
-              "name:fr": "Zikhron Yaakov",
-              "name:he": "זכרון יעקב",
-              "type": "boundary",
-              "wikidata": "Q198399",
-              "wikipedia": "he:זכרון יעקב"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.9529966,
-          32.5711587
-        ]
-      },
-      "id": "node/278477631"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/278477903",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1376825,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "ele": "331",
-              "name": "עומר",
-              "name:ar": "عومر",
-              "name:en": "Omer",
-              "name:fr": "Omer",
-              "name:he": "עומר",
-              "population": "7514",
-              "type": "boundary",
-              "website": "http://www.omer.muni.il",
-              "wikidata": "Q1968636",
-              "wikipedia": "he:עומר (יישוב)"
-            }
-          },
-          {
-            "role": "label",
-            "rel": 1376825,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "ele": "331",
-              "name": "עומר",
-              "name:ar": "عومر",
-              "name:en": "Omer",
-              "name:fr": "Omer",
-              "name:he": "עומר",
-              "population": "7514",
-              "type": "boundary",
-              "website": "http://www.omer.muni.il",
-              "wikidata": "Q1968636",
-              "wikipedia": "he:עומר (יישוב)"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.847616,
-          31.2659365
-        ]
-      },
-      "id": "node/278477903"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/278478059",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1379121,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "ele": "95",
-              "name": "יסוד המעלה",
-              "name:en": "Yesud HaMaala",
-              "name:fr": "Yessod Haméala",
-              "name:he": "יסוד המעלה",
-              "population": "1644",
-              "type": "boundary",
-              "wikidata": "Q2639602",
-              "wikipedia": "he:יסוד המעלה"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.6030157,
-          33.0573811
-        ]
-      },
-      "id": "node/278478059"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/278478116",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1386837,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "البعينة",
-              "name:ar": "البعينة",
-              "name:ar1": "البعينة نجيدات",
-              "name:en": "Biina Nujeidat",
-              "name:fr": "Bu'eine Nujeidat",
-              "name:he": "בועיינה ניג'ידאת",
-              "type": "boundary",
-              "wikidata": "Q2655774",
-              "wikipedia": "en:Bu'eine Nujeidat"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.3646736,
-          32.8056259
-        ]
-      },
-      "id": "node/278478116"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/278478190",
-        "@relations": [
-          {
-            "role": "label",
-            "rel": 1382458,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "ele": "23",
-              "name": "בת ים",
-              "name:en": "Bat Yam",
-              "name:fr": "Bat Yam",
-              "name:he": "בת ים",
-              "name:pl": "Bat Jam",
-              "name:ru": "Бат-Ям",
-              "place": "city",
-              "population": "158565",
-              "type": "boundary",
-              "website": "http://www.bat-yam.muni.il/",
-              "wikidata": "Q208725",
-              "wikipedia": "he:בת ים"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.7505283,
-          32.0154565
-        ]
-      },
-      "id": "node/278478190"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/278478216",
-        "@relations": [
-          {
-            "role": "label",
-            "rel": 1387991,
-            "reltags": {
-              "admin_level": "8",
-              "alt_name:ar": "بعنة",
-              "alt_name:en": "Bi'ina;Al-Bi'na;Al-Bi'ina;Al-Baana;el-Baneh;Al-Baneh",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "البعنة",
-              "name:ar": "البعنة",
-              "name:en": "Bi'na",
-              "name:fr": "Bi'ina",
-              "name:he": "בענה",
-              "type": "boundary",
-              "wikidata": "Q2890909",
-              "wikipedia": "ar:البعنة"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.272169,
-          32.9280587
-        ]
-      },
-      "id": "node/278478216"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/278478336",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1379103,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "ele": "130",
-              "name": "נתיבות",
-              "name:en": "Netivot",
-              "name:fr": "Netivot",
-              "name:he": "נתיבות",
-              "population": "36961",
-              "start_date": "1956",
-              "type": "boundary",
-              "wikidata": "Q167649",
-              "wikipedia": "he:נתיבות"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.5884252,
-          31.4213546
-        ]
-      },
-      "id": "node/278478336"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/278478389",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1376758,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "מצפה רמון",
-              "name:ar": "متسبي رمون",
-              "name:en": "Mizpe Ramon",
-              "name:fr": "Mitzpe Ramon",
-              "name:he": "מצפה רמון",
-              "name:ur": "متسبی رمون",
-              "type": "boundary",
-              "wikidata": "Q741793",
-              "wikipedia": "he:מצפה רמון"
-            }
-          },
-          {
-            "role": "label",
-            "rel": 1376758,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "מצפה רמון",
-              "name:ar": "متسبي رمون",
-              "name:en": "Mizpe Ramon",
-              "name:fr": "Mitzpe Ramon",
-              "name:he": "מצפה רמון",
-              "name:ur": "متسبی رمون",
-              "type": "boundary",
-              "wikidata": "Q741793",
-              "wikipedia": "he:מצפה רמון"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.8012169,
-          30.6119687
-        ]
-      },
-      "id": "node/278478389"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/278478516",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1379423,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "מועצה אזורית לכיש",
-              "name:en": "Lachish Regional Council",
-              "name:fr": "Lakhish",
-              "name:he": "מועצה אזורית לכיש",
-              "type": "boundary",
-              "wikidata": "Q2594249",
-              "wikipedia": "he:מועצה אזורית לכיש"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.70469,
-          31.6226942
-        ]
-      },
-      "id": "node/278478516"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/278478605",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1379335,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "ele": "900",
-              "name": "צפת",
-              "name:ar": "صفد",
-              "name:cs": "Safed",
-              "name:en": "Zefat",
-              "name:en1": "Safed",
-              "name:en2": "Tzfat",
-              "name:en3": "Tzefat",
-              "name:en4": "Zfat",
-              "name:fr": "Safed",
-              "name:he": "צפת",
-              "name:ru": "Цфат",
-              "name:ur": "صفد",
-              "population": "33358",
-              "type": "boundary",
-              "website": "https://www.zefat.muni.il/",
-              "wikidata": "Q188336",
-              "wikipedia": "he:צפת"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.502451,
-          32.9646301
-        ]
-      },
-      "id": "node/278478605"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/278478706",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1399264,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "بسمة طبعون",
-              "name:ar": "بسمة طبعون",
-              "name:en": "Basmat Tabun",
-              "name:fr": "Basmat Tab'un",
-              "name:he": "בסמת טבעון",
-              "type": "boundary",
-              "wikidata": "Q2651477",
-              "wikipedia": "he:בסמת טבעון"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.1546502,
-          32.7362276
-        ]
-      },
-      "id": "node/278478706"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/280115936",
-        "@relations": [
-          {
-            "role": "label",
-            "rel": 1379225,
-            "reltags": {
-              "admin_level": "8",
-              "alt_name:ar": "راهط",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "ele": "222",
-              "name": "رهط",
-              "name:ar": "رهط",
-              "name:bn": "রাহাত",
-              "name:en": "Rahat",
-              "name:fa": "رهط",
-              "name:fr": "Rahat",
-              "name:he": "רהט",
-              "name:ur": "رہط",
-              "population": "63922",
-              "type": "boundary",
-              "website": "https://www.rahat-muni.com/",
-              "wikidata": "Q167617",
-              "wikipedia": "ar:رهط (مدينة)"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.7546784,
-          31.3933637
-        ]
-      },
-      "id": "node/280115936"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/348385591",
-        "@relations": [
-          {
-            "role": "label",
-            "rel": 1383630,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "ele": "48",
-              "name": "רעננה",
-              "name:ar": "رعنانا",
-              "name:en": "Raanana",
-              "name:fr": "Raanana",
-              "name:he": "רעננה",
-              "name:ur": "رعنانا",
-              "population": "91534",
-              "type": "boundary",
-              "website": "https://www.raanana.muni.il/",
-              "wikidata": "Q309164",
-              "wikipedia": "he:רעננה"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.8675905,
-          32.1861481
-        ]
-      },
-      "id": "node/348385591"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/353022551",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1379226,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "להבים",
-              "name:en": "Lehavim",
-              "name:fr": "Lehavim",
-              "name:he": "להבים",
-              "type": "boundary",
-              "wikidata": "Q1589806",
-              "wikipedia": "he:להבים"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.8136886,
-          31.3703233
-        ]
-      },
-      "id": "node/353022551"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/389991575",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1399133,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "ele": "122",
-              "name": "אלעד",
-              "name:ar": "إلعاد",
-              "name:en": "Elad",
-              "name:fr": "El'ad",
-              "name:he": "אלעד",
-              "name:ur": "ایلعاد",
-              "population": "47033",
-              "type": "boundary",
-              "website": "http://www.elad.muni.il/",
-              "wikidata": "Q152399",
-              "wikipedia": "he:אלעד"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.9521522,
-          32.0500659
-        ]
-      },
-      "id": "node/389991575"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/404335599",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1375244,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "ele": "1034",
-              "name": "مسعدة",
-              "name:ar": "مسعدة",
-              "name:en": "Masade",
-              "name:fr": "Mas'ade",
-              "name:he": "מסעדה",
-              "population": "3557",
-              "type": "boundary",
-              "wikidata": "Q2655013",
-              "wikipedia": "he:מסעדה (יישוב)"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.7574829,
-          33.2311981
-        ]
-      },
-      "id": "node/404335599"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/536507510",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1376828,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "מיתר",
-              "name:ar": "ميتار",
-              "name:en": "Meitar",
-              "name:fr": "Meitar",
-              "name:he": "מיתר",
-              "name:ru": "Мейтар",
-              "type": "boundary",
-              "wikidata": "Q1246119",
-              "wikipedia": "he:מיתר (יישוב)"
-            }
-          },
-          {
-            "role": "label",
-            "rel": 1376828,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "מיתר",
-              "name:ar": "ميتار",
-              "name:en": "Meitar",
-              "name:fr": "Meitar",
-              "name:he": "מיתר",
-              "name:ru": "Мейтар",
-              "type": "boundary",
-              "wikidata": "Q1246119",
-              "wikipedia": "he:מיתר (יישוב)"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.9384389,
-          31.3270854
-        ]
-      },
-      "id": "node/536507510"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/558575432",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1376829,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "حورة",
-              "name:ar": "حورة",
-              "name:en": "Hora",
-              "name:fr": "Hura",
-              "name:he": "חורה",
-              "type": "boundary",
-              "wikidata": "Q1638374",
-              "wikipedia": "ar:حورة (إسرائيل)",
-              "wikipedia:ar": "حورة (إسرائيل)"
-            }
-          },
-          {
-            "role": "label",
-            "rel": 1376829,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "حورة",
-              "name:ar": "حورة",
-              "name:en": "Hora",
-              "name:fr": "Hura",
-              "name:he": "חורה",
-              "type": "boundary",
-              "wikidata": "Q1638374",
-              "wikipedia": "ar:حورة (إسرائيل)",
-              "wikipedia:ar": "حورة (إسرائيل)"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.9379061,
-          31.2972468
-        ]
-      },
-      "id": "node/558575432"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/599556378",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1376931,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "عرعرة النقب",
-              "name:ar": "عرعرة النقب",
-              "name:en": "Ar'arat an-Naqab",
-              "name:fr": "Ar'arat an-Naqab",
-              "name:he": "ערערה בנגב",
-              "short_name:ar": "عرعرة",
-              "type": "boundary",
-              "wikidata": "Q2915541",
-              "wikipedia": "ar:عرعرة النقب"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.0230464,
-          31.1595078
-        ]
-      },
-      "id": "node/599556378"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/599556920",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1376911,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "كسيفة",
-              "name:ar": "كسيفة",
-              "name:en": "Kuseife",
-              "name:fr": "Kuseife",
-              "name:he": "כסייפה",
-              "type": "boundary",
-              "wikidata": "Q2652222",
-              "wikipedia": "ar:كسيفة"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.0930574,
-          31.2465374
-        ]
-      },
-      "id": "node/599556920"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/599577806",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1377266,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "شقيب السلام",
-              "name:ar": "شقيب السلام",
-              "name:en": "Shaqib al-Salam",
-              "name:en1": "Segev Shalom",
-              "name:fr": "Shaqib al-Salam",
-              "name:he": "שגב שלום",
-              "type": "boundary",
-              "wikidata": "Q2633019",
-              "wikipedia": "ar:شقيب السلام"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.8400872,
-          31.2008757
-        ]
-      },
-      "id": "node/599577806"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/739191371",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1376764,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "ירוחם",
-              "name:ar": "يروحام",
-              "name:de": "Jerocham",
-              "name:en": "Yeroham",
-              "name:fr": "Yeruham",
-              "name:he": "ירוחם",
-              "name:pl": "Yeruham",
-              "name:ru": "Йерухам",
-              "name:sv": "Yeroẖam",
-              "name:ur": "یرحم",
-              "type": "boundary",
-              "wikidata": "Q1687708",
-              "wikipedia": "he:ירוחם"
-            }
-          },
-          {
-            "role": "label",
-            "rel": 1376764,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "ירוחם",
-              "name:ar": "يروحام",
-              "name:de": "Jerocham",
-              "name:en": "Yeroham",
-              "name:fr": "Yeruham",
-              "name:he": "ירוחם",
-              "name:pl": "Yeruham",
-              "name:ru": "Йерухам",
-              "name:sv": "Yeroẖam",
-              "name:ur": "یرحم",
-              "type": "boundary",
-              "wikidata": "Q1687708",
-              "wikipedia": "he:ירוחם"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.9250975,
-          30.9888033
-        ]
-      },
-      "id": "node/739191371"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/848726406",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1391710,
-            "reltags": {
-              "addr:postcode": "30***",
-              "admin_level": "8",
-              "alt_name:ar": "المجلس الإقليمي شاطئ الكرمل;مجلس إقليمي حوف هكرمل;المجلس الإقليمي حوف هكرمل;حوف هكرمل",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "מועצה אזורית חוף הכרמל",
-              "name:ar": "مجلس إقليمي شاطئ الكرمل",
-              "name:en": "Hof HaCarmel Regional Council",
-              "name:fr": "Côte de Carmel",
-              "name:he": "מועצה אזורית חוף הכרמל",
-              "short_name:ar": "شاطئ الكرمل",
-              "type": "boundary",
-              "wikidata": "Q1915911",
-              "wikipedia": "he:מועצה אזורית חוף הכרמל"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.9577459,
-          32.6763677
-        ]
-      },
-      "id": "node/848726406"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/857612733",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1377971,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "מועצה אזורית מבואות החרמון",
-              "name:ar": "مجلس إقليمي مقدمات جبل الشيخ",
-              "name:ar1": "المجلس الإقليمي مقدمات جبل الشيخ",
-              "name:ar2": "مجلس إقليمي مفوئوت هحرمون",
-              "name:ar3": "المجلس الإقليمي مفوئوت هحرمون",
-              "name:en": "Mevoot HaHermon Regional Council",
-              "name:fr": "Mevo'ot HaHermon",
-              "name:he": "מועצה אזורית מבואות החרמון",
-              "population": "7200",
-              "short_name:ar": "مقدمات جبل الشيخ",
-              "short_name:ar1": "مفوئوت هحرمون",
-              "type": "boundary",
-              "wikidata": "Q2916811",
-              "wikipedia": "en:Mevo'ot HaHermon Regional Council"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.5695688,
-          33.1182986
-        ]
-      },
-      "id": "node/857612733"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/871894189",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1391828,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "מועצה אזורית מנשה",
-              "name:ar": "مجلس منشة الإقليمي",
-              "name:en": "Menashe Regional Council",
-              "name:fr": "Menashe",
-              "name:he": "מועצה אזורית מנשה",
-              "type": "boundary",
-              "wikidata": "Q731661",
-              "wikipedia": "he:מועצה אזורית מנשה"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.0132774,
-          32.4671887
-        ]
-      },
-      "id": "node/871894189"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/1108682937",
-        "@relations": [
-          {
-            "role": "townhall",
-            "rel": 1379102,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "אופקים",
-              "name:": "اوفاقیم",
-              "name:ar": "أوفاكيم",
-              "name:en": "Ofakim",
-              "name:fr": "Ofaqim",
-              "name:he": "אופקים",
-              "population": "31178",
-              "type": "boundary",
-              "website": "http://www.ofaqim.muni.il/",
-              "wikidata": "Q167632",
-              "wikipedia": "he:אופקים"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.6209886,
-          31.3151842
-        ]
-      },
-      "id": "node/1108682937"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/1144627651",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1381394,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "קרית עקרון",
-              "name:en": "Kiryat Ekron",
-              "name:fr": "Kiryat Ekron",
-              "name:he": "קרית עקרון",
-              "type": "boundary",
-              "wikidata": "Q2640159",
-              "wikipedia": "he:קריית עקרון"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.8230526,
-          31.8610183
-        ]
-      },
-      "id": "node/1144627651"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/1654111437",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1379175,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "ele": "339",
-              "name": "קצרין",
-              "name:ar": "كتسرين",
-              "name:cs": "Kacrin",
-              "name:en": "Katzrin",
-              "name:fr": "Katzrin",
-              "name:he": "קצרין",
-              "name:ur": "قصرین",
-              "population": "6913",
-              "type": "boundary",
-              "wikidata": "Q1736959",
-              "wikipedia": "en:Katzrin"
-            }
-          },
-          {
-            "role": "admin_centre",
-            "rel": 1379176,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "מועצה אזורית גולן",
-              "name:ar": "مجلس الجولان الإقليمي‎‎",
-              "name:en": "Golan Regional Council",
-              "name:fr": "Golan",
-              "name:he": "מועצה אזורית גולן",
-              "population": "16500",
-              "type": "boundary",
-              "wikidata": "Q2391142",
-              "wikipedia": "he:מועצה אזורית גולן"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.6877004,
-          32.9920262
-        ]
-      },
-      "id": "node/1654111437"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/1656107649",
-        "@relations": [
-          {
-            "role": "label",
-            "rel": 1387888,
-            "reltags": {
-              "admin_level": "8",
-              "alt_name:it": "Caifa",
-              "boundary": "administrative",
-              "ele": "103",
-              "name": "חיפה",
-              "name:am": "ሐይፋ",
-              "name:ar": "حيفا",
-              "name:arc": "ܚܝܦܐ",
-              "name:en": "Haifa",
-              "name:fi": "Haifa",
-              "name:fr": "Haïfa",
-              "name:he": "חיפה",
-              "name:it": "Haifa",
-              "name:ja": "ハイファ",
-              "name:ko": "하이파",
-              "name:mi": "Haiwha",
-              "name:ru": "Хайфа",
-              "name:syc": "ܚܝܦܐ",
-              "name:ur": "حیفا",
-              "place": "minicipality",
-              "population": "279591",
-              "type": "boundary",
-              "website": "https://www.haifa.muni.il/",
-              "wikidata": "Q41621",
-              "wikipedia": "en:Haifa"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.9983856,
-          32.8191218
-        ]
-      },
-      "id": "node/1656107649"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/1657261912",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1375243,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "بقعاثا",
-              "name:ar": "بقعاثا",
-              "name:en": "Bukata",
-              "name:fr": "Buq'ata",
-              "name:he": "בוקעאתא",
-              "population": "6590",
-              "type": "boundary",
-              "wikidata": "Q2915523",
-              "wikipedia": "he:בוקעאתא"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.7779892,
-          33.20076
-        ]
-      },
-      "id": "node/1657261912"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/1697981331",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1382493,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "ele": "37",
-              "landuse": "residential",
-              "name": "רמת גן",
-              "name:en": "Ramat Gan",
-              "name:fr": "Ramat Gan",
-              "name:he": "רמת גן",
-              "name:ru": "Рамат-Ган",
-              "place": "town",
-              "population": "164764",
-              "type": "boundary",
-              "website": "https://www.ramat-gan.muni.il/",
-              "wikidata": "Q192807",
-              "wikipedia": "en:Ramat Gan"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.8246812,
-          32.0686867
-        ]
-      },
-      "id": "node/1697981331"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/7784436595",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1379225,
-            "reltags": {
-              "admin_level": "8",
-              "alt_name:ar": "راهط",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "ele": "222",
-              "name": "رهط",
-              "name:ar": "رهط",
-              "name:bn": "রাহাত",
-              "name:en": "Rahat",
-              "name:fa": "رهط",
-              "name:fr": "Rahat",
-              "name:he": "רהט",
-              "name:ur": "رہط",
-              "population": "63922",
-              "type": "boundary",
-              "website": "https://www.rahat-muni.com/",
-              "wikidata": "Q167617",
-              "wikipedia": "ar:رهط (مدينة)"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.7547052,
-          31.3933294
-        ]
-      },
-      "id": "node/7784436595"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/4462321217",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1382817,
-            "reltags": {
-              "admin_level": "8",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "contact:website": "http://www.bnei-brak.muni.il",
-              "ele": "26",
-              "landuse": "residential",
-              "name": "בני ברק",
-              "name:ar": "بني براك",
-              "name:cs": "Bnej Brak",
-              "name:en": "Bnei Brak",
-              "name:fr": "Bnei Brak",
-              "name:he": "בני ברק",
-              "name:pl": "Bene Berak",
-              "name:ru": "Бней-Брак",
-              "place": "town",
-              "population": "203573",
-              "type": "boundary",
-              "website": "http://www.bnei-brak.muni.il",
-              "wikidata": "Q152467",
-              "wikipedia": "he:בני ברק"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          34.8249749,
-          32.085788
-        ]
-      },
-      "id": "node/4462321217"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/4672294477",
-        "@relations": [
-          {
-            "role": "admin_centre",
-            "rel": 1377972,
-            "reltags": {
-              "admin_level": "8",
-              "alt_name:ar": "الغجر",
-              "boundary": "administrative",
-              "complete:relation": "yes",
-              "name": "ע'ג'ר",
-              "name:ar": "غجر",
-              "name:de": "Ghajar",
-              "name:en": "Ghajar",
-              "name:fr": "Ghajar",
-              "name:he": "ע'ג'ר",
-              "type": "boundary",
-              "wikidata": "Q1261045",
-              "wikipedia": "he:ע'ג'ר"
-            }
-          }
-        ]
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          35.6234309,
-          33.2708961
-        ]
-      },
-      "id": "node/4672294477"
+        "@id": 3,
+        "admin_level": "8",
+        "alt_name:ar": "نيس زيونا;نس تسيونا",
+        "boundary": "administrative",
+        "complete:relation": "yes",
+        "ele": "39",
+        "land_area": "administrative",
+        "name": "נס ציונה",
+        "name:ar": "نس تصيونا",
+        "name:cs": "Nes Cijona",
+        "name:en": "Nes Ziona",
+        "name:fr": "Ness Ziona",
+        "name:he": "נס ציונה",
+        "name:ru": "Нес-Циона",
+        "population": "48723",
+        "type": "boundary",
+        "website": "http://www.nzc.org.il/",
+        "wikidata": "Q168162",
+        "wikipedia": "he:נס ציונה"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.7797474,
+              31.9412294
+            ],
+            [
+              34.7797285,
+              31.9401911
+            ],
+            [
+              34.77923,
+              31.9382631
+            ],
+            [
+              34.7785425,
+              31.9364926
+            ],
+            [
+              34.7785012,
+              31.9363145
+            ],
+            [
+              34.7804167,
+              31.9368659
+            ],
+            [
+              34.7793693,
+              31.9318996
+            ],
+            [
+              34.7776726,
+              31.9263558
+            ],
+            [
+              34.7773467,
+              31.925364
+            ],
+            [
+              34.7773232,
+              31.925085
+            ],
+            [
+              34.7772032,
+              31.9246819
+            ],
+            [
+              34.777049,
+              31.9239724
+            ],
+            [
+              34.7770727,
+              31.9239147
+            ],
+            [
+              34.7777219,
+              31.9247849
+            ],
+            [
+              34.7779964,
+              31.925244
+            ],
+            [
+              34.77852,
+              31.9252908
+            ],
+            [
+              34.7788034,
+              31.9253673
+            ],
+            [
+              34.7789739,
+              31.9254687
+            ],
+            [
+              34.7790478,
+              31.9256553
+            ],
+            [
+              34.7790057,
+              31.925904
+            ],
+            [
+              34.7790868,
+              31.9259415
+            ],
+            [
+              34.7798983,
+              31.9261372
+            ],
+            [
+              34.780086,
+              31.9261396
+            ],
+            [
+              34.7801953,
+              31.9250842
+            ],
+            [
+              34.7803408,
+              31.9240707
+            ],
+            [
+              34.7804389,
+              31.9235818
+            ],
+            [
+              34.7792133,
+              31.9233553
+            ],
+            [
+              34.7793868,
+              31.9214274
+            ],
+            [
+              34.7785863,
+              31.9213922
+            ],
+            [
+              34.7786244,
+              31.920478
+            ],
+            [
+              34.7786121,
+              31.9191132
+            ],
+            [
+              34.7786426,
+              31.9162828
+            ],
+            [
+              34.7758525,
+              31.9164637
+            ],
+            [
+              34.7731899,
+              31.9159598
+            ],
+            [
+              34.7731442,
+              31.9131485
+            ],
+            [
+              34.7731618,
+              31.9129754
+            ],
+            [
+              34.7742666,
+              31.9101295
+            ],
+            [
+              34.7731814,
+              31.9102753
+            ],
+            [
+              34.7731407,
+              31.9104126
+            ],
+            [
+              34.7728684,
+              31.9108361
+            ],
+            [
+              34.772749,
+              31.9111259
+            ],
+            [
+              34.7719903,
+              31.9122141
+            ],
+            [
+              34.7715414,
+              31.9127766
+            ],
+            [
+              34.7708661,
+              31.913816
+            ],
+            [
+              34.7704492,
+              31.9133163
+            ],
+            [
+              34.7699069,
+              31.9127998
+            ],
+            [
+              34.7645665,
+              31.9136085
+            ],
+            [
+              34.7647821,
+              31.9146377
+            ],
+            [
+              34.7613984,
+              31.9151954
+            ],
+            [
+              34.7605274,
+              31.9142199
+            ],
+            [
+              34.7604405,
+              31.9142378
+            ],
+            [
+              34.7578682,
+              31.9113453
+            ],
+            [
+              34.7599799,
+              31.9093419
+            ],
+            [
+              34.7607285,
+              31.9080657
+            ],
+            [
+              34.7613838,
+              31.9070988
+            ],
+            [
+              34.7619148,
+              31.9064586
+            ],
+            [
+              34.7632334,
+              31.9054168
+            ],
+            [
+              34.764701,
+              31.9048876
+            ],
+            [
+              34.7645569,
+              31.9039199
+            ],
+            [
+              34.7648488,
+              31.9038256
+            ],
+            [
+              34.7672571,
+              31.9030476
+            ],
+            [
+              34.7694239,
+              31.9032098
+            ],
+            [
+              34.7694313,
+              31.903149
+            ],
+            [
+              34.7728096,
+              31.902843
+            ],
+            [
+              34.7728843,
+              31.9028848
+            ],
+            [
+              34.7751474,
+              31.9026394
+            ],
+            [
+              34.7747061,
+              31.9016414
+            ],
+            [
+              34.7747339,
+              31.9016336
+            ],
+            [
+              34.7742751,
+              31.9004783
+            ],
+            [
+              34.77516,
+              31.9000676
+            ],
+            [
+              34.7751912,
+              31.8999099
+            ],
+            [
+              34.7744768,
+              31.8989047
+            ],
+            [
+              34.7740578,
+              31.8985871
+            ],
+            [
+              34.7762215,
+              31.8987562
+            ],
+            [
+              34.775726,
+              31.8983429
+            ],
+            [
+              34.7757827,
+              31.8983502
+            ],
+            [
+              34.7760717,
+              31.8985613
+            ],
+            [
+              34.776285,
+              31.8986786
+            ],
+            [
+              34.776763,
+              31.8988543
+            ],
+            [
+              34.7770363,
+              31.8989102
+            ],
+            [
+              34.7774561,
+              31.8989406
+            ],
+            [
+              34.7780128,
+              31.8988806
+            ],
+            [
+              34.7785368,
+              31.8987092
+            ],
+            [
+              34.7789939,
+              31.8984392
+            ],
+            [
+              34.7792798,
+              31.8981811
+            ],
+            [
+              34.7796502,
+              31.8976884
+            ],
+            [
+              34.7797772,
+              31.8975769
+            ],
+            [
+              34.7800065,
+              31.8974505
+            ],
+            [
+              34.7805844,
+              31.8972855
+            ],
+            [
+              34.7841764,
+              31.8964801
+            ],
+            [
+              34.7841948,
+              31.8965473
+            ],
+            [
+              34.784705,
+              31.8973294
+            ],
+            [
+              34.7888648,
+              31.9033195
+            ],
+            [
+              34.7891653,
+              31.9037928
+            ],
+            [
+              34.7899673,
+              31.9050564
+            ],
+            [
+              34.7907973,
+              31.905405
+            ],
+            [
+              34.7917626,
+              31.9056865
+            ],
+            [
+              34.7927094,
+              31.9060778
+            ],
+            [
+              34.7930891,
+              31.9063502
+            ],
+            [
+              34.7933466,
+              31.906823
+            ],
+            [
+              34.7937656,
+              31.9066729
+            ],
+            [
+              34.7957974,
+              31.9074156
+            ],
+            [
+              34.7959846,
+              31.9074472
+            ],
+            [
+              34.7964139,
+              31.9074452
+            ],
+            [
+              34.7964837,
+              31.9074263
+            ],
+            [
+              34.79809,
+              31.9094461
+            ],
+            [
+              34.7988521,
+              31.9102928
+            ],
+            [
+              34.7991381,
+              31.9108754
+            ],
+            [
+              34.799624,
+              31.9120045
+            ],
+            [
+              34.8008436,
+              31.911838
+            ],
+            [
+              34.8026917,
+              31.9118182
+            ],
+            [
+              34.8029984,
+              31.9117565
+            ],
+            [
+              34.8033012,
+              31.9117328
+            ],
+            [
+              34.8036301,
+              31.9137026
+            ],
+            [
+              34.8036716,
+              31.9137334
+            ],
+            [
+              34.8064695,
+              31.9133758
+            ],
+            [
+              34.8065456,
+              31.9134494
+            ],
+            [
+              34.8068932,
+              31.9140211
+            ],
+            [
+              34.8071785,
+              31.9145995
+            ],
+            [
+              34.8072168,
+              31.9147533
+            ],
+            [
+              34.8078642,
+              31.9159235
+            ],
+            [
+              34.808297,
+              31.9158046
+            ],
+            [
+              34.8084414,
+              31.91596
+            ],
+            [
+              34.8087415,
+              31.9160255
+            ],
+            [
+              34.8091503,
+              31.917825
+            ],
+            [
+              34.8092475,
+              31.9185253
+            ],
+            [
+              34.8095935,
+              31.9203983
+            ],
+            [
+              34.8101991,
+              31.920339
+            ],
+            [
+              34.8108395,
+              31.920331
+            ],
+            [
+              34.8114268,
+              31.9203721
+            ],
+            [
+              34.8118831,
+              31.9204301
+            ],
+            [
+              34.8123385,
+              31.920521
+            ],
+            [
+              34.8133066,
+              31.920423
+            ],
+            [
+              34.8132917,
+              31.9205222
+            ],
+            [
+              34.8138994,
+              31.9204758
+            ],
+            [
+              34.814394,
+              31.9212172
+            ],
+            [
+              34.8145566,
+              31.9215243
+            ],
+            [
+              34.8148826,
+              31.9223939
+            ],
+            [
+              34.8149807,
+              31.9228953
+            ],
+            [
+              34.8150233,
+              31.923295
+            ],
+            [
+              34.8150754,
+              31.9242376
+            ],
+            [
+              34.8151299,
+              31.9242372
+            ],
+            [
+              34.8151689,
+              31.9246822
+            ],
+            [
+              34.8157103,
+              31.9246978
+            ],
+            [
+              34.8160014,
+              31.9250896
+            ],
+            [
+              34.8190755,
+              31.925425
+            ],
+            [
+              34.8221901,
+              31.9260043
+            ],
+            [
+              34.8232805,
+              31.9262594
+            ],
+            [
+              34.8225031,
+              31.9291728
+            ],
+            [
+              34.8221768,
+              31.9305708
+            ],
+            [
+              34.8209772,
+              31.9309879
+            ],
+            [
+              34.8207326,
+              31.931125
+            ],
+            [
+              34.8207241,
+              31.9313296
+            ],
+            [
+              34.8209168,
+              31.9322336
+            ],
+            [
+              34.8212698,
+              31.9332964
+            ],
+            [
+              34.82195,
+              31.935052
+            ],
+            [
+              34.8178098,
+              31.93518
+            ],
+            [
+              34.8184868,
+              31.9399394
+            ],
+            [
+              34.818301,
+              31.9399666
+            ],
+            [
+              34.8099183,
+              31.9411953
+            ],
+            [
+              34.8045818,
+              31.9419428
+            ],
+            [
+              34.8049952,
+              31.9446449
+            ],
+            [
+              34.8009711,
+              31.9452463
+            ],
+            [
+              34.8003898,
+              31.9412738
+            ],
+            [
+              34.7963367,
+              31.9413012
+            ],
+            [
+              34.7961086,
+              31.9411768
+            ],
+            [
+              34.7924672,
+              31.9411608
+            ],
+            [
+              34.7924655,
+              31.9414548
+            ],
+            [
+              34.7871513,
+              31.9414988
+            ],
+            [
+              34.7866588,
+              31.9415211
+            ],
+            [
+              34.7863044,
+              31.9415056
+            ],
+            [
+              34.7864202,
+              31.9411964
+            ],
+            [
+              34.7797474,
+              31.9412294
+            ]
+          ],
+          [
+            [
+              34.8096721,
+              31.9208663
+            ],
+            [
+              34.8096769,
+              31.9209149
+            ],
+            [
+              34.8096883,
+              31.9210544
+            ],
+            [
+              34.8098812,
+              31.921762
+            ],
+            [
+              34.8101051,
+              31.9217708
+            ],
+            [
+              34.8101696,
+              31.9208609
+            ],
+            [
+              34.8101734,
+              31.9208082
+            ],
+            [
+              34.8096991,
+              31.9208396
+            ],
+            [
+              34.8096683,
+              31.9208432
+            ],
+            [
+              34.8096721,
+              31.9208663
+            ]
+          ]
+        ]
+      },
+      "id": "relation/1246731"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": 2,
+        "admin_level": "8",
+        "boundary": "administrative",
+        "complete:relation": "yes",
+        "ele": "51",
+        "land_area": "administrative",
+        "name": "רחובות",
+        "name:ar": "رحوفوت",
+        "name:cs": "Rechovot",
+        "name:en": "Rehovot",
+        "name:fr": "Rehovot",
+        "name:he": "רחובות",
+        "population": "150349",
+        "type": "boundary",
+        "website": "https://www.rehovot.muni.il/",
+        "wikidata": "Q207350",
+        "wikipedia": "he:רחובות"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              34.8193371,
+              31.8710098
+            ],
+            [
+              34.8193733,
+              31.871038
+            ],
+            [
+              34.8194622,
+              31.8713829
+            ],
+            [
+              34.8194645,
+              31.8716627
+            ],
+            [
+              34.8190559,
+              31.8758339
+            ],
+            [
+              34.8184581,
+              31.878974
+            ],
+            [
+              34.8200182,
+              31.8796079
+            ],
+            [
+              34.8223932,
+              31.8803087
+            ],
+            [
+              34.8231969,
+              31.880611
+            ],
+            [
+              34.8241822,
+              31.8807862
+            ],
+            [
+              34.8246459,
+              31.8808108
+            ],
+            [
+              34.8246788,
+              31.8811018
+            ],
+            [
+              34.827134,
+              31.8802827
+            ],
+            [
+              34.8281686,
+              31.8799633
+            ],
+            [
+              34.8296029,
+              31.8816419
+            ],
+            [
+              34.8306121,
+              31.8827328
+            ],
+            [
+              34.8321356,
+              31.8842291
+            ],
+            [
+              34.8334079,
+              31.8857896
+            ],
+            [
+              34.8338206,
+              31.8863511
+            ],
+            [
+              34.8346813,
+              31.887429
+            ],
+            [
+              34.8354772,
+              31.8885073
+            ],
+            [
+              34.836226,
+              31.8893634
+            ],
+            [
+              34.8367192,
+              31.8899899
+            ],
+            [
+              34.8370369,
+              31.8904637
+            ],
+            [
+              34.8383168,
+              31.8919615
+            ],
+            [
+              34.8386878,
+              31.8924621
+            ],
+            [
+              34.8397243,
+              31.8941957
+            ],
+            [
+              34.8399439,
+              31.8944833
+            ],
+            [
+              34.8419461,
+              31.8974333
+            ],
+            [
+              34.8420421,
+              31.897553
+            ],
+            [
+              34.8421394,
+              31.8974175
+            ],
+            [
+              34.8422097,
+              31.8973742
+            ],
+            [
+              34.8426577,
+              31.8978579
+            ],
+            [
+              34.8438966,
+              31.8996837
+            ],
+            [
+              34.8439259,
+              31.8997322
+            ],
+            [
+              34.8439034,
+              31.8997643
+            ],
+            [
+              34.8450792,
+              31.9015809
+            ],
+            [
+              34.8462202,
+              31.9027684
+            ],
+            [
+              34.8486759,
+              31.9048996
+            ],
+            [
+              34.84912,
+              31.905261
+            ],
+            [
+              34.8493615,
+              31.9053935
+            ],
+            [
+              34.8495643,
+              31.90557
+            ],
+            [
+              34.8501022,
+              31.9058758
+            ],
+            [
+              34.8501633,
+              31.9058692
+            ],
+            [
+              34.8511431,
+              31.907076
+            ],
+            [
+              34.8487121,
+              31.9072369
+            ],
+            [
+              34.8469149,
+              31.9073962
+            ],
+            [
+              34.8467828,
+              31.908762
+            ],
+            [
+              34.8449632,
+              31.908444
+            ],
+            [
+              34.8444572,
+              31.908442
+            ],
+            [
+              34.8437591,
+              31.9083436
+            ],
+            [
+              34.8429268,
+              31.908281
+            ],
+            [
+              34.8428834,
+              31.9093467
+            ],
+            [
+              34.8413581,
+              31.9092668
+            ],
+            [
+              34.8412509,
+              31.91036
+            ],
+            [
+              34.8401361,
+              31.910266
+            ],
+            [
+              34.8391464,
+              31.910346
+            ],
+            [
+              34.8391334,
+              31.9112614
+            ],
+            [
+              34.8389394,
+              31.9115967
+            ],
+            [
+              34.8374859,
+              31.9110841
+            ],
+            [
+              34.8366347,
+              31.9107525
+            ],
+            [
+              34.8352908,
+              31.9105108
+            ],
+            [
+              34.835255,
+              31.9105862
+            ],
+            [
+              34.835293,
+              31.9114453
+            ],
+            [
+              34.8355211,
+              31.9122401
+            ],
+            [
+              34.8343858,
+              31.9125457
+            ],
+            [
+              34.8332377,
+              31.9128119
+            ],
+            [
+              34.8338085,
+              31.9144164
+            ],
+            [
+              34.8344234,
+              31.9157935
+            ],
+            [
+              34.8331253,
+              31.9160501
+            ],
+            [
+              34.8332893,
+              31.9175549
+            ],
+            [
+              34.8308026,
+              31.9163217
+            ],
+            [
+              34.8301122,
+              31.9182202
+            ],
+            [
+              34.8295152,
+              31.9180414
+            ],
+            [
+              34.828429,
+              31.9175217
+            ],
+            [
+              34.8269157,
+              31.9166801
+            ],
+            [
+              34.8255163,
+              31.9158245
+            ],
+            [
+              34.8234313,
+              31.9146185
+            ],
+            [
+              34.8226199,
+              31.9157302
+            ],
+            [
+              34.8209368,
+              31.9177973
+            ],
+            [
+              34.8189649,
+              31.92028
+            ],
+            [
+              34.8188285,
+              31.9203019
+            ],
+            [
+              34.8158692,
+              31.9203983
+            ],
+            [
+              34.8148492,
+              31.9203996
+            ],
+            [
+              34.8138994,
+              31.9204758
+            ],
+            [
+              34.8132917,
+              31.9205222
+            ],
+            [
+              34.8133066,
+              31.920423
+            ],
+            [
+              34.8123385,
+              31.920521
+            ],
+            [
+              34.8118831,
+              31.9204301
+            ],
+            [
+              34.8114268,
+              31.9203721
+            ],
+            [
+              34.8108395,
+              31.920331
+            ],
+            [
+              34.8101991,
+              31.920339
+            ],
+            [
+              34.8095935,
+              31.9203983
+            ],
+            [
+              34.8092475,
+              31.9185253
+            ],
+            [
+              34.8091503,
+              31.917825
+            ],
+            [
+              34.8087415,
+              31.9160255
+            ],
+            [
+              34.8084414,
+              31.91596
+            ],
+            [
+              34.808297,
+              31.9158046
+            ],
+            [
+              34.8078642,
+              31.9159235
+            ],
+            [
+              34.8072168,
+              31.9147533
+            ],
+            [
+              34.8071785,
+              31.9145995
+            ],
+            [
+              34.8068932,
+              31.9140211
+            ],
+            [
+              34.8065456,
+              31.9134494
+            ],
+            [
+              34.8064695,
+              31.9133758
+            ],
+            [
+              34.8036716,
+              31.9137334
+            ],
+            [
+              34.8036301,
+              31.9137026
+            ],
+            [
+              34.8033012,
+              31.9117328
+            ],
+            [
+              34.8029984,
+              31.9117565
+            ],
+            [
+              34.8026917,
+              31.9118182
+            ],
+            [
+              34.8008436,
+              31.911838
+            ],
+            [
+              34.799624,
+              31.9120045
+            ],
+            [
+              34.7991381,
+              31.9108754
+            ],
+            [
+              34.7988521,
+              31.9102928
+            ],
+            [
+              34.79809,
+              31.9094461
+            ],
+            [
+              34.7964837,
+              31.9074263
+            ],
+            [
+              34.7964139,
+              31.9074452
+            ],
+            [
+              34.7959846,
+              31.9074472
+            ],
+            [
+              34.7957974,
+              31.9074156
+            ],
+            [
+              34.7937656,
+              31.9066729
+            ],
+            [
+              34.7933466,
+              31.906823
+            ],
+            [
+              34.7930891,
+              31.9063502
+            ],
+            [
+              34.7927094,
+              31.9060778
+            ],
+            [
+              34.7917626,
+              31.9056865
+            ],
+            [
+              34.7907973,
+              31.905405
+            ],
+            [
+              34.7899673,
+              31.9050564
+            ],
+            [
+              34.7891653,
+              31.9037928
+            ],
+            [
+              34.7888648,
+              31.9033195
+            ],
+            [
+              34.784705,
+              31.8973294
+            ],
+            [
+              34.7841948,
+              31.8965473
+            ],
+            [
+              34.7841764,
+              31.8964801
+            ],
+            [
+              34.7805844,
+              31.8972855
+            ],
+            [
+              34.7800065,
+              31.8974505
+            ],
+            [
+              34.7797772,
+              31.8975769
+            ],
+            [
+              34.7796502,
+              31.8976884
+            ],
+            [
+              34.7792798,
+              31.8981811
+            ],
+            [
+              34.7789939,
+              31.8984392
+            ],
+            [
+              34.7785368,
+              31.8987092
+            ],
+            [
+              34.7780128,
+              31.8988806
+            ],
+            [
+              34.7774561,
+              31.8989406
+            ],
+            [
+              34.7770363,
+              31.8989102
+            ],
+            [
+              34.776763,
+              31.8988543
+            ],
+            [
+              34.776285,
+              31.8986786
+            ],
+            [
+              34.7760717,
+              31.8985613
+            ],
+            [
+              34.7757827,
+              31.8983502
+            ],
+            [
+              34.775726,
+              31.8983429
+            ],
+            [
+              34.7762215,
+              31.8987562
+            ],
+            [
+              34.7740578,
+              31.8985871
+            ],
+            [
+              34.7744768,
+              31.8989047
+            ],
+            [
+              34.7751912,
+              31.8999099
+            ],
+            [
+              34.77516,
+              31.9000676
+            ],
+            [
+              34.7742751,
+              31.9004783
+            ],
+            [
+              34.7747339,
+              31.9016336
+            ],
+            [
+              34.7747061,
+              31.9016414
+            ],
+            [
+              34.7751474,
+              31.9026394
+            ],
+            [
+              34.7728843,
+              31.9028848
+            ],
+            [
+              34.7728096,
+              31.902843
+            ],
+            [
+              34.7694313,
+              31.903149
+            ],
+            [
+              34.7694239,
+              31.9032098
+            ],
+            [
+              34.7672571,
+              31.9030476
+            ],
+            [
+              34.7648488,
+              31.9038256
+            ],
+            [
+              34.7647687,
+              31.9032301
+            ],
+            [
+              34.764712,
+              31.9028091
+            ],
+            [
+              34.7645062,
+              31.9019254
+            ],
+            [
+              34.7643865,
+              31.9015328
+            ],
+            [
+              34.7642139,
+              31.9011319
+            ],
+            [
+              34.7627419,
+              31.8991982
+            ],
+            [
+              34.7621869,
+              31.898212
+            ],
+            [
+              34.7659002,
+              31.8964373
+            ],
+            [
+              34.766319,
+              31.8961409
+            ],
+            [
+              34.7683677,
+              31.8937243
+            ],
+            [
+              34.7681763,
+              31.8936881
+            ],
+            [
+              34.7680445,
+              31.8936282
+            ],
+            [
+              34.767497,
+              31.8925006
+            ],
+            [
+              34.7678472,
+              31.8924758
+            ],
+            [
+              34.7683134,
+              31.8923255
+            ],
+            [
+              34.7683612,
+              31.8924114
+            ],
+            [
+              34.769315,
+              31.8920959
+            ],
+            [
+              34.7699435,
+              31.8918732
+            ],
+            [
+              34.7718773,
+              31.8910398
+            ],
+            [
+              34.7732452,
+              31.8905276
+            ],
+            [
+              34.7760471,
+              31.8890078
+            ],
+            [
+              34.7761439,
+              31.8889228
+            ],
+            [
+              34.7773068,
+              31.8882504
+            ],
+            [
+              34.777167,
+              31.8882013
+            ],
+            [
+              34.7773918,
+              31.8880859
+            ],
+            [
+              34.7780479,
+              31.8875377
+            ],
+            [
+              34.7774519,
+              31.886667
+            ],
+            [
+              34.7763404,
+              31.8849473
+            ],
+            [
+              34.7759101,
+              31.8841282
+            ],
+            [
+              34.7755465,
+              31.8833314
+            ],
+            [
+              34.7749682,
+              31.882475
+            ],
+            [
+              34.7798445,
+              31.8805994
+            ],
+            [
+              34.7798994,
+              31.8806798
+            ],
+            [
+              34.7805716,
+              31.8804517
+            ],
+            [
+              34.7804093,
+              31.8801419
+            ],
+            [
+              34.7829591,
+              31.8791894
+            ],
+            [
+              34.7830901,
+              31.8791292
+            ],
+            [
+              34.783086,
+              31.8789637
+            ],
+            [
+              34.7835891,
+              31.8786839
+            ],
+            [
+              34.7841151,
+              31.8784924
+            ],
+            [
+              34.7858342,
+              31.8777148
+            ],
+            [
+              34.7862572,
+              31.8775776
+            ],
+            [
+              34.7869569,
+              31.8769667
+            ],
+            [
+              34.7874508,
+              31.8766102
+            ],
+            [
+              34.7879268,
+              31.8763121
+            ],
+            [
+              34.7881404,
+              31.876197
+            ],
+            [
+              34.7883495,
+              31.8760842
+            ],
+            [
+              34.7891652,
+              31.875726
+            ],
+            [
+              34.7896623,
+              31.8758841
+            ],
+            [
+              34.7914761,
+              31.8760989
+            ],
+            [
+              34.791394,
+              31.8779956
+            ],
+            [
+              34.791648,
+              31.8800194
+            ],
+            [
+              34.7926905,
+              31.8803241
+            ],
+            [
+              34.7934561,
+              31.8804342
+            ],
+            [
+              34.7947641,
+              31.8807598
+            ],
+            [
+              34.7953276,
+              31.8808763
+            ],
+            [
+              34.795815,
+              31.8809344
+            ],
+            [
+              34.7961921,
+              31.8810258
+            ],
+            [
+              34.7962921,
+              31.8811441
+            ],
+            [
+              34.7958956,
+              31.8823711
+            ],
+            [
+              34.7956052,
+              31.8831063
+            ],
+            [
+              34.7956056,
+              31.883188
+            ],
+            [
+              34.7959909,
+              31.8832964
+            ],
+            [
+              34.7963331,
+              31.883319
+            ],
+            [
+              34.7963365,
+              31.8833786
+            ],
+            [
+              34.7964919,
+              31.8839717
+            ],
+            [
+              34.7972598,
+              31.8838363
+            ],
+            [
+              34.797359,
+              31.8842468
+            ],
+            [
+              34.7984066,
+              31.8840756
+            ],
+            [
+              34.7988865,
+              31.8844791
+            ],
+            [
+              34.7986022,
+              31.881226
+            ],
+            [
+              34.8025507,
+              31.8818016
+            ],
+            [
+              34.8024799,
+              31.8807363
+            ],
+            [
+              34.802565,
+              31.8807314
+            ],
+            [
+              34.8022304,
+              31.8799485
+            ],
+            [
+              34.8015244,
+              31.8786614
+            ],
+            [
+              34.7997535,
+              31.876859
+            ],
+            [
+              34.7988992,
+              31.8758915
+            ],
+            [
+              34.7986004,
+              31.8730984
+            ],
+            [
+              34.8002372,
+              31.8726825
+            ],
+            [
+              34.8038888,
+              31.8718108
+            ],
+            [
+              34.8041228,
+              31.8717642
+            ],
+            [
+              34.8061387,
+              31.8713647
+            ],
+            [
+              34.8090888,
+              31.8699079
+            ],
+            [
+              34.8114235,
+              31.8684513
+            ],
+            [
+              34.8127695,
+              31.8676444
+            ],
+            [
+              34.8128282,
+              31.8675425
+            ],
+            [
+              34.8130813,
+              31.867319
+            ],
+            [
+              34.8145101,
+              31.8663637
+            ],
+            [
+              34.8146087,
+              31.8664845
+            ],
+            [
+              34.8152986,
+              31.8675219
+            ],
+            [
+              34.8158168,
+              31.8680444
+            ],
+            [
+              34.8169841,
+              31.8689303
+            ],
+            [
+              34.8181889,
+              31.8697567
+            ],
+            [
+              34.8193371,
+              31.8710098
+            ]
+          ],
+          [
+            [
+              34.7987735,
+              31.886335
+            ],
+            [
+              34.7966531,
+              31.886749
+            ],
+            [
+              34.7983311,
+              31.8916413
+            ],
+            [
+              34.8040148,
+              31.890578
+            ],
+            [
+              34.8024808,
+              31.8884075
+            ],
+            [
+              34.8023234,
+              31.8881648
+            ],
+            [
+              34.8017882,
+              31.8871787
+            ],
+            [
+              34.8010047,
+              31.8862498
+            ],
+            [
+              34.8006995,
+              31.8859589
+            ],
+            [
+              34.800544,
+              31.8858368
+            ],
+            [
+              34.7999937,
+              31.8860967
+            ],
+            [
+              34.799664,
+              31.8861611
+            ],
+            [
+              34.7993213,
+              31.8861746
+            ],
+            [
+              34.7990549,
+              31.886222
+            ],
+            [
+              34.7988338,
+              31.8862914
+            ],
+            [
+              34.7987735,
+              31.886335
+            ]
+          ]
+        ]
+      },
+      "id": "relation/1246791"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": 1,
+        "admin_level": "8",
+        "boundary": "administrative",
+        "complete:relation": "yes",
+        "name": "مجدل شمس",
+        "name:ar": "مجدل شمس",
+        "name:en": "Majdal al-Shams",
+        "name:fr": "Majdal Shams",
+        "name:he": "מג'דל א-שמס",
+        "population": "11295",
+        "type": "boundary",
+        "wikidata": "Q670612",
+        "wikipedia": "he:מג'דל שמס"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              35.7986001,
+              33.2528828
+            ],
+            [
+              35.7940646,
+              33.251338
+            ],
+            [
+              35.7932967,
+              33.2513279
+            ],
+            [
+              35.7923837,
+              33.2516068
+            ],
+            [
+              35.7904329,
+              33.2523299
+            ],
+            [
+              35.7870676,
+              33.2539349
+            ],
+            [
+              35.7862476,
+              33.2549689
+            ],
+            [
+              35.7847281,
+              33.2558624
+            ],
+            [
+              35.7841001,
+              33.2557575
+            ],
+            [
+              35.7821772,
+              33.256018
+            ],
+            [
+              35.7811938,
+              33.2560705
+            ],
+            [
+              35.7809233,
+              33.2561316
+            ],
+            [
+              35.780853,
+              33.2562757
+            ],
+            [
+              35.7816855,
+              33.2571342
+            ],
+            [
+              35.7820361,
+              33.2584142
+            ],
+            [
+              35.7841422,
+              33.2599795
+            ],
+            [
+              35.785606,
+              33.261422
+            ],
+            [
+              35.7856079,
+              33.2617035
+            ],
+            [
+              35.7848802,
+              33.2616231
+            ],
+            [
+              35.7838006,
+              33.262227
+            ],
+            [
+              35.7823606,
+              33.2622217
+            ],
+            [
+              35.7801509,
+              33.26443
+            ],
+            [
+              35.7794965,
+              33.2648287
+            ],
+            [
+              35.7779791,
+              33.2659133
+            ],
+            [
+              35.7777868,
+              33.2675095
+            ],
+            [
+              35.7777711,
+              33.267749
+            ],
+            [
+              35.777578,
+              33.2707039
+            ],
+            [
+              35.7769603,
+              33.2740155
+            ],
+            [
+              35.7769177,
+              33.274653
+            ],
+            [
+              35.7761637,
+              33.2750802
+            ],
+            [
+              35.7763905,
+              33.2771453
+            ],
+            [
+              35.7768813,
+              33.278901
+            ],
+            [
+              35.7778055,
+              33.2807676
+            ],
+            [
+              35.7788981,
+              33.2833552
+            ],
+            [
+              35.7802907,
+              33.2853129
+            ],
+            [
+              35.7880909,
+              33.2920373
+            ],
+            [
+              35.7880573,
+              33.2921421
+            ],
+            [
+              35.783872,
+              33.2952917
+            ],
+            [
+              35.7802211,
+              33.2995047
+            ],
+            [
+              35.7802416,
+              33.2995051
+            ],
+            [
+              35.7795279,
+              33.3000418
+            ],
+            [
+              35.7792267,
+              33.2998017
+            ],
+            [
+              35.7749125,
+              33.2971106
+            ],
+            [
+              35.7735604,
+              33.296298
+            ],
+            [
+              35.7719222,
+              33.2955357
+            ],
+            [
+              35.7645744,
+              33.2907195
+            ],
+            [
+              35.7630888,
+              33.2892243
+            ],
+            [
+              35.7619042,
+              33.2878566
+            ],
+            [
+              35.7610598,
+              33.2870298
+            ],
+            [
+              35.7609585,
+              33.2869719
+            ],
+            [
+              35.7609354,
+              33.2851182
+            ],
+            [
+              35.7607507,
+              33.2848692
+            ],
+            [
+              35.7601315,
+              33.2846605
+            ],
+            [
+              35.7582545,
+              33.2845824
+            ],
+            [
+              35.7572408,
+              33.2871433
+            ],
+            [
+              35.7567576,
+              33.2885389
+            ],
+            [
+              35.7560691,
+              33.2900508
+            ],
+            [
+              35.7558517,
+              33.2900614
+            ],
+            [
+              35.7549466,
+              33.2898828
+            ],
+            [
+              35.7538907,
+              33.2893781
+            ],
+            [
+              35.7533838,
+              33.2888422
+            ],
+            [
+              35.7533659,
+              33.287814
+            ],
+            [
+              35.7541691,
+              33.2863304
+            ],
+            [
+              35.754288,
+              33.2852247
+            ],
+            [
+              35.7548813,
+              33.28477
+            ],
+            [
+              35.7553872,
+              33.283149
+            ],
+            [
+              35.7555187,
+              33.2816006
+            ],
+            [
+              35.7567425,
+              33.2772078
+            ],
+            [
+              35.7568821,
+              33.2755964
+            ],
+            [
+              35.7572544,
+              33.2728512
+            ],
+            [
+              35.7570044,
+              33.2712163
+            ],
+            [
+              35.756547,
+              33.2696835
+            ],
+            [
+              35.7552597,
+              33.2669314
+            ],
+            [
+              35.7553175,
+              33.2666358
+            ],
+            [
+              35.7553446,
+              33.2662936
+            ],
+            [
+              35.7553068,
+              33.2659411
+            ],
+            [
+              35.7553531,
+              33.2654709
+            ],
+            [
+              35.7550583,
+              33.2650901
+            ],
+            [
+              35.7589255,
+              33.2604471
+            ],
+            [
+              35.760141,
+              33.2595079
+            ],
+            [
+              35.7612353,
+              33.2580767
+            ],
+            [
+              35.7610001,
+              33.2574793
+            ],
+            [
+              35.7616049,
+              33.2570799
+            ],
+            [
+              35.7604687,
+              33.2552215
+            ],
+            [
+              35.7593562,
+              33.2522274
+            ],
+            [
+              35.7589196,
+              33.2512844
+            ],
+            [
+              35.7586342,
+              33.2509007
+            ],
+            [
+              35.7584733,
+              33.2507572
+            ],
+            [
+              35.7581389,
+              33.249883
+            ],
+            [
+              35.7578216,
+              33.249557
+            ],
+            [
+              35.7573928,
+              33.2489317
+            ],
+            [
+              35.7569667,
+              33.2486242
+            ],
+            [
+              35.7563949,
+              33.247821
+            ],
+            [
+              35.7560973,
+              33.247536
+            ],
+            [
+              35.7557234,
+              33.2470395
+            ],
+            [
+              35.7551935,
+              33.2464485
+            ],
+            [
+              35.754451,
+              33.2443072
+            ],
+            [
+              35.7536239,
+              33.2437142
+            ],
+            [
+              35.7572385,
+              33.2410375
+            ],
+            [
+              35.7606552,
+              33.2408728
+            ],
+            [
+              35.7597709,
+              33.2381988
+            ],
+            [
+              35.7667015,
+              33.2388257
+            ],
+            [
+              35.7678457,
+              33.2389573
+            ],
+            [
+              35.772078,
+              33.2386453
+            ],
+            [
+              35.7782923,
+              33.2367343
+            ],
+            [
+              35.7824125,
+              33.2416906
+            ],
+            [
+              35.7894622,
+              33.2422494
+            ],
+            [
+              35.7945905,
+              33.2434828
+            ],
+            [
+              35.7976028,
+              33.2445982
+            ],
+            [
+              35.7989681,
+              33.2515682
+            ],
+            [
+              35.7986001,
+              33.2528828
+            ]
+          ]
+        ]
+      },
+      "id": "relation/1375242"
     }
   ]
 }
