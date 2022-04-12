@@ -55,7 +55,7 @@ export class SingleValueTaxComponent implements OnInit {
   async getDiff() {
     var new_value = await this.taxes[this.tax_type].get_current_value() / this.taxes[this.tax_type].current_rate * this.new_rate;
 
-    this.onChange.emit({value: new_value - await this.taxes[this.tax_type].get_current_value()})
+    this.onChange.emit({value: new_value - await this.taxes[this.tax_type].get_current_value(), rate: this.new_rate})
   }
 
 }
