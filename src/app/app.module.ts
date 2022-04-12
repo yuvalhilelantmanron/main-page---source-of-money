@@ -19,6 +19,7 @@ import { MiddleNavBarPageComponent } from './middle-nav-bar-page/middle-nav-bar-
 import { RightNavBarPageComponent } from './right-nav-bar-page/right-nav-bar-page.component';
 import { TaxGameComponent } from './tax-game/tax-game.component';
 import { SingleValueTaxComponent } from './tax-game/single-value-tax/single-value-tax.component';
+import { CompereTaxToBudgetComponent } from './tax-game/compere-tax-to-budget/compere-tax-to-budget.component';
 
 declare let BUDGETKEY_NG2_COMPONENTS_THEME: any;
 declare const BUDGETKEY_THEME_ID: any;
@@ -55,6 +56,7 @@ if (typeof (BUDGETKEY_NG2_COMPONENTS_THEME) !== 'undefined') {
     RightNavBarPageComponent,
     TaxGameComponent,
     SingleValueTaxComponent,
+    CompereTaxToBudgetComponent,
   ],
   imports: [
     BrowserModule,
