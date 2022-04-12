@@ -1,6 +1,6 @@
 import { Component, Inject, OnInit, HostListener } from '@angular/core';
 import { BUBBLES } from './constants';
-
+import { TranslateService} from '@ngx-translate/core';
 
 const _TRANSLATIONS = window['TRANSLATIONS'] || {};
 
@@ -30,9 +30,13 @@ export class AppComponent implements OnInit {
 
   public data: any;
 
-  constructor(@Inject(BUBBLES) private bubbles: any) {
-    // this.getData(bubbles);
+  constructor(@Inject(BUBBLES) private bubbles: any, public translate: TranslateService) {
     this.newGetData();
+    this.getData(bubbles);
+    translate.addLangs(['he', 'ar']);
+    translate.setDefaultLang('he');
+    const browserLang = translate.getBrowserLang();
+    translate.use(browserLang.match(/he|ar/) ? browserLang : 'he');
   }
 
   async getData(bubbles) {
