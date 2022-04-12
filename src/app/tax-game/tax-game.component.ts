@@ -40,6 +40,13 @@ export class TaxGameComponent implements OnInit {
     this.totalIncome = data.rows[0].history[this.year].net_executed;
   }
 
+  async getData() {
+    var tax_code = '0000';
+    var raw = await fetch("https://next.obudget.org/api/query?query=SELECT%20history%20FROM%20budget%20WHERE%20code=%27"+tax_code+"%27AND%20year>=2020%20ORDER%20BY%20year%20ASC%20LIMIT%201");
+    var data = await raw.json();
+    this.totalIncome = data.rows[0].history[this.year].net_executed;
+  }
+
   public changeTax(evt, tax) {
     this.currTax = this.taxes[tax];
 
