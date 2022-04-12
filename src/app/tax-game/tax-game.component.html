@@ -1,22 +1,22 @@
 <div class="tax-selection">
   <button class="tax-btn active" (click)="changeTax($event, 1)">
     דלק <br />
-    <span id="tax1-cng" class="tax-cng">({{ formatNum(tax1Diff) }}₪)</span>
+    <span id="tax1-cng" class="tax-cng">({{ formatNum(taxes[1].diff) }}₪)</span>
   </button>
   <button class="tax-btn" (click)="changeTax($event, 2)">
     מע"מ <br />
-    <span id="tax2-cng" class="tax-cng">({{ formatNum(tax2Diff) }}₪)</span>
+    <span id="tax2-cng" class="tax-cng">({{ formatNum(taxes[2].diff) }}₪)</span>
   </button>
   <button class="tax-btn" (click)="changeTax($event, 3)">
     טבק <br />
-    <span id="tax3-cng" class="tax-cng">({{ formatNum(tax3Diff) }}₪)</span>
+    <span id="tax3-cng" class="tax-cng">({{ formatNum(taxes[3].diff) }}₪)</span>
   </button>
 </div>
 <div class="tax-input">
   <div [hidden]="!(currTax == 'delek')">
     <p>
       <app-single-value-tax
-        (onChange)="tax1Diff = $event.value; tax1Cng = $event.rate"
+        (onChange)="taxes[1].diff = $event.value; tax1Cng = $event.rate"
         tax_type="delek"
       ></app-single-value-tax>
     </p>
@@ -25,7 +25,7 @@
   <div [hidden]="!(currTax == 'maam')">
     <p>
       <app-single-value-tax
-        (onChange)="tax2Diff = $event.value; tax2Cng = $event.rate"
+        (onChange)="taxes[2].diff = $event.value; tax2Cng = $event.rate"
         tax_type="maam"
       ></app-single-value-tax>
     </p>
@@ -34,7 +34,7 @@
   <div [hidden]="!(currTax == 'tabak')">
     <p>
       <app-single-value-tax
-        (onChange)="tax3Diff = $event.value; tax3Cng = $event.rate"
+        (onChange)="taxes[3].diff = $event.value; tax3Cng = $event.rate"
         tax_type="tabak"
       ></app-single-value-tax>
     </p>

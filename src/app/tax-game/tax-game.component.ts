@@ -1,6 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { UtilsService } from '../utils.service';
 
+interface Tax {
+  name: string;
+  diff: string;
+  cng: string;
+  status: string;
+}
+
 @Component({
   selector: 'app-tax-game',
   templateUrl: './tax-game.component.html',
@@ -10,20 +17,12 @@ export class TaxGameComponent implements OnInit {
   public totalIncome: number = 0;
   public year: number = 2020;
 
-  tax1Diff: number = 0;
-  tax2Diff: number = 0;
-  tax3Diff: number = 0;
-
-  tax1Cng: number = 0;
-  tax2Cng: number = 0;
-  tax3Cng: number = 0;
-
   taxes: any = {
-    1: 'delek',
-    2: 'maam',
-    3: 'tabak',
+    1: { name: 'delek', diff: 0, cng: 0, status: 'active' },
+    2: { name: 'maam', diff: 0, cng: 0, status: 'active' },
+    3: { name: 'tabak', diff: 0, cng: 0, status: 'active' },
   };
-  currTax: string = this.taxes[1];
+  currTax: string = this.taxes[1].name;
 
   constructor(private utils: UtilsService) {
     this.getData();
@@ -43,7 +42,7 @@ export class TaxGameComponent implements OnInit {
   }
 
   public changeTax(evt, tax) {
-    this.currTax = this.taxes[tax];
+    this.currTax = this.taxes[tax].name;
 
     // Remove highlight
     let taxButtons = document.getElementsByClassName('tax-btn');
@@ -56,7 +55,7 @@ export class TaxGameComponent implements OnInit {
   }
 
   totalDiff() {
-    return this.tax1Diff + this.tax2Diff + this.tax3Diff;
+    return this.taxes[1].diff + this.taxes[2].diff + this.taxes[3].diff;
   }
 
   formatNum(value): string {
