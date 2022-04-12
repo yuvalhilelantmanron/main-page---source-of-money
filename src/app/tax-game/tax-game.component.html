@@ -1,23 +1,39 @@
 <div class="tax-selection">
-  <button class="tax-btn active" (click)="changeTax($event, 1)">
-    דלק <br />
-    <span id="tax1-cng" class="tax-cng">({{ formatNum(taxes[1].diff) }}₪)</span>
-    <br />
-    <button (click)="changeStatus(1)">{{ getStatus(1) }}</button>
-  </button>
-  <button class="tax-btn" (click)="changeTax($event, 2)">
-    מע"מ <br />
-    <span id="tax2-cng" class="tax-cng">({{ formatNum(taxes[2].diff) }}₪)</span>
-    <br />
-    <button (click)="changeStatus(2)">{{ getStatus(2) }}</button>
-  </button>
-  <button class="tax-btn" (click)="changeTax($event, 3)">
-    טבק <br />
-    <span id="tax3-cng" class="tax-cng">({{ formatNum(taxes[3].diff) }}₪)</span>
-    <br />
-    <button (click)="changeStatus(3)">{{ getStatus(3) }}</button>
-  </button>
+  <div class="tax-btns">
+    <button class="tax-btn active" (click)="changeTax($event, 1)">
+      דלק <br />
+      <span id="tax1-cng" class="tax-cng"
+        >({{ formatNum(taxes[1].diff) }}₪)</span
+      >
+    </button>
+    <button class="status-btn" (click)="changeStatus(1)">
+      {{ getStatus(1) }}
+    </button>
+  </div>
+  <div class="tax-btns">
+    <button class="tax-btn" (click)="changeTax($event, 2)">
+      מע"מ <br />
+      <span id="tax2-cng" class="tax-cng"
+        >({{ formatNum(taxes[2].diff) }}₪)</span
+      >
+    </button>
+    <button class="status-btn" (click)="changeStatus(2)">
+      {{ getStatus(2) }}
+    </button>
+  </div>
+  <div class="tax-btns">
+    <button class="tax-btn" (click)="changeTax($event, 3)">
+      טבק <br />
+      <span id="tax3-cng" class="tax-cng"
+        >({{ formatNum(taxes[3].diff) }}₪)</span
+      >
+    </button>
+    <button class="status-btn" (click)="changeStatus(3)">
+      {{ getStatus(3) }}
+    </button>
+  </div>
 </div>
+
 <div class="tax-input">
   <div [hidden]="!(currTax == 'delek')">
     <p>
