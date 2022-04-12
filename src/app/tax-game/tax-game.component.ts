@@ -1,6 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { UtilsService } from '../utils.service';
 
+interface Tax {
+  name: string;
+  diff: string;
+  cng: string;
+  status: string;
+}
+
 @Component({
   selector: 'app-tax-game',
   templateUrl: './tax-game.component.html',
@@ -10,20 +17,18 @@ export class TaxGameComponent implements OnInit {
   public totalIncome: number = 0;
   public year: number = 2020;
 
-  tax1Diff: number = 0;
-  tax2Diff: number = 0;
-  tax3Diff: number = 0;
-
-  tax1Cng: number = 0;
-  tax2Cng: number = 0;
-  tax3Cng: number = 0;
+  taxStatus: any = {
+    0: 'רגיל',
+    1: 'איפוס',
+    2: 'התעלמות',
+  };
 
   taxes: any = {
-    1: 'delek',
-    2: 'maam',
-    3: 'tabak',
+    1: { name: 'delek', diff: 0, total: 0, cng: 0, status: 0 },
+    2: { name: 'maam', diff: 0, total: 0, cng: 0, status: 0 },
+    3: { name: 'tabak', diff: 0, total: 0, cng: 0, status: 0 },
   };
-  currTax: string = this.taxes[1];
+  currTax: string = this.taxes[1].name;
 
   constructor(private utils: UtilsService) {
     this.getData();
@@ -43,7 +48,7 @@ export class TaxGameComponent implements OnInit {
   }
 
   public changeTax(evt, tax) {
-    this.currTax = this.taxes[tax];
+    this.currTax = this.taxes[tax].name;
 
     // Remove highlight
     let taxButtons = document.getElementsByClassName('tax-btn');
@@ -56,7 +61,12 @@ export class TaxGameComponent implements OnInit {
   }
 
   totalDiff() {
-    return this.tax1Diff + this.tax2Diff + this.tax3Diff;
+    let total = 0;
+    for (let i = 1; i <= 3; i++) {
+      if (this.taxes[i].status == 0) total += this.taxes[i].diff;
+      if (this.taxes[i].status == 1) total -= this.taxes[i].total;
+    }
+    return total;
   }
 
   formatNum(value): string {
@@ -72,5 +82,13 @@ export class TaxGameComponent implements OnInit {
 
   valueSuffix(value): string {
     return this.utils.getValueSuffix(value);
+  }
+
+  getStatus(number): string {
+    return this.taxStatus[this.taxes[number].status];
+  }
+
+  changeStatus(number) {
+    this.taxes[number].status = (this.taxes[number].status + 1) % 3;
   }
 }
