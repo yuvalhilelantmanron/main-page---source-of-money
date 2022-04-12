@@ -1,4 +1,8 @@
 <div>
+  <p>
+    <a href={{taxes[getTax()].url}} target="_blank">{{taxes[getTax()].title}}</a>
+    {{taxes[getTax()].description}}
+  </p>
   <p>שיעור המס הנוכחי: {{taxes[getTax()].current_rate}} {{taxes[getTax()].units}}</p>
   <input [(ngModel)]="new_rate" type="number"  placeholder="שיעור המס החדש" (ngModelChange)="getDiff()"/>
 
