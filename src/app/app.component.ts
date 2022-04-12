@@ -105,6 +105,34 @@ export class AppComponent implements OnInit {
       minimizedArray.push(minimizedData[item]);
     }
 
+    for (let item of minimizedArray) {
+      console.log(item);
+      var arrOfSub = [];
+      for (let sub in item.values) {
+        arrOfSub.push({ amount: item.values[sub].amount, name: sub });
+      }
+
+      let maxAmount = 5;
+
+      if (arrOfSub.length > maxAmount - 1) {
+        var sortedSub = arrOfSub.sort((a, b) => b.amount - a.amount);
+
+        var sortedSubData = {}
+        for (let sub of sortedSub.slice(0, maxAmount - 1)) {
+          var shortName = sub.name;
+          if (shortName.length > 10)
+            shortName = shortName.slice(0, 10) + "...";
+          sortedSubData[sub.name] = { ...sub, shortName: shortName };
+        }
+        item.values = sortedSubData;
+
+        var otherSum = sortedSub.slice(maxAmount - 1, sortedSub.length).reduce((sum, curr) => sum += curr.amount, 0);
+
+        if (otherSum > 0)
+          item.values['אחר'] = { amount: otherSum, name: 'אחר' };
+      }
+    }
+
     //gets the percentage of each category
     for (item of minimizedArray)
       item.percent = (item.amount / this.totalAmount) * 100;
