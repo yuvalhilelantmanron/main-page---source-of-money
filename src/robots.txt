@@ -1,3 +1,2 @@
-Sitemap: https://next.obudget.org/datapackages/sitemaps/sitemap.xml
-Disallow: /api/
-
+User-agent: *
+Disallow: /
