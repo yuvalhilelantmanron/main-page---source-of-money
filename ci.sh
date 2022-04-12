@@ -10,6 +10,7 @@ DEPLOY_COMMIT_MESSAGE="automatic update of source-of-money-app-main-page"
 DEPLOY_VALUES_CHART_NAME=source-of-money-app-main-page
 DOCKER_IMAGE=inbararan/source-of-money
 
+echo $DOCKER_USER
 
 if [ "${1}" == "install" ]; then
     mkdir -p $HOME/bin &&
