@@ -25,7 +25,7 @@ export class SingleValueTaxComponent implements OnInit {
       demo_placeholder: "40",
       demo_units: "ליטרים",
       demo_result_text: "תשלום עבור מילוי של מיכל זה ",
-      neutralizer: 1
+      normalizer: 1
     },
     "maam": {
       get_current_value: async () => {
@@ -40,7 +40,7 @@ export class SingleValueTaxComponent implements OnInit {
       demo_placeholder: "3000",
       demo_units: "שקלים",
       demo_result_text: "תשלום עבור מוצר זה",
-      neutralizer: 100
+      normalizer: 100
     },
     "tabak": {
       get_current_value: async () => {
@@ -55,7 +55,7 @@ export class SingleValueTaxComponent implements OnInit {
       demo_placeholder: "50",
       demo_units: "גרם",
       demo_result_text: "תשלום עבור הטבק",
-      neutralizer: 1000
+      normalizer: 1000
     }
   }
 
