@@ -16,7 +16,7 @@
   <div [hidden]="!(currTax == 'delek')">
     <p>
       <app-single-value-tax
-        (onChange)="taxes[1].diff = $event.value; tax1Cng = $event.rate"
+        (onChange)="taxes[1].diff = $event.value; taxes[1].cng = $event.rate"
         tax_type="delek"
       ></app-single-value-tax>
     </p>
@@ -25,7 +25,7 @@
   <div [hidden]="!(currTax == 'maam')">
     <p>
       <app-single-value-tax
-        (onChange)="taxes[2].diff = $event.value; tax2Cng = $event.rate"
+        (onChange)="taxes[2].diff = $event.value; taxes[2].cng = $event.rate"
         tax_type="maam"
       ></app-single-value-tax>
     </p>
@@ -34,7 +34,7 @@
   <div [hidden]="!(currTax == 'tabak')">
     <p>
       <app-single-value-tax
-        (onChange)="taxes[3].diff = $event.value; tax3Cng = $event.rate"
+        (onChange)="taxes[3].diff = $event.value; taxes[3].cng = $event.rate"
         tax_type="tabak"
       ></app-single-value-tax>
     </p>
