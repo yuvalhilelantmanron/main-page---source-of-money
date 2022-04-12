@@ -49,6 +49,7 @@ app.get(basePath + '*', function(req, res) {
     // fallback to local file - for local development / testing
     } else if (fs.existsSync(path.resolve(__dirname, themeFileName))) {
       themeJson = JSON.parse(fs.readFileSync(path.resolve(__dirname, themeFileName)));
+      console.log("hello");
     } else {
       themeJson = {};
     }
