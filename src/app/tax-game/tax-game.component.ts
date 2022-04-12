@@ -39,6 +39,13 @@ export class TaxGameComponent implements OnInit {
       cng: 0,
       status: { cancel: false, ignore: false },
     },
+    4: {
+      name: 'other',
+      diff: 0,
+      total: 0,
+      cng: 0,
+      status: { cancel: false, ignore: false },
+    },
   };
   currTax: string = this.taxes[1].name;
 
@@ -95,7 +102,7 @@ export class TaxGameComponent implements OnInit {
       this.taxes[number].status.cancel = false;
     }
 
-    let taxButtons = document.getElementsByClassName('status-btn');
+    let taxButtons = document.getElementsByClassName('status-' + number);
     for (let i = 0; i < taxButtons.length; i++) {
       if (taxButtons[i] != evt.currentTarget)
         taxButtons[i].className = taxButtons[i].className.replace(
