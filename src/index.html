@@ -3,6 +3,7 @@
 
 <head>
   <title>מקור הכסף</title>
+  <base href="{{base}}">
 
   <link rel="search" type="application/opensearchdescription+xml" title="מקור הכסף" href="/opensearch.xml">
   <meta name="referrer" content="origin" />
@@ -37,7 +38,7 @@
   <link rel="canonical" href="https://next.obudget.org/" />
   <script>
     window.bubbles = {{ bubbles | safe }};
-    { { injectedScript | safe } }
+    {{ injectedScript | safe }}
   </script>
   <script type="application/ld+json">
     {
