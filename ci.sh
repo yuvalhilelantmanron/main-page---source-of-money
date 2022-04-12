@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 K8S_OPS_REPO_BRANCH=master
-K8S_OPS_REPO_SLUG=OpenBudget/budgetkey-k8s
+K8S_OPS_REPO_SLUG=OpenBudget/source-of-money-k8s
 DEPLOY_VALUES_IMAGE_PROP=image
 DEPLOY_YAML_UPDATE_FILE=values.auto-updated.yaml
 DEPLOY_GIT_EMAIL=budgetkey-deployer@null.void
 DEPLOY_GIT_USER=budgetkey-deployer
 
-DEPLOY_COMMIT_MESSAGE="automatic update of budgetkey-app-main-page"
+DEPLOY_COMMIT_MESSAGE="automatic update of source-of-money-app-main-page"
 DEPLOY_VALUES_CHART_NAME=app-main-page
-DOCKER_IMAGE=budgetkey/budgetkey-app-main-page
+DOCKER_IMAGE=budgetkey/source-of-money-app-main-page
 
 
 if [ "${1}" == "install" ]; then
