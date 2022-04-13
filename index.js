@@ -7,7 +7,7 @@ const nunjucks = require('nunjucks');
 const get_cache = require('./cache');
 
 const basePath = process.env.BASE_PATH || '/';
-const rootPath = path.resolve(__dirname, './dist/budgetkey-app-main-page');
+const rootPath = path.resolve(__dirname, './dist/source-of-money-app-main-page');
 
 const cachedThemes = {};
 const cachedThemeJsons = {};
