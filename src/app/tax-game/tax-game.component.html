@@ -4,16 +4,14 @@
       דלק <br />
       <span class="tax-cng">({{ formatNum(taxes[1].diff) }}₪)</span>
     </button>
-    <div>
-      <button class="status-btn status-1" (click)="changeStatus($event, 1, 2)">
-        ביטול המס <br />
-        <span class="tax-cng">המס יוריד {{ formatNum(taxes[1].total) }}₪</span>
-      </button>
-      <button class="status-btn status-1" (click)="changeStatus($event, 1, 1)">
-        התעלמות מהשינויים <br />
-        <span class="tax-cng">השינויים שנעשו במס לא ישפיעו על המאזן</span>
-      </button>
-    </div>
+    <button class="status-btn status-1" (click)="changeStatus($event, 1, 2)">
+      ביטול המס <br />
+      <span class="tax-cng">המס יוריד {{ formatNum(taxes[1].total) }}₪</span>
+    </button>
+    <button class="status-btn status-1" (click)="changeStatus($event, 1, 1)">
+      התעלמות מהשינויים <br />
+      <span class="tax-cng">השינויים שנעשו במס לא ישפיעו על המאזן</span>
+    </button>
   </div>
 
   <div class="tax-btns">
@@ -21,16 +19,14 @@
       מע"מ <br />
       <span class="tax-cng">({{ formatNum(taxes[2].diff) }}₪)</span>
     </button>
-    <div>
-      <button class="status-btn status-2" (click)="changeStatus($event, 2, 2)">
-        ביטול המס<br />
-        <span class="tax-cng">המס יוריד {{ formatNum(taxes[2].total) }}₪</span>
-      </button>
-      <button class="status-btn status-2" (click)="changeStatus($event, 2, 1)">
-        התעלמות מהשינויים <br />
-        <span class="tax-cng">השינויים שנעשו במס לא ישפיעו על המאזן</span>
-      </button>
-    </div>
+    <button class="status-btn status-2" (click)="changeStatus($event, 2, 2)">
+      ביטול המס<br />
+      <span class="tax-cng">המס יוריד {{ formatNum(taxes[2].total) }}₪</span>
+    </button>
+    <button class="status-btn status-2" (click)="changeStatus($event, 2, 1)">
+      התעלמות מהשינויים <br />
+      <span class="tax-cng">השינויים שנעשו במס לא ישפיעו על המאזן</span>
+    </button>
   </div>
 
   <div class="tax-btns">
@@ -38,24 +34,22 @@
       טבק <br />
       <span class="tax-cng">({{ formatNum(taxes[3].diff) }}₪)</span>
     </button>
-    <div>
-      <button class="status-btn status-3" (click)="changeStatus($event, 3, 2)">
-        ביטול המס<br />
-        <span class="tax-cng">המס יוריד {{ formatNum(taxes[3].total) }}₪</span>
-      </button>
-      <button class="status-btn status-3" (click)="changeStatus($event, 3, 1)">
-        התעלמות מהשינויים <br />
-        <span class="tax-cng">השינויים שנעשו במס לא ישפיעו על המאזן</span>
-      </button>
-    </div>
-  </div>
-
-  <div class="tax-btns other">
-    <button class="tax-btn" (click)="changeTax($event, 4)">
-      שונות <br />
-      <span class="tax-cng">({{ formatNum(taxes[4].diff) }})₪</span>
+    <button class="status-btn status-3" (click)="changeStatus($event, 3, 2)">
+      ביטול המס<br />
+      <span class="tax-cng">המס יוריד {{ formatNum(taxes[3].total) }}₪</span>
+    </button>
+    <button class="status-btn status-3" (click)="changeStatus($event, 3, 1)">
+      התעלמות מהשינויים <br />
+      <span class="tax-cng">השינויים שנעשו במס לא ישפיעו על המאזן</span>
     </button>
   </div>
+
+  <!-- <div class="tax-btns other">
+       <button class="tax-btn" (click)="changeTax($event, 4)">
+       שונות <br />
+       <span class="tax-cng">({{ formatNum(taxes[4].diff) }})₪</span>
+       </button>
+       </div> -->
 </div>
 
 <div class="tax-input">
@@ -96,17 +90,20 @@
 <div class="tax-result">
   <p>
     הכנסות נוכחיות <br />
-    <span id="curr-inc">{{ formatNum(totalIncome) }}</span>₪
+    <span id="curr-inc">{{ formatNum(totalIncome) }}</span
+    >₪
   </p>
   <p>
     הפרש <br />
-    <span id="diff">{{ formatNum(totalDiff()) }}</span>₪
+    <span id="diff">{{ formatNum(totalDiff()) }}</span
+    >₪
   </p>
   <p>
     הכנסות חדשות <br />
-    <span id="new-inc">{{ formatNum(totalIncome + totalDiff()) }}</span>₪
+    <span id="new-inc">{{ formatNum(totalIncome + totalDiff()) }}</span
+    >₪
   </p>
 </div>
-<div style="text-align: center;">
+<div style="text-align: center">
   <p>[הנתונים נכונים לשנת 2020]</p>
 </div>
