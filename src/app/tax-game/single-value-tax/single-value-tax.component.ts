@@ -16,11 +16,7 @@ export class SingleValueTaxComponent implements OnInit {
   demo_value: number;
   taxes: any = {
     delek: {
-      get_current_value: async () => {
-        var tax_code = '0000180101';
-        var data = await this.fetching.get(tax_code);
-        return data.net_executed;
-      },
+      code: '0000180101',
       current_rate: 3.05585,
       units: "שקלים לליטר",
       demo_text: " לדוגמה ניקח מיכל של",
@@ -33,11 +29,7 @@ export class SingleValueTaxComponent implements OnInit {
       title: "מס דלק"
     },
     maam: {
-      get_current_value: async () => {
-        var tax_code = '0000140201';
-        var data = await this.fetching.get(tax_code);
-        return data.net_executed;
-      },
+      code: '0000140201',
       current_rate: 17,
       units: "אחוזים",
       demo_text: " לדוגמה ניקח מוצר שמחירו",
@@ -50,11 +42,7 @@ export class SingleValueTaxComponent implements OnInit {
       title: 'מע"מ'
     },
     tabak: {
-      get_current_value: async () => {
-        var tax_code = '00001501';
-        var data = await this.fetching.get(tax_code);
-        return data.net_executed;
-      },
+      code: '00001501',
       current_rate: 1097.24,
       units: 'ש"ח לק"ג',
       demo_text: " לדוגמה טבק לגלגול במשקל",
@@ -92,8 +80,9 @@ export class SingleValueTaxComponent implements OnInit {
   }
 
   async getDiff() {
+    var data = await this.fetching.get(this.taxes[this.tax_type].code);
     var new_value =
-      ((await this.taxes[this.tax_type].get_current_value()) /
+      (data.net_executed /
         this.taxes[this.tax_type].current_rate) *
       this.new_rate;
 
