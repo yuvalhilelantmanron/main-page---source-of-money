@@ -87,14 +87,14 @@ export class SingleValueTaxComponent implements OnInit {
       this.new_rate;
 
     this.onChange.emit({
-      value: new_value - (await this.taxes[this.tax_type].get_current_value()),
+      value: new_value - (await this.fetching.get(this.taxes[this.tax_type].code)).net_executed,
       rate: this.new_rate,
     });
   }
 
   async getTotal() {
     this.onLoad.emit({
-      total: await this.taxes[this.tax_type].get_current_value(),
+      total: (await this.fetching.get(this.taxes[this.tax_type].code)).net_executed,
     });
   }
 }

@@ -7,7 +7,8 @@ export class FetchingService {
   codes = [
     '0000180101',
     '0000140201',
-    '00001501'
+    '00001501',
+    '0000'
   ];
   all_data: any = {};
   latest_year = "2020";
