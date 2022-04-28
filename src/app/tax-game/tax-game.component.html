@@ -87,23 +87,27 @@
     <p>Other taxes here</p>
   </div>
 </div>
-<div class="tax-result">
-  <p>
-    הכנסות נוכחיות <br />
-    <span id="curr-inc">{{ formatNum(totalIncome) }}</span
-    >₪
-  </p>
-  <p>
-    הפרש <br />
-    <span id="diff">{{ formatNum(totalDiff()) }}</span
-    >₪
-  </p>
-  <p>
-    הכנסות חדשות <br />
-    <span id="new-inc">{{ formatNum(totalIncome + totalDiff()) }}</span
-    >₪
-  </p>
+
+<div style="text-align: center">
+  <div class="tax-result">
+    <p>
+      הכנסות נוכחיות <br />
+      <span id="curr-inc">{{ formatNum(totalIncome) }}</span
+      >₪
+    </p>
+    <p>
+      הפרש <br />
+      <span id="diff">{{ formatNum(totalDiff()) }}</span
+      >₪
+    </p>
+    <p>
+      הכנסות חדשות <br />
+      <span id="new-inc">{{ formatNum(totalIncome + totalDiff()) }}</span
+      >₪
+    </p>
+  </div>
 </div>
+
 <div style="text-align: center">
   <p>[הנתונים נכונים לשנת 2020]</p>
 </div>
