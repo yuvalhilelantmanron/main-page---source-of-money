@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { FetchingService } from 'src/app/fetching.service';
 import { UtilsService } from '../../utils.service';
 
 @Component({
@@ -15,16 +16,7 @@ export class SingleValueTaxComponent implements OnInit {
   demo_value: number;
   taxes: any = {
     delek: {
-      get_current_value: async () => {
-        var tax_code = '0000180101';
-        var raw = await fetch(
-          'https://next.obudget.org/api/query?query=SELECT%20history%20FROM%20budget%20WHERE%20code=%27' +
-            tax_code +
-            '%27AND%20year>=2020%20ORDER%20BY%20year%20ASC%20LIMIT%201',
-        );
-        var data = await raw.json();
-        return data.rows[0].history[this.latest_year].net_executed;
-      },
+      code: '0000180101',
       current_rate: 3.05585,
       units: "שקלים לליטר",
       demo_text: " לדוגמה ניקח מיכל של",
@@ -37,16 +29,7 @@ export class SingleValueTaxComponent implements OnInit {
       title: "מס דלק"
     },
     maam: {
-      get_current_value: async () => {
-        var tax_code = '0000140201';
-        var raw = await fetch(
-          'https://next.obudget.org/api/query?query=SELECT%20history%20FROM%20budget%20WHERE%20code=%27' +
-            tax_code +
-            '%27AND%20year>=2020%20ORDER%20BY%20year%20ASC%20LIMIT%201',
-        );
-        var data = await raw.json();
-        return data.rows[0].history[this.latest_year].net_executed;
-      },
+      code: '0000140201',
       current_rate: 17,
       units: "אחוזים",
       demo_text: " לדוגמה ניקח מוצר שמחירו",
@@ -59,18 +42,7 @@ export class SingleValueTaxComponent implements OnInit {
       title: 'מע"מ'
     },
     tabak: {
-      get_current_value: async () => {
-        var tax_code = '00001501';
-        var raw = await fetch(
-          'https://next.obudget.org/api/query?query=SELECT%20net_executed%20FROM%20budget%20WHERE%20code=%27' +
-            tax_code +
-            '%27AND%20year=%27' +
-            this.latest_year +
-            '%27',
-        );
-        var data = await raw.json();
-        return data.rows[0].net_executed;
-      },
+      code: '00001501',
       current_rate: 1097.24,
       units: 'ש"ח לק"ג',
       demo_text: " לדוגמה טבק לגלגול במשקל",
@@ -84,7 +56,7 @@ export class SingleValueTaxComponent implements OnInit {
     }
   }
 
-  constructor(private utils: UtilsService) {}
+  constructor(private utils: UtilsService, private fetching: FetchingService) {}
 
   async ngOnInit() {
     this.demo_value = this.taxes[this.tax_type].demo_placeholder;
@@ -108,20 +80,21 @@ export class SingleValueTaxComponent implements OnInit {
   }
 
   async getDiff() {
+    var data = await this.fetching.get(this.taxes[this.tax_type].code);
     var new_value =
-      ((await this.taxes[this.tax_type].get_current_value()) /
+      (data.net_executed /
         this.taxes[this.tax_type].current_rate) *
       this.new_rate;
 
     this.onChange.emit({
-      value: new_value - (await this.taxes[this.tax_type].get_current_value()),
+      value: new_value - (await this.fetching.get(this.taxes[this.tax_type].code)).net_executed,
       rate: this.new_rate,
     });
   }
 
   async getTotal() {
     this.onLoad.emit({
-      total: await this.taxes[this.tax_type].get_current_value(),
+      total: (await this.fetching.get(this.taxes[this.tax_type].code)).net_executed,
     });
   }
 }
