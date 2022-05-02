@@ -92,17 +92,17 @@
   <div class="tax-result">
     <p>
       הכנסות נוכחיות <br />
-      <span id="curr-inc">{{ formatNum(totalIncome) }}</span
+      <span class="res-value" id="curr-inc">{{ formatNum(totalIncome) }}</span
       >₪
     </p>
     <p>
       הפרש <br />
-      <span id="diff">{{ formatNum(totalDiff()) }}</span
+      <span class="res-value" id="diff">{{ formatNum(totalDiff()) }}</span
       >₪
     </p>
     <p>
       הכנסות חדשות <br />
-      <span id="new-inc">{{ formatNum(totalIncome + totalDiff()) }}</span
+      <span class="res-value" id="new-inc">{{ formatNum(totalIncome + totalDiff()) }}</span
       >₪
     </p>
   </div>
