@@ -32,20 +32,10 @@ export class MapComponent implements OnInit {
     });
 
     this.map.on('load', () => {
-      // console.log((mapData as any).default);
       this.map.addSource('city_data', {
         'type': 'geojson',
         'data': (mapData as any).default
       });
-
-      // this.map.addLayer(
-      //   {
-      //     id: "city_layout",
-      //     source: 'city_data',
-      //     type: 'line',
-      //     color: 'black'
-      //   }
-      // )
 
       this.map.addLayer({
         'id': 'city_fill',

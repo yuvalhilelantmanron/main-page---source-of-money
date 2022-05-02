@@ -269,7 +269,8 @@ export class CategoryVisualizationComponent implements OnInit, AfterViewInit {
         };
       })
       .on('click', function (datum: any) {
-        window.location.href = datum.data.href;
+        if (datum.data.href)
+          window.location.href = datum.data.href;
       })
       .on('mouseout', () => {
         this.currentBubble = null;

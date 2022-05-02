@@ -105,11 +105,11 @@ export class AppComponent implements OnInit {
       minimizedArray.push(minimizedData[item]);
     }
 
+    //sets a max amount of subcategories
     for (let item of minimizedArray) {
-      console.log(item);
       var arrOfSub = [];
       for (let sub in item.values) {
-        arrOfSub.push({ amount: item.values[sub].amount, name: sub });
+        arrOfSub.push({ ...item.values[sub], name: sub });
       }
 
       let maxAmount = 5;
