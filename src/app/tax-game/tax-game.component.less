@@ -9,6 +9,13 @@
     flex-direction: column;
     transition: 0.3s;
     width: 25vw;
+    margin: 0px 10px;
+    padding-bottom: 20px;
+
+
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #ff5a5f;
 
     button {
       background-color: inherit;
@@ -20,26 +27,25 @@
     button.tax-btn {
       transition: 0.3s;
       padding: 20px 30px;
+      font-size: 20px;
+      font-weight: bold;
     }
     button.tax-btn:hover {
-      background-color: #ddd;
+      // background-color: #ddd;
     }
 
     button.active {
-      background-color: #ccc;
+      color: #ff5a5f;
     }
 
     .tax-cng {
       opacity: 75%;
+      font-size: 15px;
+      font-weight: normal;
     }
 
-    div button {
-      width: 50%;
-      height: 100%;
-      transition: 0.3s;
-    }
-    div button:hover {
-      background-color: #ddd;
+    .status-btn {
+      font-size: 16px;
     }
   }
 
@@ -52,6 +58,8 @@
 .tax-input {
   text-align: center;
   margin: 20px;
+  font-size: 15px;
+
   p {
     display: inline-block;
     margin: 0 10%;
@@ -61,8 +69,22 @@
 .tax-result {
   text-align: center;
   margin: 20px;
+  padding: 20px;
+  display: inline-block;
+  width: 50%;
+  font-size: 15px;
+
+  border-radius: 25px;
+  border-style: solid;
+  border-color: #ff5a5f;
+
   p {
     display: inline-block;
     margin: 0 10%;
+  }
+
+  .res-value {
+    font-size: 17px;
+    font-weight: bold;
   }
 }

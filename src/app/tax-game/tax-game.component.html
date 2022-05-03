@@ -49,13 +49,6 @@
       </button>
     </div>
   </div>
-
-  <div class="tax-btns other">
-    <button class="tax-btn" (click)="changeTax($event, 4)">
-      שונות <br />
-      <span class="tax-cng">({{ formatNum(taxes[4].diff) }})₪</span>
-    </button>
-  </div>
 </div>
 
 <div class="tax-input">
@@ -88,24 +81,23 @@
       ></app-single-value-tax>
     </p>
   </div>
-
-  <div [hidden]="!(currTax == 'other')">
-    <p>Other taxes here</p>
-  </div>
 </div>
-<div class="tax-result">
-  <p>
-    הכנסות נוכחיות <br />
-    <span id="curr-inc">{{ formatNum(totalIncome) }}</span>₪
-  </p>
-  <p>
-    הפרש <br />
-    <span id="diff">{{ formatNum(totalDiff()) }}</span>₪
-  </p>
-  <p>
-    הכנסות חדשות <br />
-    <span id="new-inc">{{ formatNum(totalIncome + totalDiff()) }}</span>₪
-  </p>
+
+<div style="text-align: center">
+  <div class="tax-result">
+    <p>
+      הכנסות נוכחיות <br />
+      <span class="res-value" id="curr-inc">{{ formatNum(totalIncome) }}</span>₪
+    </p>
+    <p>
+      הפרש <br />
+      <span class="res-value" id="diff">{{ formatNum(totalDiff()) }}</span>₪
+    </p>
+    <p>
+      הכנסות חדשות <br />
+      <span class="res-value" id="new-inc">{{ formatNum(totalIncome + totalDiff()) }}</span>₪
+    </p>
+  </div>
 </div>
 <div style="text-align: center;">
   <p>[הנתונים נכונים לשנת 2020]</p>

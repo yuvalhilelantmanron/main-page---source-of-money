@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FetchingService } from '../fetching.service';
 import { UtilsService } from '../utils.service';
 
 interface Tax {
@@ -39,17 +40,10 @@ export class TaxGameComponent implements OnInit {
       cng: 0,
       status: { cancel: false, ignore: false },
     },
-    4: {
-      name: 'other',
-      diff: 0,
-      total: 0,
-      cng: 0,
-      status: { cancel: false, ignore: false },
-    },
   };
   currTax: string = this.taxes[1].name;
 
-  constructor(private utils: UtilsService) {
+  constructor(private utils: UtilsService, private fetching: FetchingService) {
     this.getData();
   }
 
@@ -57,13 +51,8 @@ export class TaxGameComponent implements OnInit {
 
   async getData() {
     var tax_code = '0000';
-    var raw = await fetch(
-      'https://next.obudget.org/api/query?query=SELECT%20history%20FROM%20budget%20WHERE%20code=%27' +
-        tax_code +
-        '%27AND%20year>=2020%20ORDER%20BY%20year%20ASC%20LIMIT%201',
-    );
-    var data = await raw.json();
-    this.totalIncome = data.rows[0].history[this.year].net_executed;
+    var data = await this.fetching.get(tax_code);
+    this.totalIncome = data.net_executed;
   }
 
   public changeTax(evt, tax) {
