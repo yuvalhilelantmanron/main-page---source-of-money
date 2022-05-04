@@ -7,6 +7,8 @@
     [(ngModel)]="new_rate"
     type="number"
     placeholder="שיעור המס החדש"
+    min="0"
+    oninput="this.value > 0 ||validity.valid||(value='')"
     (ngModelChange)="getDiff()"
   />
 
