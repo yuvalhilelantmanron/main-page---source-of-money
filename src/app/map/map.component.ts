@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import * as mapboxgl from 'mapbox-gl';
 import * as mapData from '../mapData.json';
 
@@ -13,7 +13,7 @@ export class MapComponent implements OnInit {
   style = 'mapbox://styles/mapbox/light-v10';
   lat = 31.55;
   lng = 34.99;
-  hoveredStateId = null;
+  prevE: any = null;
 
   constructor() {
     mapboxgl.accessToken = 'pk.eyJ1IjoiYnVkZ2V0a2V5IiwiYSI6ImNsMWdscGN4cjAwcXUzZHVqMTNubGJvODQifQ.-3UrIwz_R4UcmNFpfSlPKg';
@@ -53,6 +53,36 @@ export class MapComponent implements OnInit {
               "hsl(360, 100%, 54%)"
             ]
         }
+      });
+
+      const popup = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: false
+      });
+
+      this.map.on('mousemove', 'city_fill', (e) => {
+        if (this.prevE == e)
+          return
+        this.prevE = e;
+        this.map.getCanvas().style.cursor = 'pointer';
+
+        var coordinates = e.features[0].geometry.coordinates[0];
+        var cityName = e.features[0].properties["name:he"];
+        var description: any = `<div style='color:red'>${cityName}</div>`;
+
+        var topCoordinate = { lng: coordinates[0][0], lat: coordinates[0][1] }
+        for (let coordinate of coordinates) {
+          if (coordinate[1] > topCoordinate.lat) {
+            topCoordinate = { lng: coordinate[0], lat: coordinate[1] }
+          }
+        }
+
+        popup.setLngLat(topCoordinate).setHTML(description).addTo(this.map);
+      });
+
+      this.map.on('mouseleave', 'city_fill', () => {
+        this.map.getCanvas().style.cursor = '';
+        popup.remove();
       });
     })
   }
