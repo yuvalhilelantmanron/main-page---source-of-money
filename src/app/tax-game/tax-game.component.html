@@ -53,7 +53,7 @@
 </div>
 
 <div class="tax-input">
-  <div [hidden]="!(currTax == 'delek')">
+  <div [hidden]="!(currTax == 'delek')||taxes[1].status.ignore||taxes[1].status.cancel">
     <p>
       <app-single-value-tax
         (onChange)="lastDiff = taxes[1].diff = $event.value; taxes[1].cng = $event.rate"
@@ -63,7 +63,7 @@
     </p>
   </div>
 
-  <div [hidden]="!(currTax == 'maam')">
+  <div [hidden]="!(currTax == 'maam')||taxes[2].status.ignore||taxes[2].status.cancel">
     <p>
       <app-single-value-tax
         (onChange)="lastDiff = taxes[2].diff = $event.value; taxes[2].cng = $event.rate"
@@ -73,7 +73,7 @@
     </p>
   </div>
 
-  <div [hidden]="!(currTax == 'tabak')">
+  <div [hidden]="!(currTax == 'tabak')||taxes[3].status.ignore||taxes[3].status.cancel">
     <p>
       <app-single-value-tax
         (onChange)="lastDiff = taxes[3].diff = $event.value; taxes[3].cng = $event.rate"
