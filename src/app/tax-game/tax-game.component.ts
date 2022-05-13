@@ -18,6 +18,7 @@ export class TaxGameComponent implements OnInit {
   public totalIncome: number = 0;
   public year: number = 2020;
 
+  lastDiff: number = 0;
   taxes: any = {
     1: {
       name: 'delek',
@@ -112,5 +113,13 @@ export class TaxGameComponent implements OnInit {
         '',
       );
     else evt.currentTarget.className += ' active';
+
+    if (this.taxes[number].status.ignore) {
+      this.taxes[number].diff = 0;
+    } else if (this.taxes[number].status.cancel) {
+      this.taxes[number].diff = 0 - this.taxes[number].total;
+    } else if(!this.taxes[number].status.ignore && !this.taxes[number].status.cancel) {
+      this.taxes[number].diff = this.lastDiff; // load previous diff
+    }
   }
 }
