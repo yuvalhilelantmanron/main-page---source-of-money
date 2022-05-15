@@ -23,6 +23,7 @@ import { RightNavBarPageComponent } from './right-nav-bar-page/right-nav-bar-pag
 import { TaxGameComponent } from './tax-game/tax-game.component';
 import { SingleValueTaxComponent } from './tax-game/single-value-tax/single-value-tax.component';
 import { MapComponent } from './map/map.component';
+import { JokerTaxComponent } from './tax-game/joker-tax/joker-tax.component';
 
 declare let BUDGETKEY_NG2_COMPONENTS_THEME: any;
 declare const BUDGETKEY_THEME_ID: any;
@@ -63,6 +64,7 @@ if (typeof (BUDGETKEY_NG2_COMPONENTS_THEME) !== 'undefined') {
     TaxGameComponent,
     SingleValueTaxComponent,
     MapComponent,
+    JokerTaxComponent,
   ],
   imports: [
     BrowserModule,

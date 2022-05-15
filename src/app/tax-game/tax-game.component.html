@@ -44,6 +44,13 @@
     </button>
   </div>
 
+  <div class="tax-btns">
+    <button class="tax-btn" (click)="changeTax($event, 4)">
+      אחר
+    </button>
+  </div>
+
+
   <!-- <div class="tax-btns other">
        <button class="tax-btn" (click)="changeTax($event, 4)">
        שונות <br />
@@ -85,6 +92,7 @@
 
   <div [hidden]="!(currTax == 'other')">
     <p>Other taxes here</p>
+    <app-joker-tax></app-joker-tax>
   </div>
 </div>
 
