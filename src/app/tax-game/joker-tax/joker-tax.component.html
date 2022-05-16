@@ -1,3 +1,12 @@
-<p>
-  joker-tax works!
-</p>
+<div>
+  <input type="text" #other_tax (keyup.enter)="fetchTaxes(other_tax.value)">
+</div>
+
+<div class="taxes" *ngIf="taxes.length">
+  <div class="tax" *ngFor="let tax of taxes">
+    <button class="tax-btn" (click)="onClick(tax)">{{tax.title}}</button>
+    <span>{{tax.net_executed}}</span>
+  </div>  
+</div>
+
+
