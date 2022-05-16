@@ -47,6 +47,7 @@
   <div class="tax-btns">
     <button class="tax-btn" (click)="changeTax($event, 4)">
       אחר
+      <span class="tax-cng">({{ formatNum(taxes[4].diff) }}₪)</span>
     </button>
   </div>
 
@@ -92,7 +93,10 @@
 
   <div [hidden]="!(currTax == 'other')">
     <p>Other taxes here</p>
-    <app-joker-tax></app-joker-tax>
+    <app-joker-tax
+      (onChange)="lastDiff = taxes[4].diff = $event.value"
+      (onLoad)="taxes[4].total = $event.total"
+    ></app-joker-tax>
   </div>
 </div>
 

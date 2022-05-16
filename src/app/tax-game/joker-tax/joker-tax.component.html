@@ -4,9 +4,17 @@
 
 <div class="taxes" *ngIf="taxes.length">
   <div class="tax" *ngFor="let tax of taxes">
-    <button class="tax-btn" (click)="onClick(tax)">{{tax.title}}</button>
+    <button class="tax-btn" (click)="addTax(tax)">{{tax.title}}</button>
     <span>{{tax.net_executed}}</span>
   </div>  
 </div>
 
+<div *ngIf="chosen_taxes.length">
+  <div *ngFor="let tax of chosen_taxes;let index = index;">
+    <span>{{tax.title}}</span>
+    <input type="number" placeholder="100%" [(ngModel)]="new_rates[index]" (ngModelChange)="diff()">
+    <button (click)="deleteTax(tax)">x</button>
+  </div>
+</div>
 
+<!-- TODO: make user unable to enter numbers outside of range 0-200 -->

@@ -35,7 +35,7 @@ export class FetchingService {
 
   AlreadyExists(arr, data) {
     for(let i=0; i<arr.length; i++){
-      if(arr[i].title == data.title && arr[i].net_executed == data.net_executed){
+      if(arr[i].title == data.title){
         return true;
       }
     }
