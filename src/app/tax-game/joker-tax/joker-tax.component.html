@@ -10,11 +10,11 @@
 </div>
 
 <div *ngIf="chosen_taxes.length">
-  <div *ngFor="let tax of chosen_taxes;let index = index;">
+  <div class="chosen-tax" *ngFor="let tax of chosen_taxes;let index = index;">
     <span>{{tax.title}}</span>
-    <input type="number" placeholder="100%" [(ngModel)]="new_rates[index]" (ngModelChange)="diff()">
+    <input type="number" min="0" max="200" placeholder="100%" oninput="validity.valid || (this.value=100)"
+    [(ngModel)]="new_rates[index]" (ngModelChange)="diff()">
+    <input class="slider" type="range" min="0" max="200" [(ngModel)]="new_rates[index]" (ngModelChange)="diff()">
     <button (click)="deleteTax(tax)">x</button>
   </div>
 </div>
-
-<!-- TODO: make user unable to enter numbers outside of range 0-200 -->
