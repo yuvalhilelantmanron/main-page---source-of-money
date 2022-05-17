@@ -10,6 +10,7 @@ export class JokerTaxComponent implements OnInit {
   taxes: Array<any> = [];
   chosen_taxes: Array<any> = [];
   new_rates: Array<number> = [];
+  is_fetching: boolean = false;
   @Output() onChange = new EventEmitter();
   @Output() onLoad = new EventEmitter();
 
@@ -19,7 +20,9 @@ export class JokerTaxComponent implements OnInit {
   }
 
   async fetchTaxes(other_tax:string) {
+    this.is_fetching = true;
     let data = await this.fetching.fetchTaxByTitle(other_tax);
+    this.is_fetching = false;
     this.taxes = data;
   }
 

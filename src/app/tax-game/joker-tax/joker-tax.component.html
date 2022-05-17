@@ -1,5 +1,10 @@
 <div>
   <input type="text" #other_tax (keyup.enter)="fetchTaxes(other_tax.value)">
+  <div [hidden]="!is_fetching" class="loading-dots">
+    <div class="bounce-1"></div>
+    <div class="bounce-2"></div>
+    <div class="bounce-3"></div>
+  </div>  
 </div>
 
 <div class="taxes" *ngIf="taxes.length">
