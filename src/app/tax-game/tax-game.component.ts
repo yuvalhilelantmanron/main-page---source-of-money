@@ -78,7 +78,7 @@ export class TaxGameComponent implements OnInit {
 
   totalDiff() {
     let total = 0;
-    for (let i = 1; i <= 3; i++) {
+    for (let i = 1; i <= 4; i++) {
       if (this.taxes[i].status.ignore) continue;
       if (this.taxes[i].status.cancel) total -= this.taxes[i].total;
       else total += this.taxes[i].diff;
