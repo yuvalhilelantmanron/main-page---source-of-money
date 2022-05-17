@@ -4,7 +4,7 @@
 
 <div class="taxes" *ngIf="taxes.length">
   <div class="tax" *ngFor="let tax of taxes">
-    <button class="tax-btn" (click)="addTax(tax)">{{tax.title}}</button>
+    <button class="option-tax-btn" (click)="addTax($event, tax)">{{tax.title}}</button>
   </div>  
 </div>
 

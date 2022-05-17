@@ -1,6 +1,7 @@
 .taxes {
     display: flex;
     margin-top: 15px;
+    margin-bottom: 40px;
     box-sizing: border-box;
     text-align: center;
     flex-direction: row;
@@ -11,20 +12,27 @@
 
 .tax {
     margin: 0 3px;
-    border: 3px solid #ff5a5f;
 }
 
-.tax-btn {
+.option-tax-btn {
     background-color: inherit;
     padding: 10px 20px;
     height: 100%;
     border: none;
     outline: none;
     transition: 0.3s;
+    border: 3px solid #ff5a5f;
+
 }
 
-.tax-btn:hover {
+.option-tax-btn:hover {
     background-color: #ddd;
+}
+
+.option-tax-btn.active {
+    border: none;
+    background-color: #ddd;
+    cursor: default;
 }
 
 .slider {

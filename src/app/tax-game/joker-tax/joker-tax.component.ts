@@ -23,9 +23,29 @@ export class JokerTaxComponent implements OnInit {
     this.taxes = data;
   }
 
-  addTax(chosen_tax) {
-    this.chosen_taxes.push(chosen_tax);
-    // TODO: grey out purple box and make user unable to click it so it won't be added a second time
+  isChosen(title) {
+    for(let i=0; i < this.chosen_taxes.length; i++){
+      if(this.chosen_taxes[i].title == title)
+        return true;
+    }
+    return false;
+  }
+
+  activate() {
+    let taxBtns = document.getElementsByClassName('option-tax-btn');
+    for (let i = 0; i < taxBtns.length; i++) {
+      if(!this.isChosen(taxBtns[i].innerHTML))
+        taxBtns[i].className = taxBtns[i].className.replace(' active', '');
+    }
+  }
+
+  addTax(evt, chosen_tax) {
+    if(!this.isChosen(chosen_tax.title)) 
+      this.chosen_taxes.push(chosen_tax);
+
+    this.activate();
+  
+    evt.currentTarget.className += ' active';
   }
 
   deleteTax(tax_to_delete) {
@@ -33,6 +53,7 @@ export class JokerTaxComponent implements OnInit {
     this.chosen_taxes.splice(index, 1);
     this.new_rates.splice(index, 1);
     this.diff();
+    this.activate()
   }
 
   diff(){
