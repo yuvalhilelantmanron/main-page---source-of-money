@@ -3,9 +3,7 @@
 </div>
 
 <div class="taxes" *ngIf="taxes.length">
-  <div class="tax" *ngFor="let tax of taxes">
-    <button class="option-tax-btn" (click)="addTax($event, tax)">{{tax.title}}</button>
-  </div>  
+  <button class="option-tax-btn" *ngFor="let tax of taxes" (click)="addTax($event, tax)">{{tax.title}}</button>
 </div>
 
 <div *ngIf="chosen_taxes.length">

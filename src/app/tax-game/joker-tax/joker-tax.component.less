@@ -1,27 +1,36 @@
 .taxes {
     display: flex;
-    margin-top: 15px;
-    margin-bottom: 40px;
-    box-sizing: border-box;
-    text-align: center;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
+    padding-bottom: 30px;
+    margin: 15px auto 40px;
     overflow-x: auto;
+    width: 60%;
 }
 
-.tax {
-    margin: 0 3px;
+::-webkit-scrollbar {
+    height: 10px;
+    background: #ccc;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff5a5f; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #c24448; 
 }
 
 .option-tax-btn {
     background-color: inherit;
     padding: 10px 20px;
-    height: 100%;
+    height: 100px;
     border: none;
     outline: none;
     transition: 0.3s;
     border: 3px solid #ff5a5f;
+    margin: 0 3px;
 
 }
 
@@ -74,4 +83,3 @@
     border: none;
     font-weight: bold;
 }
-// TODO: make tax divs fit screen responsively
