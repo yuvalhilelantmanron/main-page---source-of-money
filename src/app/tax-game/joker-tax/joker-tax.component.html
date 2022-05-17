@@ -5,7 +5,6 @@
 <div class="taxes" *ngIf="taxes.length">
   <div class="tax" *ngFor="let tax of taxes">
     <button class="tax-btn" (click)="addTax(tax)">{{tax.title}}</button>
-    <span>{{tax.net_executed}}</span>
   </div>  
 </div>
 
@@ -15,6 +14,6 @@
     <input type="number" min="0" max="200" placeholder="100%" oninput="validity.valid || (this.value=100)"
     [(ngModel)]="new_rates[index]" (ngModelChange)="diff()">
     <input class="slider" type="range" min="0" max="200" [(ngModel)]="new_rates[index]" (ngModelChange)="diff()">
-    <button (click)="deleteTax(tax)">x</button>
+    <button class="x-btn" (click)="deleteTax(tax)">x</button>
   </div>
 </div>
