@@ -1,0 +1,22 @@
+<div>
+  <input type="text" #other_tax (keyup.enter)="fetchTaxes(other_tax.value)">
+  <div [hidden]="!is_fetching" class="loading-dots">
+    <div class="bounce-1"></div>
+    <div class="bounce-2"></div>
+    <div class="bounce-3"></div>
+  </div>  
+</div>
+
+<div class="taxes" *ngIf="taxes.length">
+  <button class="option-tax-btn" *ngFor="let tax of taxes" (click)="addTax($event, tax)">{{tax.title}}</button>
+</div>
+
+<div *ngIf="chosen_taxes.length">
+  <div class="chosen-tax" *ngFor="let tax of chosen_taxes;let index = index;">
+    <span>{{tax.title}}</span>
+    <input type="number" min="0" max="200" placeholder="100%" oninput="validity.valid || (this.value=100)"
+    [(ngModel)]="new_rates[index]" (ngModelChange)="diff()">
+    <input class="slider" type="range" min="0" max="200" [(ngModel)]="new_rates[index]" (ngModelChange)="diff()">
+    <button class="x-btn" (click)="deleteTax(tax)">x</button>
+  </div>
+</div>

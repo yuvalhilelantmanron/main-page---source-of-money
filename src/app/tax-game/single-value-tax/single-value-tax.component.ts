@@ -80,7 +80,6 @@ export class SingleValueTaxComponent implements OnInit {
   }
 
   async getDiff() {
-    console.log(this.new_rate);
     var data = await this.fetching.get(this.taxes[this.tax_type].code);
     var new_value =
       (data.net_executed /
