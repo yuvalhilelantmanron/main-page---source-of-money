@@ -5,6 +5,9 @@
     <div class="bounce-2"></div>
     <div class="bounce-3"></div>
   </div>  
+  <div [hidden]="found_result" style="margin-top: 10px;">
+    <p>אין תוצאות</p>
+  </div>
 </div>
 
 <div class="taxes" *ngIf="taxes.length">
