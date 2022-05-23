@@ -60,14 +60,6 @@
       <span class="tax-cng">השינויים שנעשו במס לא ישפיעו על המאזן</span>
     </button>
   </div>
-  
-  <div class="tax-btns">
-    <button class="tax-btn" (click)="changeTax($event, 4)">
-      אחר<br />
-      <span class="tax-cng">({{ formatNum(taxes[4].diff) }}₪)</span>
-    </button>
-  </div>
-
 
   <!-- <div class="tax-btns other">
        <button class="tax-btn" (click)="changeTax($event, 4)">
@@ -75,6 +67,13 @@
        <span class="tax-cng">({{ formatNum(taxes[4].diff) }})₪</span>
        </button>
        </div> -->
+</div>
+
+<div class="other-tax">
+  <button class="other-tax-btn" (click)="changeTax($event, 4)">
+    אחר<br />
+    <span class="tax-cng">(סה"כ {{ formatNum(taxes[4].diff) }}₪)</span>
+  </button>
 </div>
 
 <div class="tax-input">
