@@ -32,7 +32,7 @@
     padding-bottom: 30px;
     margin: 15px auto 40px;
     overflow-x: auto;
-    width: 60%;
+    width: 78vw;
 }
 
 ::-webkit-scrollbar {
@@ -51,29 +51,37 @@
 
 .option-tax-btn {
     background-color: inherit;
+    margin: 0 3px;
     padding: 10px 20px;
     height: 100px;
     border: none;
     outline: none;
     transition: 0.3s;
-    border: 3px solid #ff5a5f;
-    margin: 0 3px;
+    font-weight: bold;
+
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #ff5a5f;
+
+    
 
 }
 
 .option-tax-btn:hover {
-    background-color: #ddd;
+    // background-color: #ddd;
 }
 
 .option-tax-btn.active {
     border: none;
+    color: #ff5a5f;
+    font-weight: bold;
     background-color: #ddd;
     cursor: default;
 }
 
 .slider {
     -webkit-appearance: none;
-    width: 100px;
+    width: 70vw;
     height: 5px;
     border-radius: 30%;
     background: #ddd;
@@ -97,6 +105,7 @@
 }
 
 .chosen-tax > * {
+    margin: auto 0;
     margin-left: 15px;
 }
 
