@@ -1,5 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FetchingService } from 'src/app/fetching.service';
+import { UtilsService } from 'src/app/utils.service';
 
 @Component({
   selector: 'app-joker-tax',
@@ -12,10 +13,11 @@ export class JokerTaxComponent implements OnInit {
   new_rates: Array<number> = [];
   is_fetching: boolean = false;
   found_result: boolean = true;
+  diffs: Array<number> = [];
   @Output() onChange = new EventEmitter();
   @Output() onLoad = new EventEmitter();
 
-  constructor(private fetching: FetchingService) { }
+  constructor(private utils: UtilsService, private fetching: FetchingService) { }
 
   ngOnInit() {
   }
@@ -58,11 +60,21 @@ export class JokerTaxComponent implements OnInit {
     let index = this.chosen_taxes.indexOf(tax_to_delete);
     this.chosen_taxes.splice(index, 1);
     this.new_rates.splice(index, 1);
-    this.diff();
+    this.totalDiff();
     this.activate()
   }
 
-  diff(){
+  formatNum(value): string {
+    return this.utils.formatNumberWithSuffix(value, 2);
+  }
+
+  handleRateChange(index: number) {
+    this.diffs[index] = this.chosen_taxes[index].net_executed * this.new_rates[index]/100 - this.chosen_taxes[index].net_executed;
+
+    this.totalDiff();
+  }
+
+  totalDiff(){
     let total_diff = 0;
     for(let i=0; i<this.chosen_taxes.length; i++) {
       if(this.new_rates[i] != null){

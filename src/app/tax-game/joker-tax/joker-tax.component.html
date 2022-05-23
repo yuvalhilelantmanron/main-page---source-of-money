@@ -18,8 +18,9 @@
   <div class="chosen-tax" *ngFor="let tax of chosen_taxes;let index = index;">
     <span>{{tax.title}}</span>
     <input type="number" min="0" max="200" placeholder="100%" oninput="validity.valid || (this.value=100)"
-    [(ngModel)]="new_rates[index]" (ngModelChange)="diff()">
-    <input class="slider" type="range" min="0" max="200" [(ngModel)]="new_rates[index]" (ngModelChange)="diff()">
+    [(ngModel)]="new_rates[index]" (ngModelChange)="handleRateChange(index)">
+    <input class="slider" type="range" min="0" max="200" [(ngModel)]="new_rates[index]" (ngModelChange)="handleRateChange(index)">
     <button class="x-btn" (click)="deleteTax(tax)">x</button>
+    <p style="width: 150px; text-align:center;">{{formatNum(diffs[index]||0)}}₪</p>
   </div>
 </div>
