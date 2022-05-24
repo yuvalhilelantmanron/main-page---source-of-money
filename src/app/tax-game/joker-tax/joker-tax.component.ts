@@ -62,6 +62,7 @@ export class JokerTaxComponent implements OnInit {
     this.new_rates.splice(index, 1);
     this.totalDiff();
     this.activate()
+    this.diffs[index] = 0;
   }
 
   formatNum(value): string {
