@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { ChangeDetectorRef, Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FetchingService } from 'src/app/fetching.service';
 
 @Component({
@@ -11,10 +11,11 @@ export class JokerTaxComponent implements OnInit {
   chosen_taxes: Array<any> = [];
   new_rates: Array<number> = [];
   is_fetching: boolean = false;
+  found_result: boolean = true;
   @Output() onChange = new EventEmitter();
   @Output() onLoad = new EventEmitter();
 
-  constructor(private fetching: FetchingService) { }
+  constructor(private fetching: FetchingService, private changeDetector: ChangeDetectorRef) { }
 
   ngOnInit() {
   }
@@ -24,31 +25,39 @@ export class JokerTaxComponent implements OnInit {
     let data = await this.fetching.fetchTaxByTitle(other_tax);
     this.is_fetching = false;
     this.taxes = data;
+    if(!this.taxes.length) { this.found_result = false };
+    this.activate();
   }
 
   isChosen(title) {
     for(let i=0; i < this.chosen_taxes.length; i++){
-      if(this.chosen_taxes[i].title == title)
+      if(this.chosen_taxes[i].title == title) {
         return true;
+      }
     }
     return false;
   }
 
   activate() {
+    this.changeDetector.detectChanges();
     let taxBtns = document.getElementsByClassName('option-tax-btn');
     for (let i = 0; i < taxBtns.length; i++) {
-      if(!this.isChosen(taxBtns[i].innerHTML))
+      if(this.isChosen(taxBtns[i].innerHTML)) {
+        if (!taxBtns[i].className.includes(' active')) {
+          taxBtns[i].className += ' active';
+        }
+      }
+      else {
         taxBtns[i].className = taxBtns[i].className.replace(' active', '');
+      }
     }
   }
 
-  addTax(evt, chosen_tax) {
+  addTax(chosen_tax) {
     if(!this.isChosen(chosen_tax.title)) 
       this.chosen_taxes.push(chosen_tax);
 
     this.activate();
-  
-    evt.currentTarget.className += ' active';
   }
 
   deleteTax(tax_to_delete) {

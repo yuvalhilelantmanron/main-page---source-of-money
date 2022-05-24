@@ -26,7 +26,6 @@ export class FetchingService {
         data: data.rows[i]
       }
     }
-    console.log(this.all_data);
   }
 
   async get(code) {
