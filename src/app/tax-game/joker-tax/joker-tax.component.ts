@@ -89,6 +89,13 @@ export class JokerTaxComponent implements OnInit {
 
   }
 
+  reset() {
+    let length = this.chosen_taxes.length;
+    for(let i=0; i<length; i++){
+      this.deleteTax(this.chosen_taxes[i]);
+    }
+  }
+
   async getTotal() {
     let sum = 0;
     for(let i=0; i<this.chosen_taxes.length; i++){

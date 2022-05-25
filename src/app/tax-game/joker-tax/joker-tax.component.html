@@ -26,3 +26,9 @@
     <p style="width: 150px; text-align:center; font-weight: bold;">{{formatNum(diffs[index]||0)}}₪</p>
   </div>
 </div>
+
+<div [hidden]="!chosen_taxes.length">
+  <button class="reset-btn" (click)="reset()">
+    אפס
+  </button>
+</div>
