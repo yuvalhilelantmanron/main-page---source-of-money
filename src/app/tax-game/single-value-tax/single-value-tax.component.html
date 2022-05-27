@@ -4,7 +4,6 @@
     {{ taxes[getTax()].units }}
   </p>
   <input
-    id="input-rate"
     [(ngModel)]="new_rate"
     type="number"
     placeholder="שיעור המס החדש"
@@ -40,6 +39,10 @@
         }}₪
       </p>
     </div>
-    <button class="balance" (click)="balanceOut()">הבא לאיזון</button>
+    <div class="balance">
+      <button (click)="balanceOut()">הבא לאיזון</button>
+      <p [hidden]="enough_to_balance">{{taxes[getTax()].title}} לא מספיק כדי לאזן</p>
+    </div>
+    
   </div>
 </div>

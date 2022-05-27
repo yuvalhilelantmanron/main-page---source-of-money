@@ -74,6 +74,7 @@ export class TaxGameComponent implements OnInit {
 
     // Add highlight to selected button
     evt.currentTarget.className += ' active';
+
   }
 
   totalDiff() {

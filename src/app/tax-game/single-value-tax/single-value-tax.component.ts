@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FetchingService } from 'src/app/fetching.service';
 import { UtilsService } from '../../utils.service';
 
@@ -15,6 +15,7 @@ export class SingleValueTaxComponent implements OnInit {
   new_rate: number;
   latest_year: number = 2020;
   demo_value: number;
+  enough_to_balance: boolean = true;
   taxes: any = {
     delek: {
       code: '0000180101',
@@ -62,6 +63,7 @@ export class SingleValueTaxComponent implements OnInit {
   async ngOnInit() {
     this.demo_value = this.taxes[this.tax_type].demo_placeholder;
     await this.getTotal();
+
   }
 
   getTax() {
@@ -107,10 +109,16 @@ export class SingleValueTaxComponent implements OnInit {
     });
   }
 
-  async balanceOut() {
+  async balanceOut(){
     var tax = await this.fetching.get(this.taxes[this.tax_type].code);
     let balance_rate = (this.taxes[this.tax_type].current_rate / tax.net_executed) * (tax.net_executed - this.total_diff);
-    this.new_rate = balance_rate;
-    this.getDiff();
+
+    if(balance_rate < 0){
+      this.enough_to_balance = false;
+    } else {
+      this.new_rate = balance_rate;
+      this.getDiff();
+      this.enough_to_balance = true;  
+    }
   }
 }
