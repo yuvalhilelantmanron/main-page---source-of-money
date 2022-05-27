@@ -4,6 +4,7 @@
     {{ taxes[getTax()].units }}
   </p>
   <input
+    id="input-rate"
     [(ngModel)]="new_rate"
     type="number"
     placeholder="שיעור המס החדש"
@@ -39,5 +40,6 @@
         }}₪
       </p>
     </div>
+    <button class="balance" (click)="balanceOut()">הבא לאיזון</button>
   </div>
 </div>

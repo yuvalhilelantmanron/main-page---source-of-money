@@ -9,6 +9,7 @@ import { UtilsService } from '../../utils.service';
 })
 export class SingleValueTaxComponent implements OnInit {
   @Input() tax_type: any;
+  @Input() total_diff: number;
   @Output() onChange = new EventEmitter();
   @Output() onLoad = new EventEmitter();
   new_rate: number;
@@ -104,5 +105,12 @@ export class SingleValueTaxComponent implements OnInit {
     this.onLoad.emit({
       total: (await this.fetching.get(this.taxes[this.tax_type].code)).net_executed,
     });
+  }
+
+  async balanceOut() {
+    var tax = await this.fetching.get(this.taxes[this.tax_type].code);
+    let balance_rate = (this.taxes[this.tax_type].current_rate / tax.net_executed) * (tax.net_executed - this.total_diff);
+    this.new_rate = balance_rate;
+    this.getDiff();
   }
 }
