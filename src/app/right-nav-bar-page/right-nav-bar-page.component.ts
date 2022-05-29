@@ -38,6 +38,6 @@ export class RightNavBarPageComponent implements OnInit {
     this.showImgs = true;
   }
   valueIntoMillions(amount) {
-    return Math.floor(amount / 1000000) + " מליון"
+    return Math.floor(amount / 1000000) + " מיליון"
   }
 }

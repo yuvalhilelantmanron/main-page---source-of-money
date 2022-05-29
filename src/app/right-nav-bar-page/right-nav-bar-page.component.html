@@ -1,11 +1,17 @@
 <div class="cover">
   <div class="top">
-    <br>
     הכנסות מיסים לפי תעשיות
-    <!-- כותרת -->
-    <br>
-    <br>
   </div>
+
+  <div class="para">
+    החלוקה הבאה מציגה את ההכנסה של המדינה ממיסים מענפים שונים במשק:
+    <ul>
+      <li>מס הכנסה המשולם ע"י חברות</li>
+      <li>מע"מ המשולם ע"י חברות</li>
+      <li>מס הכנסה המשולם ע"י שכירים העובדים בענף</li>
+    </ul>
+  </div>
+
   <div class="industries">
     <div class="industry" *ngFor="let industry of industryData">
       <p [ngStyle]="{'font-size': industry.headerSize*1.2+'rem'}" class="industry-caption">{{industry.name}}</p>
@@ -13,7 +19,8 @@
     </div>
   </div>
 
+
   <div class="big-header">פילוח גאוגרפי</div>
-  <div class="para">לפניכם מפה אשר מחלקת את הכנסות המדינה לפי רשויות</div>
+  <div>לפניכם מפה אשר מחלקת את הכנסות המדינה לפי רשויות</div>
   <map></map>
 </div>
