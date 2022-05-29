@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import * as mapboxgl from 'mapbox-gl';
 import * as mapData from '../mapData.json';
 
-
 @Component({
   selector: 'map',
   templateUrl: './map.component.html',

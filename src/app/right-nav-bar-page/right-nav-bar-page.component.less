@@ -92,15 +92,31 @@ input::-webkit-inner-spin-button {
   font-size: 2rem;
 }
 
-.Industries {
+.industries {
   display: flex;
   flex-flow: row wrap;
   width: 80vw;
   justify-content: center;
 
-   @media (max-width: 600px) {
-     width:100vw;
-   }
+  @media (max-width: 600px) {
+    width: 100vw;
+  }
+}
+
+.industry {
+  border: #ff6666 2px solid;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.industry img {
+  width: 5rem;
+  height: 5rem;
 }
 
 .imgss {
