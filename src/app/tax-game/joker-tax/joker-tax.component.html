@@ -5,18 +5,30 @@
     <div class="bounce-2"></div>
     <div class="bounce-3"></div>
   </div>  
+  <div [hidden]="found_result" style="margin-top: 10px;">
+    <p>אין תוצאות</p>
+  </div>
 </div>
 
 <div class="taxes" *ngIf="taxes.length">
-  <button class="option-tax-btn" *ngFor="let tax of taxes" (click)="addTax(tax)">{{tax.title}}</button>
+  <div class="option-tax" *ngFor="let tax of taxes">
+    <button class="option-tax-btn" (click)="addTax($event, tax)">{{tax.title}}</button>
+  </div>
 </div>
 
 <div *ngIf="chosen_taxes.length">
   <div class="chosen-tax" *ngFor="let tax of chosen_taxes;let index = index;">
-    <span>{{tax.title}}</span>
+    <span style="font-weight: bold;">{{tax.title}}</span>
     <input type="number" min="0" max="200" placeholder="100%" oninput="validity.valid || (this.value=100)"
-    [(ngModel)]="new_rates[index]" (ngModelChange)="diff()">
-    <input class="slider" type="range" min="0" max="200" [(ngModel)]="new_rates[index]" (ngModelChange)="diff()">
+    [(ngModel)]="new_rates[index]" (ngModelChange)="handleRateChange(index)">
+    <input class="slider" type="range" min="0" max="200" [(ngModel)]="new_rates[index]" (ngModelChange)="handleRateChange(index)">
     <button class="x-btn" (click)="deleteTax(tax)">x</button>
+    <p style="width: 150px; text-align:center; font-weight: bold;">{{formatNum(diffs[index]||0)}}₪</p>
   </div>
+</div>
+
+<div [hidden]="!chosen_taxes.length">
+  <button class="reset-btn" (click)="reset()">
+    אפס
+  </button>
 </div>

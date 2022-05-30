@@ -72,6 +72,10 @@ export class TaxGameComponent implements OnInit {
       taxButtons[i].className = taxButtons[i].className.replace(' active', '');
     }
 
+    // TODO: Remove highlight from other tax
+    let otherTax = document.getElementsByClassName('other-tax-btn');
+    otherTax[0].className = otherTax[0].className.replace(' active', '');
+
     // Add highlight to selected button
     evt.currentTarget.className += ' active';
   }
