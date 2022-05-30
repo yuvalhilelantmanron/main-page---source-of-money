@@ -8,9 +8,9 @@ import { Component, OnInit, Input, OnChanges, SimpleChanges } from '@angular/cor
 export class NavBarComponent {
   leftCaption: string = "משחק המסים";
   middleCaption: string = "מיסי הכנסה אל מול מיסי הוצאה";
-  rightCaption: string = "כמה אני מכניס למדינה";
+  rightCaption: string = "פילוחים נוספים";
 
-  
+
 
   currentlySelected: string = "middle";
 

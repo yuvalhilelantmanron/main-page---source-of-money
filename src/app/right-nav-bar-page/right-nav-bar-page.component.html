@@ -1,127 +1,26 @@
-<div class="top">
-  <br>
-  הכנסות מיסים לפי תעשיות
-  <!-- כותרת -->
-  <br>
-  <br>
-</div>
-<div class="Industries">
-  <div>
-    <p>תעשית המזון</p> <!-- תעשיה ראשונה -->
-    <img src="/assets/img/food_patter_icon_150227.svg" width="350" height="200" /> <!-- תמונה ראשונה -->
-    <p> מהווה 12.5 אחוז מהכנסות המיסים </p> <!-- כמה כל תעשיה מכניסה / מייצגת -->
+<div class="cover">
+  <div class="top">
+    הכנסות מיסים לפי תעשיות
   </div>
-  <div>
-    <p>תעשית ההייטק</p>
-    <img src="/assets/img/pc-computer-with-monitor_icon-icons.com_56249.svg" width="350" height="200" />
-    <p> מהווה 12.5 אחוז מהכנסות המיסים </p>
-  </div>
-  <div>
-    <p>תעשית החקלאות</p>
-    <img src="/assets/img/tractor_vehicle_farmer_farming_agriculture_icon_183561.svg" width="350" height="200" />
-    <p> מהווה 12.5 אחוז מהכנסות המיסים </p>
-  </div>
-  <div>
-    <p>תעשית הכריה וחציבה</p>
-    <img src="/assets/img/3605334-construction-digger-excavation-excavator-industry-machinery-mining_107857.svg"
-      width="350" height="200" />
-    <p> מהווה 12.5 אחוז מהכנסות המיסים </p>
-  </div>
-</div> <!-- עד פה ה4 תעשיות העליונות -->
 
-<div>
-  <br>
-  <br>
-</div> <!-- לרדת שורה ל 4 הבאים -->
-
-<div class="Industries">
-  <div>
-    <p>תעשית המזון</p>
-    <img src="/assets/img/food_patter_icon_150227.svg" width="350" height="200" />
-    <p> מהווה 12.5 אחוז מהכנסות המיסים </p>
+  <div class="para">
+    החלוקה הבאה מציגה את ההכנסה של המדינה ממיסים מענפים שונים במשק:
+    <ul>
+      <li>מס הכנסה המשולם ע"י חברות</li>
+      <li>מע"מ המשולם ע"י חברות</li>
+      <li>מס הכנסה המשולם ע"י שכירים העובדים בענף</li>
+    </ul>
   </div>
-  <div>
-    <p>תעשית ההייטק</p>
-    <img src="/assets/img/pc-computer-with-monitor_icon-icons.com_56249.svg" width="350" height="200" />
-    <p> מהווה 12.5 אחוז מהכנסות המיסים </p>
+
+  <div class="industries">
+    <div class="industry" *ngFor="let industry of industryData">
+      <p [ngStyle]="{'font-size': industry.headerSize*1.2+'rem'}" class="industry-caption">{{industry.name}}</p>
+      <p [ngStyle]="{'font-size': industry.headerSize+'rem'}">{{valueIntoMillions(industry.amount)}}₪</p>
+    </div>
   </div>
-  <div>
-    <p>תעשית החקלאות</p>
-    <img src="/assets/img/tractor_vehicle_farmer_farming_agriculture_icon_183561.svg" width="350" height="200" />
-    <p> מהווה 12.5 אחוז מהכנסות המיסים </p>
-  </div>
-  <div>
-    <p>תעשית הכריה וחציבה</p>
-    <img src="/assets/img/3605334-construction-digger-excavation-excavator-industry-machinery-mining_107857.svg"
-      width="350" height="200" />
-    <p> מהווה 12.5 אחוז מהכנסות המיסים </p>
-  </div>
-</div>
 
-
-
-
-<div class="button1">
 
   <div class="big-header">פילוח גאוגרפי</div>
+  <div>לפניכם מפה אשר מחלקת את הכנסות המדינה לפי רשויות</div>
   <map></map>
-  <div class="top">
-    <br>
-    כמה מיסים אני משלם ולאן הם הולכים
-  </div>
-  <div ng-controller="ctrl">
-    <br>
-    <!--number input of income-->
-    <input #income type="number" ng-model="income" placeholder="שכר חודשי ₪" [min]="0" />
-  </div>
-  <br />
-
-  <div>
-    <!--number input of number of kids-->
-    <input #kids type="number" ng-model="kids" placeholder="מספר ילדים" />
-  </div>
-  <br />
-  <div>
-    <!--select input of type of home-->
-    <select #type name="type" id="property-type" class="form-control" ngModel required>
-      <option *ngFor="let type of propertyTypes" [value]="type">
-        {{ type }}
-      </option>
-    </select>
-  </div>
-  <br />
-  <div>
-    <div class="calc">
-      <!--calc button-->
-      <button (click)="logval(income.value, kids.value, type.value)">
-        חשב
-      </button>
-    </div>
-  </div>
-  <div>
-    <!--ans after calc-->
-    <div *ngIf="showImgs" class="ans">
-      <div>
-        אתה משלם כ <label class="tax-label">₪{{tax}}</label> מיסים למדינה
-      </div>
-      המחשה של איפה המיסים שלך עוזרים:
-      <!--img disply based on ans-->
-      <div class="imgs">
-        <div>
-          עזרת לתקן {{(tax/20).toFixed(2)}} תמרורים
-          <img src="/assets/img/intersectionImg.jpg" width="350" height="200" />
-        </div>
-        <div>
-          שילמת על הלימודים של {{(tax/100).toFixed(2)}} תלמידים
-          <img src="/assets/img/schoolImg.jpg" width="350" height="200" />
-        </div>
-        <div>
-          שילמת על {{(tax/200).toFixed(2)}} F16
-          <img src="/assets/img/jetImg.jpg" width="350" height="200" />
-        </div>
-      </div>
-    </div>
-    <br>
-    <br>
-  </div>
 </div>

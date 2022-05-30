@@ -1,5 +1,4 @@
 <budgetkey-container class="page-cover" [showHeader]="true" [showSearchBar]="false" [showLanguages]="true">
-
     <div class='ad' [class.active]='adVisible'>
         <a href='https://act.obudget.org' target='_blank'>
             <span>נפתח מחזור חדש לקורס </span>
@@ -11,9 +10,9 @@
         <label for="">
             {{ 'HOME.SELECT' | translate }}
             <select #langselect (change)="translate.use(langselect.value)">
-            <option *ngFor="let lang of translate.getLangs()" [value]="lang">{{lang}}</option>
-            </select> 
-        </label> 
+                <option *ngFor="let lang of translate.getLangs()" [value]="lang">{{lang}}</option>
+            </select>
+        </label>
 
         <div class='head'>
             <h1>{{ 'HOME.TITLE' | translate }}</h1>

@@ -68,35 +68,50 @@
   </div>
 </div>
 
+<div class="other-tax">
+  <button class="other-tax-btn" (click)="changeTax($event, 4)">
+    אחר<br />
+    <span class="tax-cng">(סה"כ {{ formatNum(taxes[4].diff) }}₪)</span>
+  </button>
+</div>
+
 <div class="tax-input">
-  <div [hidden]="!(currTax == 'delek')">
+  <div [hidden]="!(currTax == 'delek')||taxes[1].status.ignore||taxes[1].status.cancel">
     <p>
       <app-single-value-tax
-        (onChange)="taxes[1].diff = $event.value; taxes[1].cng = $event.rate"
+        (onChange)="lastDiff = taxes[1].diff = $event.value; taxes[1].cng = $event.rate"
         (onLoad)="taxes[1].total = $event.total"
         tax_type="delek"
       ></app-single-value-tax>
     </p>
   </div>
 
-  <div [hidden]="!(currTax == 'maam')">
+  <div [hidden]="!(currTax == 'maam')||taxes[2].status.ignore||taxes[2].status.cancel">
     <p>
       <app-single-value-tax
-        (onChange)="taxes[2].diff = $event.value; taxes[2].cng = $event.rate"
+        (onChange)="lastDiff = taxes[2].diff = $event.value; taxes[2].cng = $event.rate"
         (onLoad)="taxes[2].total = $event.total"
         tax_type="maam"
       ></app-single-value-tax>
     </p>
   </div>
 
-  <div [hidden]="!(currTax == 'tabak')">
+  <div [hidden]="!(currTax == 'tabak')||taxes[3].status.ignore||taxes[3].status.cancel">
     <p>
       <app-single-value-tax
-        (onChange)="taxes[3].diff = $event.value; taxes[3].cng = $event.rate"
+        (onChange)="lastDiff = taxes[3].diff = $event.value; taxes[3].cng = $event.rate"
         (onLoad)="taxes[3].total = $event.total"
         tax_type="tabak"
       ></app-single-value-tax>
     </p>
+  </div>
+
+  <div [hidden]="!(currTax == 'other')">
+    <p>נסה מס אחר :</p>
+    <app-joker-tax
+      (onChange)="lastDiff = taxes[4].diff = $event.value"
+      (onLoad)="taxes[4].total = $event.total"
+    ></app-joker-tax>
   </div>
 </div>
 

@@ -1,4 +1,4 @@
-.button1 {
+.cover {
   display: flex;
   width: 100%;
   justify-content: center;
@@ -6,7 +6,7 @@
   align-items: center;
 }
 
-.button1 button {
+.cover button {
   width: 35rem;
   height: 5rem;
   outline: none;
@@ -17,10 +17,10 @@ select {
   width: 35rem;
 }
 
-// .button1 div {
+// .cover div {
 //   outline: none;
 // }
-.button1 div input {
+.cover div input {
   width: 35rem;
   height: 5rem;
   outline: none;
@@ -92,11 +92,31 @@ input::-webkit-inner-spin-button {
   font-size: 2rem;
 }
 
-.Industries {
+.industries {
   display: flex;
-  width: 100%;
+  flex-flow: row wrap;
+  width: 80vw;
+  justify-content: center;
+
+  @media (max-width: 600px) {
+    width: 100vw;
+  }
+}
+
+.industry {
+  border: #ff6666 2px solid;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 2rem;
+  display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.industry img {
+  width: 5rem;
+  height: 5rem;
 }
 
 .imgss {
@@ -129,4 +149,15 @@ input::-webkit-inner-spin-button {
   font-size: 3rem;
   color: #ff6666;
   font-family: inherit;
+}
+
+.para {
+  width: 60vw;
+  font-size: 2rem;
+  position: relative;
+  text-align: right;
+
+  @media screen and (max-width: 600px) {
+    width: 85vw;
+  }
 }

@@ -1,0 +1,140 @@
+.loading-dots > div {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: inline-block;
+    margin-top: 10px;
+    animation: 1.5s bounce infinite ease-in-out both;
+}
+
+.loading-dots .bounce-1 {
+    animation-delay: -0.30s;
+}
+
+.loading-dots .bounce-2 {
+    animation-delay: -0.15s;
+}
+
+@keyframes bounce {
+    0%, 80%, 100%{
+        transform: scale(0);
+    }
+    40%{
+        transform: scale(1);
+    }
+}
+
+.taxes {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+    margin: 15px auto 40px;
+    overflow-x: auto;
+    width: 78vw;
+}
+
+::-webkit-scrollbar {
+    height: 10px;
+    background: #ccc;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff5a5f; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #c24448; 
+}
+
+.option-tax {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.option-tax-btn {
+    background-color: inherit;
+    margin: 0 3px;
+    padding: 10px 20px;
+    height: 100px;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    font-weight: bold;
+
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #ff5a5f;
+
+    
+
+}
+
+.option-tax-btn:hover {
+    // background-color: #ddd;
+}
+
+.option-tax-btn.active {
+    border: none;
+    color: #ff5a5f;
+    font-weight: bold;
+    background-color: #ddd;
+    cursor: default;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 70vw;
+    height: 5px;
+    border-radius: 30%;
+    background: #ddd;
+    outline: none;
+    margin: auto 0;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #ff5a5f;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+  }  
+
+.chosen-tax {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.chosen-tax > * {
+    margin: auto 0;
+    margin-left: 15px;
+}
+
+.chosen-tax > span {
+    margin: auto 10px;
+    width: 150px;
+}
+
+.x-btn {
+    background-color: #ff5a5f;
+    border: none;
+    font-weight: bold;
+    height: 35px;
+}
+
+.reset-btn {
+    margin-top: 30px;
+    padding: 10px 50px;
+    background-color: #fff;
+    color: #ff5a5f;
+    font-weight: bold;
+    border: none;
+    outline: none;
+
+    border-radius: 25px;
+    border-style: solid;
+    border-color: #ff5a5f;
+}

@@ -1,0 +1,99 @@
+{
+    "data": [
+        {
+            "name": "חקלאות",
+            "amount": 515023626,
+            "img": "../../assets/img/tractor_vehicle_farmer_farming_agriculture_icon_183561.svg"
+        },
+        {
+            "name": "כרייה וחציבה",
+            "amount": 641314659,
+            "img": "../../assets/img/tractor_vehicle_farmer_farming_agriculture_icon_183561.svg"
+        },
+        {
+            "name": "תעשייה",
+            "amount": 3436057838,
+            "img": "../../assets/img/tractor_vehicle_farmer_farming_agriculture_icon_183561.svg"
+        },
+        {
+            "name": "אספקת חשמל וגז",
+            "amount": 18280478,
+            "img": "../../assets/img/tractor_vehicle_farmer_farming_agriculture_icon_183561.svg"
+        },
+        {
+            "name": "אספקת מים",
+            "amount": 139618725,
+            "img": "../../assets/img/tractor_vehicle_farmer_farming_agriculture_icon_183561.svg"
+        },
+        {
+            "name": "בינוי",
+            "amount": 3857244417,
+            "img": "../../assets/img/tractor_vehicle_farmer_farming_agriculture_icon_183561.svg"
+        },
+        {
+            "name": "מסחר סיטוני",
+            "amount": 5461831847,
+            "img": "../../assets/img/tractor_vehicle_farmer_farming_agriculture_icon_183561.svg"
+        },
+        {
+            "name": "שירותי תחבורה, אחסנה, דורא ובלדרות",
+            "amount": 992683210,
+            "img": "../../assets/img/tractor_vehicle_farmer_farming_agriculture_icon_183561.svg"
+        },
+        {
+            "name": "שירותי אירוח ואוכל",
+            "amount": 594662652,
+            "img": "../../assets/img/tractor_vehicle_farmer_farming_agriculture_icon_183561.svg"
+        },
+        {
+            "name": "מידע ותקשורת",
+            "amount": 3170520583,
+            "img": "../../assets/img/tractor_vehicle_farmer_farming_agriculture_icon_183561.svg"
+        },
+        {
+            "name": "שירותים פיננסים ושירותי ביטוח",
+            "amount": 3347301245,
+            "img": "../../assets/img/tractor_vehicle_farmer_farming_agriculture_icon_183561.svg"
+        },
+        {
+            "name": "פעילויות בנדלן",
+            "amount": 8912284624,
+            "img": "../../assets/img/tractor_vehicle_farmer_farming_agriculture_icon_183561.svg"
+        },
+        {
+            "name": "שירותים מקצועיים, מדעיים וטכניים",
+            "amount": 5418661684,
+            "img": "../../assets/img/tractor_vehicle_farmer_farming_agriculture_icon_183561.svg"
+        },
+        {
+            "name": "שירותי ניהול ותמיכה",
+            "amount": 765420793,
+            "img": "../../assets/img/tractor_vehicle_farmer_farming_agriculture_icon_183561.svg"
+        },
+        {
+            "name": "חינוך",
+            "amount": 75083551,
+            "img": "../../assets/img/tractor_vehicle_farmer_farming_agriculture_icon_183561.svg"
+        },
+        {
+            "name": "שירותי בריאות, רווחה וסעד",
+            "amount": 676559560,
+            "img": "../../assets/img/tractor_vehicle_farmer_farming_agriculture_icon_183561.svg"
+        },
+        {
+            "name": "אמנות, בידור ופנאי",
+            "amount": 268686628,
+            "img": "../../assets/img/tractor_vehicle_farmer_farming_agriculture_icon_183561.svg"
+        },
+        {
+            "name": "שירותים אחרים",
+            "amount": 199617433,
+            "img": "../../assets/img/tractor_vehicle_farmer_farming_agriculture_icon_183561.svg"
+        },
+        {
+            "name": "משקי בית כמעסיקים",
+            "amount": 2238810,
+            "img": "../../assets/img/tractor_vehicle_farmer_farming_agriculture_icon_183561.svg"
+        }
+    ]
+}
