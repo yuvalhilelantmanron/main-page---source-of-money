@@ -39,5 +39,10 @@
         }}₪
       </p>
     </div>
+    <div class="balance">
+      <button (click)="balanceOut()">הבא לאיזון</button>
+      <p [hidden]="enough_to_balance">{{taxes[getTax()].title}} לא מספיק כדי לאזן</p>
+    </div>
+    
   </div>
 </div>
