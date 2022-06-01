@@ -15,7 +15,12 @@
   <div class="industries">
     <div class="industry" *ngFor="let industry of industryData">
       <p [ngStyle]="{'font-size': industry.headerSize*1.2+'rem'}" class="industry-caption">{{industry.name}}</p>
-      <p [ngStyle]="{'font-size': industry.headerSize+'rem'}">{{valueIntoMillions(industry.amount)}}₪</p>
+      <p [ngStyle]="{'font-size': industry.headerSize+'rem'}">{{formatNum(industry.amount)}}₪</p>
+      <div class="popup">
+        <ul>
+          <li *ngFor="let mini_industry of industryData">{{industry.name}}</li>
+        </ul>
+      </div>
     </div>
   </div>
 

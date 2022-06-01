@@ -112,6 +112,31 @@ input::-webkit-inner-spin-button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
+}
+
+.popup {
+  visibility: hidden;
+  position: absolute;
+  bottom: -5px;
+  top: 105%;
+
+  height: 120px;
+  overflow-y: auto;
+  width: 250px;
+  border: #ff6666 2px solid;
+  background: #ddd;
+  padding: 1rem;
+  border-radius: 2rem;
+  align-items: center;
+}
+
+.popup > ul {
+  list-style: none;
+}
+
+.industry:hover .popup {
+  visibility: visible;
 }
 
 .industry img {

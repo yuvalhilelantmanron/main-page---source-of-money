@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as industryData from '../industryData.json';
+import { UtilsService } from '../utils.service';
 
 @Component({
   selector: 'right-nav-bar-page',
@@ -20,7 +21,7 @@ export class RightNavBarPageComponent implements OnInit {
   industryData: any = industryData.data;
   bingbong: "5px";
 
-  constructor() { }
+  constructor(private utils: UtilsService) { }
 
   ngOnInit() {
     var sum = this.industryData.reduce((sum, curr) => sum + curr.amount, 0);
@@ -37,7 +38,7 @@ export class RightNavBarPageComponent implements OnInit {
     this.ans4 = "יש לך " + kids + "ילדים ואתה גר ב" + type;
     this.showImgs = true;
   }
-  valueIntoMillions(amount) {
-    return Math.floor(amount / 1000000) + " מיליון"
+  formatNum(amount) {
+    return this.utils.formatNumberWithSuffix(amount, 2);
   }
 }
