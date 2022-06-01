@@ -28,6 +28,21 @@ export class FetchingService {
     }
   }
 
+  async getTotalIncome() {
+    var raw = await fetch('https://next.obudget.org/api/query?query=SELECT%20year,%20func_cls_title_2-%3E%3E0%20as%20func_title,%20sum(net_revised)%20AS%20revised,%20sum(net_allocated)%20AS%20allocated,%20sum(net_executed)%20AS%20executed%20FROM%20budget%20WHERE%20depth%20=%204%20and%20code%20like%20%270000%%%27%20group%20by%201,%202%20order%20by%202,%201')
+    var data = await raw.json();
+    data = data.rows;
+
+    var totalAmount = 0;
+        for (var item of data) {
+          if (item.year != 2022 || item.func_title == "הכנסות למימון גירעון") continue;
+          totalAmount += item.allocated;
+        }
+
+    return totalAmount;
+	
+  }
+
   async get(code) {
     await this.fetchAll_promise;
     return this.all_data[code].data;
