@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as mapboxgl from 'mapbox-gl';
-import * as mapData from '../mapData.json';
+import * as mapData from '../finalMapData.json';
 
 @Component({
   selector: 'map',
@@ -49,10 +49,10 @@ export class MapComponent implements OnInit {
             [
               "interpolate",
               ["linear"],
-              ["get", "@id"],
+              ["get", "income"],
               0,
               "hsla(0, 7%, 11%, 0.8)",
-              4,
+              4778982898,
               "hsla(360, 100%, 54%, 0.8)"
             ]
         }
