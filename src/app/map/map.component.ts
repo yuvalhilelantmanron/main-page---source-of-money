@@ -72,7 +72,7 @@ export class MapComponent implements OnInit {
       });
 
       //mousemove event listner for showing a city popup with its description
-      this.map.on('mousemove', 'city_fill', (e) => {
+      this.map.on('click', 'city_fill', (e) => {
         if (this.prevE == e)
           return
         this.prevE = e;
@@ -92,14 +92,15 @@ export class MapComponent implements OnInit {
 
 
         //shows the popup
+        this.map.flyTo({center:popupLngLat})
         popup.setLngLat(popupLngLat).setHTML(description).addTo(this.map);
       });
 
       //hides the popup when when the mouse leaves the city geomatry
-      this.map.on('mouseleave', 'city_fill', () => {
-        this.map.getCanvas().style.cursor = '';
-        popup.remove();
-      });
+    //   this.map.on('mouseleave', 'city_fill', () => {
+    //     this.map.getCanvas().style.cursor = '';
+    //     popup.remove();
+    //   });
     })
   }
 }
