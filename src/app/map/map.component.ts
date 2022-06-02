@@ -48,7 +48,13 @@ export class MapComponent implements OnInit {
           'fill-color':
             [
               "interpolate",
-              ["linear"],
+              [
+                "cubic-bezier",
+                0,
+                0.7,
+                0,
+                0.7
+              ],
               ["get", "income"],
               0,
               "hsla(0, 7%, 11%, 0.8)",
@@ -68,24 +74,18 @@ export class MapComponent implements OnInit {
       this.map.on('mousemove', 'city_fill', (e) => {
         if (this.prevE == e)
           return
+        // console.log(e)
         this.prevE = e;
         this.map.getCanvas().style.cursor = 'pointer';
 
         //gets data about the hovered city
         var coordinates = e.features[0].geometry.coordinates[0];
         var cityName = e.features[0].properties["name:he"];
-        var description: any = `<div>${cityName}</div>`;
-
-        //finds the highest part of the city geomatry to put the popup there
-        var topCoordinate = { lng: coordinates[0][0], lat: coordinates[0][1] }
-        for (let coordinate of coordinates) {
-          if (coordinate[1] > topCoordinate.lat) {
-            topCoordinate = { lng: coordinate[0], lat: coordinate[1] }
-          }
-        }
+        var cityIncome = e.features[0].properties.income;
+        var description: any = `<div style="text-align:center">${cityName}</div><div style="text-align:center">הכנסות:${cityIncome}</div>`;
 
         //shows the popup
-        popup.setLngLat(topCoordinate).setHTML(description).addTo(this.map);
+        popup.setLngLat(e.lngLat).setHTML(description).addTo(this.map);
       });
 
       //hides the popup when when the mouse leaves the city geomatry
