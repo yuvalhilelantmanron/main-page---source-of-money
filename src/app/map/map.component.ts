@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as mapboxgl from 'mapbox-gl';
 import * as mapData from '../finalMapData.json';
+import { UtilsService } from '../utils.service';
 
 @Component({
   selector: 'map',
@@ -14,7 +15,7 @@ export class MapComponent implements OnInit {
   lng = 34.99;
   prevE: any = null;
 
-  constructor() {
+  constructor(private utils: UtilsService) {
     mapboxgl.accessToken = 'pk.eyJ1IjoiYnVkZ2V0a2V5IiwiYSI6ImNsMWdscGN4cjAwcXUzZHVqMTNubGJvODQifQ.-3UrIwz_R4UcmNFpfSlPKg';
   }
 
@@ -48,7 +49,13 @@ export class MapComponent implements OnInit {
           'fill-color':
             [
               "interpolate",
-              ["linear"],
+              [
+                "cubic-bezier",
+                0,
+                0.7,
+                0,
+                0.7
+              ],
               ["get", "income"],
               0,
               "hsla(0, 7%, 11%, 0.8)",
@@ -74,18 +81,18 @@ export class MapComponent implements OnInit {
         //gets data about the hovered city
         var coordinates = e.features[0].geometry.coordinates[0];
         var cityName = e.features[0].properties["name:he"];
-        var description: any = `<div>${cityName}</div>`;
+        var cityIncome = e.features[0].properties.income;
+        var description: any = `<div style="text-align:center">${cityName}</div><div style="text-align:center">סה"כ ההכנסות ממס הכנסה:${this.utils.bareFormatValue(cityIncome,0)} ${this.utils.getValueSuffix(cityIncome)} ₪</div>`;
 
-        //finds the highest part of the city geomatry to put the popup there
-        var topCoordinate = { lng: coordinates[0][0], lat: coordinates[0][1] }
-        for (let coordinate of coordinates) {
-          if (coordinate[1] > topCoordinate.lat) {
-            topCoordinate = { lng: coordinate[0], lat: coordinate[1] }
-          }
-        }
+        var popupLngLat = {lng:e.lngLat.lng, lat:e.lngLat.lat};
+        // if(e.point.x<115)
+        //   popup.lng=popup.lng + 115 -e.point.x;
+        // else if(e.point.x >330)
+        //   popup.lng=popup.lng + 330 -e.point.x;
+
 
         //shows the popup
-        popup.setLngLat(topCoordinate).setHTML(description).addTo(this.map);
+        popup.setLngLat(popupLngLat).setHTML(description).addTo(this.map);
       });
 
       //hides the popup when when the mouse leaves the city geomatry
