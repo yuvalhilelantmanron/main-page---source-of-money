@@ -28,6 +28,8 @@ export class AppComponent implements OnInit {
   public __ = __T;
   public adVisible = false;
 
+
+  public giraonSum = 0;
   public data: any;
 
   constructor(@Inject(BUBBLES) private bubbles: any, public translate: TranslateService) {
@@ -89,7 +91,10 @@ export class AppComponent implements OnInit {
     var minimizedData = {};
     this.totalAmount = 0;
     for (var item of data) {
-      if (item.year != this.year || item.func_title == "הכנסות למימון גירעון" || item.allocated == 0) continue;
+      if (item.year != this.year || item.allocated == 0) continue;
+
+      if(item.func_title == "הכנסות למימון גירעון")
+        this.giraonSum += item.allocated;
 
       if (!minimizedData[item.func_title])
         minimizedData[item.func_title] = { name: item.func_title, scale: 1, amount: 0, values: {} };

@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { UtilsService } from '../utils.service';
 
 @Component({
   selector: 'middle-nav-bar-page',
@@ -8,6 +9,7 @@ import { Component, OnInit, Input, OnChanges, SimpleChanges } from '@angular/cor
 export class MiddleNavBarPageComponent implements OnChanges {
 
   @Input() fetchedData: any;
+  @Input() giraonSum :number;
 
   public taxPercentagesLayout = {
     xaxis: {
@@ -68,6 +70,10 @@ export class MiddleNavBarPageComponent implements OnChanges {
       y: [],
     }
   ]
+
+  constructor(private utils: UtilsService){
+
+  }
 
   ngOnChanges() {
     if (!this.fetchedData) return;
