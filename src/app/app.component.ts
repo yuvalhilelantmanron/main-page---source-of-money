@@ -93,8 +93,10 @@ export class AppComponent implements OnInit {
     for (var item of data) {
       if (item.year != this.year || item.allocated == 0) continue;
 
-      if(item.func_title == "הכנסות למימון גירעון")
+      if(item.func_title == "הכנסות למימון גירעון"){
         this.giraonSum += item.allocated;
+        continue;
+      }
 
       if (!minimizedData[item.func_title])
         minimizedData[item.func_title] = { name: item.func_title, scale: 1, amount: 0, values: {} };
