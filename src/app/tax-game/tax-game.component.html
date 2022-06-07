@@ -82,6 +82,7 @@
         (onChange)="lastDiff = taxes[1].diff = $event.value; taxes[1].cng = $event.rate"
         (onLoad)="taxes[1].total = $event.total"
         tax_type="delek"
+        total_diff="{{totalDiff()-taxes[1].diff}}"
       ></app-single-value-tax>
     </p>
   </div>
@@ -92,6 +93,7 @@
         (onChange)="lastDiff = taxes[2].diff = $event.value; taxes[2].cng = $event.rate"
         (onLoad)="taxes[2].total = $event.total"
         tax_type="maam"
+        total_diff="{{totalDiff()-taxes[2].diff}}"
       ></app-single-value-tax>
     </p>
   </div>
@@ -102,6 +104,7 @@
         (onChange)="lastDiff = taxes[3].diff = $event.value; taxes[3].cng = $event.rate"
         (onLoad)="taxes[3].total = $event.total"
         tax_type="tabak"
+        total_diff="{{totalDiff()-taxes[3].diff}}"
       ></app-single-value-tax>
     </p>
   </div>
