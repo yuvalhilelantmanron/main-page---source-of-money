@@ -39,5 +39,15 @@
         }}₪
       </p>
     </div>
+    <div class="balance">
+      <button (click)="balanceOut()">
+        הבא לאיזון
+        
+      </button>
+      <br/>
+        (לחיצה על כפתור זה תערוך את שיעור המס הנוכחי כדי להביא את ההפרש המשוקלל כאן למטה ל-0)
+      <p [hidden]="enough_to_balance">{{taxes[getTax()].title}} לא מספיק כדי לאזן</p>
+    </div>
+    
   </div>
 </div>

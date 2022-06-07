@@ -58,9 +58,12 @@ export class TaxGameComponent implements OnInit {
   ngOnInit() {}
 
   async getData() {
-    var tax_code = '0000';
-    var data = await this.fetching.get(tax_code);
-    this.totalIncome = data.net_executed;
+    // var tax_code = '0000';
+    // var data = await this.fetching.get(tax_code);
+    // this.totalIncome = data.net_executed;
+
+    var data = await this.fetching.getTotalIncome();
+    this.totalIncome = data;
   }
 
   public changeTax(evt, tax) {
@@ -78,6 +81,7 @@ export class TaxGameComponent implements OnInit {
 
     // Add highlight to selected button
     evt.currentTarget.className += ' active';
+
   }
 
   totalDiff() {
