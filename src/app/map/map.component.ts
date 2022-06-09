@@ -82,7 +82,7 @@ export class MapComponent implements OnInit {
         var coordinates = e.features[0].geometry.coordinates[0];
         var cityName = e.features[0].properties["name:he"];
         var cityIncome = e.features[0].properties.income;
-        var description: any = `<div style="text-align:center">${cityName}</div><div style="text-align:center">סה"כ ההכנסות ממס הכנסה:${this.utils.bareFormatValue(cityIncome,0)} ${this.utils.getValueSuffix(cityIncome)} ₪</div>`;
+        var description: any = `<div style="text-align:center">${cityName}</div><div style="text-align:center">סה"כ ההכנסות ממס הכנסה:${this.utils.formatNumber(cityIncome,0)}₪</div>`;
 
         var popupLngLat = {lng:e.lngLat.lng, lat:e.lngLat.lat};
         // if(e.point.x<115)
