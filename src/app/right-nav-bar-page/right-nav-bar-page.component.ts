@@ -7,18 +7,7 @@ import * as industryData from '../industryData.json';
   styleUrls: ['./right-nav-bar-page.component.less']
 })
 export class RightNavBarPageComponent implements OnInit {
-  propertyTypes: Array<string> = ['בית', 'דירה'];
-  inIncome: number;
-  inKids: number;
-  inType: string = ""
-  ans4: string = ""
-  img1: string = ""
-  num: number = 1;
-  tax: number;
-  showImgs = false;
-
   industryData: any = industryData.data;
-  bingbong: "5px";
 
   constructor() { }
 
@@ -29,14 +18,6 @@ export class RightNavBarPageComponent implements OnInit {
     }
   }
 
-  logval(income: number, kids: number, type: string) {
-    this.inKids = kids;
-    this.inIncome = income;
-    this.inType = type;
-    this.tax = income * 3;
-    this.ans4 = "יש לך " + kids + "ילדים ואתה גר ב" + type;
-    this.showImgs = true;
-  }
   valueIntoMillions(amount) {
     return Math.floor(amount / 1000000) + " מיליון"
   }

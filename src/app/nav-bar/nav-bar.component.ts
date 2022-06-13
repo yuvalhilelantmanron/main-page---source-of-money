@@ -14,7 +14,7 @@ export class NavBarComponent {
   currentlySelected: string = "middle";
 
   @Input() fetchedData: any;
-
+  @Input() giraon: any;
 
   constructor() {
 
