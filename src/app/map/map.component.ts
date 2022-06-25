@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as mapboxgl from 'mapbox-gl';
-import * as mapData from '../finalMapData.json';
+import * as mapData from '../mapData.json';
 import { UtilsService } from '../utils.service';
 
 @Component({
@@ -67,7 +67,7 @@ export class MapComponent implements OnInit {
 
       //creates an object of type poput to be used later
       const popup = new mapboxgl.Popup({
-        closeButton: false,
+        closeButton: true,
         closeOnClick: false
       });
 
