@@ -85,8 +85,9 @@
     <div style="width: 100%; margin: 3rem 0; font-size: 3rem;">
       גירעון = גיוס הון נטו + הפרטה + שינוי יתרות בבנקים.
     </div>
-    סה"כ ההכנסות למימון הגרעון לשנת 2022
-    <div style="margin-top: 2rem; color:#ff6666; font-size: 4rem; text-align: center;">₪{{utils.formatNumber(giraonSum)}}</div>
+    <div style="margin-right: auto;margin-left: auto; display:flex; justify-content: center;;" *ngIf="giraon">
+      <category-visualization [category]="giraon" data-kind="func"></category-visualization>
+    </div>
   </div>
 
   <!-- TODO: Graph -->
@@ -102,9 +103,7 @@
     ובגירעון, (שהם הכללים הפיסקליים בתכנון התקציב) מצטמצמות דרגות החופש של
     הממשלה בתכנון התקציב לשנים הבאות. <br />
     אם אתם רוצים להמשיך לקרוא עוד על הגרעון ותקציב המדינה אתם מוזמנים לקפוץ לאתר
-    <a href="https://main.knesset.gov.il/About/Pages/Budget/BudgetInfo1.aspx"
-      >הכנסת</a
-    >
+    <a href="https://main.knesset.gov.il/About/Pages/Budget/BudgetInfo1.aspx">הכנסת</a>
     שמפרט על נושאים אלו בצורה מצוינת <br />
     <small>[מקור: צוות "מקור הכסף" ואבישר כהן]</small>
   </div>
@@ -116,34 +115,21 @@
 
     <ul>
       <li>
-        <a
-          href="https://www.gov.il/he/departments/topics/subject-state-revenues/govil-landing-page"
-          >אגף הכלכלנית הראשית
+        <a href="https://www.gov.il/he/departments/topics/subject-state-revenues/govil-landing-page">אגף הכלכלנית הראשית
         </a>
         - באתר מוצגים דוחות תקופתיים של מינהל הכנסות המדינה, בפורמאט חדש ונגיש
         לציבור. דוחות אלו מציגים את ההתפתחויות בגביית המסים בישראל ומהווה כלי
         חשוב להכרת מערכת המס ולקביעת מדיניות המס בישראל
       </li>
       <li>
-        <a
-          href="https://www.gov.il/he/departments/topics/subject-budget-execution/govil-landing-page"
-          >אגף החשב הכללי</a
-        >
+        <a href="https://www.gov.il/he/departments/topics/subject-budget-execution/govil-landing-page">אגף החשב
+          הכללי</a>
         - חטיבת מאקרו ותקציב באגף החשב הכללי מייצרת בזמן אמת אומדן ראשוני של
         ביצוע התקציב ברמת המסגרות המקרו-כלכליות, כגון גירעון הממשלה, מימון
         הגירעון, הוצאות והכנסות הממשלה.
       </li>
       <li>
-        <a href="https://kohelet.org.il/tag/%D7%9B%D7%9C%D7%9B%D7%9C%D7%94"
-          >פורום קהלת</a
-        >
-        - מכון מחקר ומעשה עצמאי שבין השאר מפרסם ניירות מדיניות העוסקות בכלכלת
-        ישראל.
-      </li>
-      <li>
-        <a href="https://www.boi.org.il/he/Research/Pages/Default.aspx"
-          >חטיבת המחקר של בנק ישראל</a
-        >
+        <a href="https://www.boi.org.il/he/Research/Pages/Default.aspx">חטיבת המחקר של בנק ישראל</a>
         - המפרטת בין השאר על פעילות המגזר הציבורי בנוגע להכנסות ותקציב המדינה,
         הגרעון ומימון הגרעון.
       </li>

@@ -20,13 +20,16 @@
         <div class='para'>
             <div>
                 ברוך הבא למקור הכסף, מטרת האתר היא להנגיש את הכנסות המדינה לציבור הרחב.
-                אנחנו מנסים להציג לכם את כלל הנתונים אשר בידנו. 
+                אנחנו מנסים להציג לכם את כלל הנתונים אשר בידנו.
                 מפילוח ההכנסות בצורה הכללית ביותר עד לאפשרות להגיע לכל רכיב ספציפי ככל שיהיה בהכנסות תקציב המדינה.
             </div>
-            
+
             <div style="padding-top: 1rem;">
-                האתר הוא חלק מפרויקט <a style="font-weight: bold; color:#ff6666" href="https://next.obudget.org/">"מפתח התקציב"</a> שמנגיש את כל המידע על תקציב המדינה ועל הוצאות הממשלה.
-                אם אתם מחפשים משהו מסוים אז אתם מוזמנים להיכנס <a href="https://next.obudget.org/s/?q=&dd=all&range=all&lang=he&theme=budgetkey" style="font-weight: bold; color:#ff6666">לחיפוש</a>, אם אחרת - יאללה תתחילו לגלול.
+                האתר הוא חלק מפרויקט <a style="font-weight: bold; color:#ff6666" href="https://next.obudget.org/">"מפתח
+                    התקציב"</a> שמנגיש את כל המידע על תקציב המדינה ועל הוצאות הממשלה.
+                אם אתם מחפשים משהו מסוים אז אתם מוזמנים להיכנס <a
+                    href="https://next.obudget.org/s/?q=&dd=all&range=all&lang=he&theme=budgetkey"
+                    style="font-weight: bold; color:#ff6666">לחיפוש</a>, אם אחרת - יאללה תתחילו לגלול.
             </div>
         </div>
         <main-page-summary [amount]="totalAmount" [year]="year"></main-page-summary>
@@ -37,17 +40,14 @@
         </div>
 
     </div>
-    <div class='para' style="margin-top: 6rem;">
+    <div class='para' style="margin: 6rem 0;">
         <div>
             ניתן לראות בגרפים למעלה חלוקה גסה של הכנסות תקציב המדינה. אם תרצו תמשיכו לגלול ותגיעו למספר סוגיות אשר
             מאפשרות לכם
             להבין יותר לעומק את הכנסות תקציב המדינה.
-            <br>
-            <br>
-            <br>
         </div>
     </div>
     <div class="footer">
-        <nav-bar [giraonSum]="giraonSum" [fetchedData]='data'></nav-bar>
+        <nav-bar [giraon]="giraon" [fetchedData]='data'></nav-bar>
     </div>
 </budgetkey-container>

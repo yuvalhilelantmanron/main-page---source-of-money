@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as mapboxgl from 'mapbox-gl';
-import * as mapData from '../finalMapData.json';
+import * as mapData from '../mapData.json';
 import { UtilsService } from '../utils.service';
 
 @Component({
@@ -67,7 +67,7 @@ export class MapComponent implements OnInit {
 
       //creates an object of type poput to be used later
       const popup = new mapboxgl.Popup({
-        closeButton: false,
+        closeButton: true,
         closeOnClick: false
       });
 
@@ -82,25 +82,14 @@ export class MapComponent implements OnInit {
         var coordinates = e.features[0].geometry.coordinates[0];
         var cityName = e.features[0].properties["name:he"];
         var cityIncome = e.features[0].properties.income;
-        var description: any = `<div style="text-align:center">${cityName}</div><div style="text-align:center">סה"כ ההכנסות ממס הכנסה:${this.utils.formatNumber(cityIncome,0)}₪</div>`;
+        var description: any = `<div style="text-align:center">${cityName}</div><div style="text-align:center">סה"כ ההכנסות ממס הכנסה:${this.utils.formatNumberWithSuffix(cityIncome, 2)}₪</div>`;
 
-        var popupLngLat = {lng:e.lngLat.lng, lat:e.lngLat.lat};
-        // if(e.point.x<115)
-        //   popup.lng=popup.lng + 115 -e.point.x;
-        // else if(e.point.x >330)
-        //   popup.lng=popup.lng + 330 -e.point.x;
-
+        var popupLngLat = { lng: e.lngLat.lng, lat: e.lngLat.lat };
 
         //shows the popup
-        this.map.flyTo({center:popupLngLat})
+        this.map.flyTo({ center: popupLngLat })
         popup.setLngLat(popupLngLat).setHTML(description).addTo(this.map);
       });
-
-      //hides the popup when when the mouse leaves the city geomatry
-    //   this.map.on('mouseleave', 'city_fill', () => {
-    //     this.map.getCanvas().style.cursor = '';
-    //     popup.remove();
-    //   });
     })
   }
 }

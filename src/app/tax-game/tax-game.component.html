@@ -4,11 +4,13 @@
   </p>
   <p>
     משחק זה נועד לאפשר לאזרח הפשוט להכנס לרגע אחד לנעלי הרשות המחוקקת ולקבוע מחדש את המסים במדינה
-    <br/>
-    כאן תוכלו לשנות את הגודל של מס מסוים, לראות איך הוא משנה את מאזן הכנסות המדינה, להבין כיצד תצטרכו לשנות מסים אחרים כדי לחפות על העדכון שלכם, ועוד!
+    <br />
+    כאן תוכלו לשנות את הגודל של מס מסוים, לראות איך הוא משנה את מאזן הכנסות המדינה, להבין כיצד תצטרכו לשנות מסים אחרים
+    כדי לחפות על העדכון שלכם, ועוד!
   </p>
   <p>
-    נסו ללחוץ על שם המס כדי לעבור לשחק עם מס אחר, או ללחוץ "ביטול המס" או "התעלמות מהשינויים" על כל אחד מהמסים, גם אם אתם משחקים עם מס אחר באותו רגע
+    נסו ללחוץ על שם המס כדי לעבור לשחק עם מס אחר, או ללחוץ "ביטול המס" או "התעלמות מהשינויים" על כל אחד מהמסים, גם אם
+    אתם משחקים עם מס אחר באותו רגע
   </p>
   <p>
     בחלון למטה תוכלו לראות את ההשפעה של המשחק שלכם על המספרים
@@ -78,43 +80,32 @@
 <div class="tax-input">
   <div [hidden]="!(currTax == 'delek')||taxes[1].status.ignore||taxes[1].status.cancel">
     <p>
-      <app-single-value-tax
-        (onChange)="lastDiff = taxes[1].diff = $event.value; taxes[1].cng = $event.rate"
-        (onLoad)="taxes[1].total = $event.total"
-        tax_type="delek"
-        total_diff="{{totalDiff()-taxes[1].diff}}"
-      ></app-single-value-tax>
+      <app-single-value-tax (onChange)="lastDiff = taxes[1].diff = $event.value; taxes[1].cng = $event.rate"
+        (onLoad)="taxes[1].total = $event.total" tax_type="delek" total_diff="{{totalDiff()-taxes[1].diff}}">
+      </app-single-value-tax>
     </p>
   </div>
 
   <div [hidden]="!(currTax == 'maam')||taxes[2].status.ignore||taxes[2].status.cancel">
     <p>
-      <app-single-value-tax
-        (onChange)="lastDiff = taxes[2].diff = $event.value; taxes[2].cng = $event.rate"
-        (onLoad)="taxes[2].total = $event.total"
-        tax_type="maam"
-        total_diff="{{totalDiff()-taxes[2].diff}}"
-      ></app-single-value-tax>
+      <app-single-value-tax (onChange)="lastDiff = taxes[2].diff = $event.value; taxes[2].cng = $event.rate"
+        (onLoad)="taxes[2].total = $event.total" tax_type="maam" total_diff="{{totalDiff()-taxes[2].diff}}">
+      </app-single-value-tax>
     </p>
   </div>
 
   <div [hidden]="!(currTax == 'tabak')||taxes[3].status.ignore||taxes[3].status.cancel">
     <p>
-      <app-single-value-tax
-        (onChange)="lastDiff = taxes[3].diff = $event.value; taxes[3].cng = $event.rate"
-        (onLoad)="taxes[3].total = $event.total"
-        tax_type="tabak"
-        total_diff="{{totalDiff()-taxes[3].diff}}"
-      ></app-single-value-tax>
+      <app-single-value-tax (onChange)="lastDiff = taxes[3].diff = $event.value; taxes[3].cng = $event.rate"
+        (onLoad)="taxes[3].total = $event.total" tax_type="tabak" total_diff="{{totalDiff()-taxes[3].diff}}">
+      </app-single-value-tax>
     </p>
   </div>
 
   <div [hidden]="!(currTax == 'other')">
     <p>נסה מס אחר :</p>
-    <app-joker-tax
-      (onChange)="lastDiff = taxes[4].diff = $event.value"
-      (onLoad)="taxes[4].total = $event.total"
-    ></app-joker-tax>
+    <app-joker-tax (onChange)="lastDiff = taxes[4].diff = $event.value" (onLoad)="taxes[4].total = $event.total">
+    </app-joker-tax>
   </div>
 </div>
 
@@ -139,19 +130,25 @@
 </div>
 
 <div class="extra-links-cover">
-  <h3 style="text-align: center; color:#ff5a5f;">אם מעניין אותכם ללמוד עוד על החלטות הממשלה והמדיניות הכלכלית שלה - אנו ממליצים על שלושת גופי המחקר הבאים:</h3>
+  <h3 style="text-align: center; color:#ff5a5f;">אם מעניין אותכם ללמוד עוד על החלטות הממשלה והמדיניות הכלכלית שלה - אנו
+    ממליצים על שלושת גופי המחקר הבאים:</h3>
   <div class="extra-links">
     <div>
-      <h4>מכון קהלת</h4>
-      מכון מחקר ומעשה עצמאי הפועל מירושלים להבטחת עתידה של ישראל כמדינת הלאום של העם היהודי, לחיזוק הדמוקרטיה הייצוגית, הרחבת חירויות הפרט והעמקת עקרונות השוק החופשי.
+      <a href="https://kohelet.org.il/">מכון קהלת</a>
+      מכון מחקר ומעשה עצמאי הפועל מירושלים להבטחת עתידה של ישראל כמדינת הלאום של העם היהודי, לחיזוק הדמוקרטיה הייצוגית,
+      הרחבת חירויות הפרט והעמקת עקרונות השוק החופשי.
     </div>
     <div class="middle-extra-link">
-      <h4>מכון הישראלי לדמוקרטיה</h4>
-      מוסד עצמאי א-מפלגתי, מחקרי ויישומי, הפועל בזירה הציבורית הישראלית בתחומי הממשל, הכלכלה והחברה. יעדיו הם חיזוק התשתית הערכית והמוסדית של ישראל כמדינה יהודית ודמוקרטית, שיפור התפקוד של מבני הממשל והמשק, גיבוש דרכים להתמודדות עם אתגרי הביטחון מתוך שמירה על הערכים הדמוקרטיים וטיפוח שותפות ומכנה משותף אזרחי בחברה הישראלית רבת הפנים.
+      <a href="https://www.idi.org.il/tags/3948">מכון הישראלי לדמוקרטיה</a>
+      מוסד עצמאי א-מפלגתי, מחקרי ויישומי, הפועל בזירה הציבורית הישראלית בתחומי הממשל, הכלכלה והחברה. יעדיו הם חיזוק
+      התשתית הערכית והמוסדית של ישראל כמדינה יהודית ודמוקרטית, שיפור התפקוד של מבני הממשל והמשק, גיבוש דרכים להתמודדות
+      עם אתגרי הביטחון מתוך שמירה על הערכים הדמוקרטיים וטיפוח שותפות ומכנה משותף אזרחי בחברה הישראלית רבת הפנים.
     </div>
     <div>
-      <h4>מרכז אדוה</h4>
-      מכון מחקר המתמחה בניטור של מגמות חברתיות וכלכליות ובניתוח של המדיניות הממשלתית אל מול מגמות אלה. מרכז אדוה בוחן את המגמות ואת המדיניות לפי אמות המידה של שוויון וצדק חברתי. מלאכת הניטור של מרכז אדוה נסמכת על מאגרי נתונים עשירים ומגוונים, המאפשרים לעקוב אחר התפתחויות בתחום הפיתוח הכלכלי כמו גם בתחום השוויון החברתי.
+      <a href="https://adva.org/he/category/research-fields/budget-and-economy/">מרכז אדוה</a>
+      מכון מחקר המתמחה בניטור של מגמות חברתיות וכלכליות ובניתוח של המדיניות הממשלתית אל מול מגמות אלה. מרכז אדוה בוחן את
+      המגמות ואת המדיניות לפי אמות המידה של שוויון וצדק חברתי. מלאכת הניטור של מרכז אדוה נסמכת על מאגרי נתונים עשירים
+      ומגוונים, המאפשרים לעקוב אחר התפתחויות בתחום הפיתוח הכלכלי כמו גם בתחום השוויון החברתי.
     </div>
   </div>
 </div>

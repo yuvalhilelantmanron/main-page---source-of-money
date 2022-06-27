@@ -1,5 +1,4 @@
 import { Component, Inject, OnInit, HostListener } from '@angular/core';
-import { BUBBLES } from './constants';
 import { TranslateService } from '@ngx-translate/core';
 
 const _TRANSLATIONS = window['TRANSLATIONS'] || {};
@@ -31,46 +30,14 @@ export class AppComponent implements OnInit {
 
   public giraonSum = 0;
   public data: any;
+  public giraon: any;
 
-  constructor(@Inject(BUBBLES) private bubbles: any, public translate: TranslateService) {
+  constructor(public translate: TranslateService) {
     this.newGetData();
     translate.addLangs(['he', 'ar']);
     translate.setDefaultLang('he');
     const browserLang = translate.getBrowserLang();
     translate.use(browserLang.match(/he|ar/) ? browserLang : 'he');
-  }
-
-  async getData(bubbles) {
-    //fetches data from url
-    var raw = await fetch('https://next.obudget.org/api/query?query=SELECT%20year,%20func_cls_title_2-%3E%3E0%20as%20func_title,%20sum(net_revised)%20AS%20revised,%20sum(net_allocated)%20AS%20allocated,%20sum(net_executed)%20AS%20executed%20FROM%20budget%20WHERE%20depth%20=%204%20and%20code%20like%20%270000%%%27%20group%20by%201,%202%20order%20by%202,%201')
-    var data = await raw.json();
-    data = data.rows;
-    this.data = data;
-
-    //gets the most current year
-    var lastTitle = data[0].func_title;
-    for (var item of data) {
-      if (item.func_title != lastTitle) break;
-      this.year = Math.max(this.year, item.year);
-    }
-
-    //creates an array of data
-    var minimizedData = [];
-    this.totalAmount = 0;
-    for (var item of data) {
-      if (item.year != this.year || item.func_title == "הכנסות למימון גירעון") continue;
-
-      let value = bubbles.func[minimizedData.length].values;
-      minimizedData.push({ name: item.func_title, scale: 1, amount: item.allocated, values: value });
-      this.totalAmount += item.allocated;
-    }
-
-    //gets the percentage of each category
-    for (item of minimizedData)
-      item.percent = (item.amount / this.totalAmount) * 100;
-
-    minimizedData.sort((a, b) => b.amount - a.amount)
-    this.funcCategories = minimizedData;
   }
 
   async newGetData() {
@@ -93,17 +60,13 @@ export class AppComponent implements OnInit {
     for (var item of data) {
       if (item.year != this.year || item.allocated == 0) continue;
 
-      if(item.func_title == "הכנסות למימון גירעון"){
-        this.giraonSum += item.allocated;
-        continue;
-      }
-
       if (!minimizedData[item.func_title])
         minimizedData[item.func_title] = { name: item.func_title, scale: 1, amount: 0, values: {} };
 
       minimizedData[item.func_title].amount += item.allocated;
       minimizedData[item.func_title].values[item.title] = { amount: item.allocated, href: `https://next.obudget.org/i/budget/${item.code}/${item.year}` };
-      this.totalAmount += item.allocated;
+      if (item.func_title != "הכנסות למימון גירעון")
+        this.totalAmount += item.allocated;
     }
 
     //turns diconary into array
@@ -140,8 +103,17 @@ export class AppComponent implements OnInit {
       }
     }
 
+    for (let i = 0; i < minimizedArray.length; i++) {
+      if (minimizedArray[i].name == "הכנסות למימון גירעון") {
+        this.giraon = minimizedArray[i];
+        this.giraon.percent = (this.giraon.amount / (this.totalAmount + this.giraon.amount)) * 100;
+        minimizedArray.splice(i, 1);
+        console.log(this.giraon);
+      }
+    }
+
     //gets the percentage of each category
-    for (item of minimizedArray)
+    for (let item of minimizedArray)
       item.percent = (item.amount / this.totalAmount) * 100;
 
     minimizedArray.sort((a, b) => b.amount - a.amount)
