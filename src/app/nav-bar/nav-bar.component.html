@@ -4,13 +4,13 @@
       (click)="changeCurrentlySelected('left')">
       {{ leftCaption }}
     </h2>
-    <h2 class="nav-option middle-nav-bar" [ngClass]="{ 'selected-nav-option': currentlySelected == 'middle' }"
-      (click)="changeCurrentlySelected('middle')">
-      {{ middleCaption }}
-    </h2>
-    <h2 class="nav-option" [ngClass]="{ 'selected-nav-option': currentlySelected == 'right' }"
+    <h2 class="nav-option middle-nav-bar" [ngClass]="{ 'selected-nav-option': currentlySelected == 'right' }"
       (click)="changeCurrentlySelected('right')">
       {{ rightCaption }}
+    </h2>
+    <h2 class="nav-option" [ngClass]="{ 'selected-nav-option': currentlySelected == 'middle' }"
+      (click)="changeCurrentlySelected('middle')">
+      {{ middleCaption }}
     </h2>
   </div>
 

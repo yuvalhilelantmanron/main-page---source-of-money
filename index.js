@@ -4,7 +4,7 @@ const path = require('path');
 const fs = require('fs');
 const express = require('express');
 const nunjucks = require('nunjucks');
-const get_cache = require('./cache');
+// const get_cache = require('./cache');
 
 const basePath = process.env.BASE_PATH || '/';
 const rootPath = path.resolve(__dirname, './dist/source-of-money-app-main-page');
@@ -12,11 +12,11 @@ const rootPath = path.resolve(__dirname, './dist/source-of-money-app-main-page')
 const cachedThemes = {};
 const cachedThemeJsons = {};
 
-let bubbles = '{}';
-get_cache()
-  .then((data) => {
-    bubbles = JSON.stringify(data);
-  });
+// let bubbles = '{}';
+// get_cache()
+//   .then((data) => {
+//     bubbles = JSON.stringify(data);
+//   });
 
 const app = express();
 app.use(basePath, express.static(rootPath, {
@@ -87,7 +87,7 @@ app.get(basePath + '*', function(req, res) {
   let doc_id = req.params[0];
   res.render('index.html', {
       base: basePath,
-      bubbles: bubbles,
+      // bubbles: bubbles,
       injectedScript: injectedScript,
       doc_id: doc_id
   });

@@ -36,7 +36,9 @@ export class AppComponent implements OnInit {
     this.newGetData();
     translate.addLangs(['he', 'ar']);
     translate.setDefaultLang('he');
-    const browserLang = translate.getBrowserLang();
+    const urlParams = new URLSearchParams(window.location.search);
+    const queryLang = urlParams.get('lang');
+    const browserLang = queryLang || translate.getBrowserLang();
     translate.use(browserLang.match(/he|ar/) ? browserLang : 'he');
   }
 

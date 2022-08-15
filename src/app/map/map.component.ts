@@ -11,8 +11,10 @@ import { UtilsService } from '../utils.service';
 export class MapComponent implements OnInit {
   map: mapboxgl.Map;
   style = 'mapbox://styles/mapbox/light-v10';
-  lat = 31.55;
-  lng = 34.99;
+  lat = 32.1;
+  lng = 34.8;
+  // lat = 31.55;
+  // lng = 34.99;
   prevE: any = null;
 
   constructor(private utils: UtilsService) {
@@ -28,7 +30,7 @@ export class MapComponent implements OnInit {
     this.map = new mapboxgl.Map({
       container: 'map',
       style: this.style,
-      zoom: 5.5,
+      zoom: 8.5,
       center: [this.lng, this.lat]
     });
 
@@ -58,9 +60,9 @@ export class MapComponent implements OnInit {
               ],
               ["get", "income"],
               0,
-              "hsla(0, 7%, 11%, 0.8)",
+              "hsla(0, 100%, 98%, 0.8)",
               4778982898,
-              "hsla(360, 100%, 54%, 0.8)"
+              "hsla(0, 100%, 54%, 0.8)"
             ]
         }
       });

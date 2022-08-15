@@ -1,4 +1,4 @@
-<budgetkey-container class="page-cover" [showHeader]="true" [showSearchBar]="false" [showLanguages]="false">
+<budgetkey-container class="page-cover" [showHeader]="true" [showSearchBar]="false" [showLanguages]="true">
     <div class='ad' [class.active]='adVisible'>
         <a href='https://act.obudget.org' target='_blank'>
             <span>נפתח מחזור חדש לקורס </span>
@@ -7,21 +7,14 @@
         </a>
     </div>
     <div class='header'>
-        <label for="">
-            {{ 'HOME.SELECT' | translate }}
-            <select #langselect (change)="translate.use(langselect.value)">
-                <option *ngFor="let lang of translate.getLangs()" [value]="lang">{{lang}}</option>
-            </select>
-        </label>
-
         <div class='head'>
             <h1>{{ 'HOME.TITLE' | translate }}</h1>
         </div>
         <div class='para'>
-            <div>
-                ברוך הבא למקור הכסף, מטרת האתר היא להנגיש את הכנסות המדינה לציבור הרחב.
+            <div>{{ 'HOME.TEXT' | translate }}
+                <!-- ברוך הבא למקור הכסף, מטרת האתר היא להנגיש את הכנסות המדינה לציבור הרחב.
                 אנחנו מנסים להציג לכם את כלל הנתונים אשר בידנו.
-                מפילוח ההכנסות בצורה הכללית ביותר עד לאפשרות להגיע לכל רכיב ספציפי ככל שיהיה בהכנסות תקציב המדינה.
+                מפילוח ההכנסות בצורה הכללית ביותר עד לאפשרות להגיע לכל רכיב ספציפי ככל שיהיה בהכנסות תקציב המדינה. -->
             </div>
 
             <div style="padding-top: 1rem;">
